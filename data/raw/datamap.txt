@@ -1,0 +1,5637 @@
+[record]: Record number
+Open numeric response
+
+[uuid]: Participant identifier
+Open text response
+
+[date]: Completion time and date
+Open text response
+
+[markers]: Acquired markers
+Open text response
+
+[status]: Participant status
+Values: 1-4
+ 1=Terminated
+ 2=Overquota
+ 3=Qualified
+ 4=Partial
+
+[VersionHistory]: Hidden to keep changes list during FW
+Values: 1-6
+ 1=TEST!
+ 2=Live!
+ 3=Script changes with ROI amends
+ 4=Supress M5/BB2/BB3/BB4
+ 5=Supress F7/D2/D3/D4
+ 6=ROI question removals
+
+SLFlag: Hidden to keep flags for straight line answers in grids
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SLFlagr01] Strike 1
+ [SLFlagr02] Strike 2
+ [SLFlagr03] Third strike and out!
+
+[Device]: Hidden to keep device type
+Values: 1-4
+ 1=Desktop/Laptop
+ 2=Tablet
+ 3=Phone
+ 4=Other
+
+[Sample]: Hidden to capture sample provider/source
+Values: 1-5
+ 1=Sky
+ 2=Research Now UK
+ 3=Research Now ROI
+ 4=NOW TV
+ 5=Other
+
+[startTime]: Start time before first question/intro
+Values: -99999-999999
+
+[S1]: What is your gender?
+Values: 1-4
+ 1=Male
+ 2=Female
+ 3=Prefer another answer
+ 4=Prefer not to say
+
+[S2]: And how old are you?
+Values: 18-110
+
+noanswer: No Answer
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [noanswerS2_r96] And how old are you?: Prefer not to say
+ [noanswerS4a_r99] And now thinking about the TV sets that you have in your home. To what extent do you get to decide what is watched on those TVs?: Don't have a TV set
+ [noanswerS4b_r99] And now thinking about the TV sets that you have in your home. To what extent do you get to decide what is watched on those TVs?: Don't have a TV set
+ [noanswerS7b_r97] And thinking about the same services again, please select those which are important to you and then the service which is most important overall.: Don't know
+ [noanswerC60_r99] Which, if any, of the following elements are important for a TV entertainment service to include and which is the most important element?: None of these
+ [noanswerC61_r99] Which, if any, of the following features of a TV service are you looking for when considering TV entertainment providers and which is the most important feature?: None of these
+ [noanswerC62_r99] And what qualities, if any, are important for a TV entertainment service you would consider to have and which is the most important quality?: None of these
+ [noanswerSK5_r97] And why do you feel you would be unlikely to be subscribing to Sky in 10 years' time?: Don't know
+ [noanswerSK6_r97] And why do you think you might be subscribing to Sky in 10 years' time $ {"even though you don't subscribe today" if not S5.r1 else ""}?: Don't know
+ [noanswerG1_r96] How many adults, aged 18 or over, including yourself, are there in your household? : I prefer not to say
+
+[S2b]: Which of the following age bands do you fall into?
+Values: 1-8
+ 1=Under 18
+ 2=18 to 24
+ 3=25 to 34
+ 4=35 to 44
+ 5=45 to 54
+ 6=55 to 64
+ 7=65 to 74
+ 8=75+
+
+[DAGE]: Age
+Values: 1-6
+ 1=18 to 24
+ 2=25 to 34
+ 3=35 to 44
+ 4=45 to 54
+ 5=55 to 64
+ 6=65 to 74
+
+[DAGE_GROUPED]: Hidden to keep age recoded
+Values: 1-3
+ 1=18-34
+ 2=35-54
+ 3=55+
+
+[S3]: And where do you live?
+Values: 1-13
+ 1=Scotland
+ 2=North East
+ 3=North West
+ 4=Yorkshire and Humberside
+ 5=East Midlands
+ 6=Wales
+ 7=Republic of Ireland
+ 8=South East
+ 9=Northern Ireland
+ 10=East Anglia
+ 11=South West
+ 12=West Midlands
+ 13=London
+
+[REGION_DUMMY]: Hidden to keep region
+Values: 1-3
+ 1=North
+ 2=Midlands
+ 3=South
+
+[S4ROI]: And where do you live?
+Values: 1-9
+ 1=Ulster
+ 2=Galway
+ 3=Rest of Connaught
+ 4=Dublin
+ 5=Rest of Leinster
+ 6=Limerick
+ 7=Cork
+ 8=Rest of Munster
+ 9=None of these
+
+[Country]: Hidden to keep country for the survey
+Values: 1-3
+ 1=UK
+ 2=ROI
+ 3=None of these
+
+S4: Which of the following, best describes your involvement in household decisions concerning providers used for TV, broadband and your own mobile phone service? If you don't currently use one of the services think about who is responsible for the decision not to use the service.
+Values: 1-5
+ 1=I am solely responsible
+ 2=I am jointly responsible
+ 3=I'm not responsible, but I have some influence on the decision
+ 4=I don't influence the decision, but I do pay towards it
+ 5=I make no contribution to the decision
+ [S4c01] Main TV service (e.g. Freeview, Sky, Virgin Media, BT etc...)
+ [S4c02] Broadband
+ [S4c03] Mobile
+ [S4c04] Additional TV streaming services (e.g. Netflix)
+
+[S4a]: And now thinking about the TV sets that you have in your home. To what extent do you get to decide what is watched on those TVs?
+Values: 1-4
+ 1=Sole control
+ 2=Joint control
+ 3=Limited/ very occasional control
+ 4=No control at all
+
+S4b: And now thinking about the TV sets that you have in your home. To what extent do you get to decide what is watched on those TVs?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S4br01c02] Sole control
+ [S4br02c02] Joint control
+ [S4br03c02] Limited/ very occasional control
+ [S4br04c02] No control at all
+
+A19a: How would you describe your knowledge of the following services and the TV shows they give access to?
+Values: 1-5
+ 1=Never heard of it
+ 2=I've only heard of the name
+ 3=I know a bit about the types of TV shows it offers but couldn't name one
+ 4=I could name a few of the TV shows on there
+ 5=I'm confident I could name a lot of TV shows it offers
+ [A19ar1] Sky TV
+ [A19ar2] Netflix
+ [A19ar3] Amazon Prime Video
+ [A19ar4] NOW
+ [A19ar5] Disney+
+ [A19ar6] Apple TV
+ [A19ar7] Paramount
+ [A19ar8] BBC
+ [A19ar9] Channel 4
+ [A19ar10] ITV
+ [A19ar11] RTE
+ [A19ar12] Virgin
+
+A19b: How would you describe your knowledge of the following services and the Sports they offer?
+Values: 1-5
+ 1=Never heard of it
+ 2=I've only heard of the name
+ 3=I know a bit about the types of sports it offers but couldn't name one
+ 4=I could name a few of the sports on there
+ 5=I'm confident I could name a lot of the sports it offers
+ [A19br1] Sky Sports
+ [A19br2] DAZN
+ [A19br3] Amazon Prime Video
+ [A19br4] NOW
+ [A19br5] Discovery+
+ [A19br6] TNT Sports
+ [A19br7] BBC Sport
+ [A19br8] RTE
+ [A19br9] Virgin
+ [A19br10] Sports Extra
+
+[S5]: Which of the following TV service providers do you use as your main home TV provider?
+Values: 1-13
+ 1=Sky
+ 2=Virgin Media
+ 3=Freeview
+ 4=EE TV (formerly BT TV)
+ 5=Freesat
+ 6=TalkTalk TV
+ 7=YouView (Standalone box only)
+ 8=Saorview
+ 9=Eir TV
+ 10=Vodafone
+ 11=Another provider (please specify)
+ 12=I don't have a TV/I don't use a TV service provider
+ 13=Don't know
+
+[S5r98oe]: Which of the following TV service providers do you use as your main home TV provider? - Another provider (please specify)
+Open text response
+
+[P0]: Sample type
+Values: 1-7
+ 1=UK Sky TV customers
+ 2=UK Pay TV prospects
+ 3=UK Free TV prospects
+ 4=ROI Sky TV customers
+ 5=ROI Pay TV prospects
+ 6=ROI Free TV prospects
+ 7=No TV
+
+[S6]: Which one of the following are you using to access Sky TV?
+Values: 1-5
+ 1=Sky+
+ 2=SkyQ
+ 3=Sky Glass (new Sky TV from Sky)
+ 4=Sky Stream
+ 5=An older Sky box
+
+[SMC]: Do you have with your Sky subscription?
+Values: 1-3
+ 1=Yes
+ 2=No
+ 3=Not sure
+
+[TRAP1]: Now we just want to ask a quick test question. From the list shown below, please select the answer which is not an animal.
+Values: 1-9
+ 1=Cat
+ 2=Dog
+ 3=Horse
+ 4=Elephant
+ 5=Mouse
+ 6=Rabbit
+ 7=Tiger
+ 8=Car
+ 9=None of these
+
+[PR2]: How long has your household been a TV customer of Sky? Please answer based on the whole time your household has continuously been a TV customer, even if at a previous address.
+Values: 1-7
+ 1=3 months or less
+ 2=4-6 months
+ 3=7-12 months
+ 4=13-18 months
+ 5=18-24 months
+ 6=Over 2 years
+ 7=Don't know
+
+PR3: How likely are you to get your main TV services from each of the following companies in the next 12 months?
+Values: 0-10
+ [PR3r1] Sky
+ [PR3r2] Virgin Media
+ [PR3r3] Freeview
+ [PR3r4] EE TV (formerly BT TV)
+ [PR3r5] Saorview
+ [PR3r6] Eir TV
+ [PR3r7] Vodafone
+
+PR4: On a scale of 1 to 10, where 1 is extremely unlikely and 10 is extremely likely, how likely are you to still be using the following TV service provider in 12 months' time?
+Values: 1-10
+ [PR4r1] Sky
+ [PR4r2] Virgin Media
+ [PR4r3] Freeview
+ [PR4r4] EE TV (formerly BT TV)
+ [PR4r5] Freesat
+ [PR4r6] TalkTalk TV
+ [PR4r7] YouView (Standalone box only)
+ [PR4r8] Saorview
+ [PR4r9] Eir TV
+ [PR4r10] Vodafone
+ [PR4r98] $ {S5.r98.open}
+
+S7: From the provider(s) below, please indicate which, if any, you currently subscribe to or have access to?
+Values: 1-4
+ 1=I am a paying subscriber to the service (either full or part)
+ 2=I am using service but not paying for it
+ 3=Don't subscribe to
+ 4=Don't know
+ [S7r1] Netflix
+ [S7r2] Amazon Prime Video
+ [S7r3] NOW
+ [S7r4] Britbox
+ [S7r5] AppleTV+
+ [S7r6] Disney+
+ [S7r7] Discovery+
+ [S7r8] Paramount+
+ [S7r9] Amazon Music
+ [S7r10] Apple Music
+ [S7r11] Spotify
+ [S7r12] Xbox Game Pass
+ [S7r13] PlayStation Plus
+ [S7r14] DAZN
+ [S7r15] YouTube Premium (no adverts)
+
+S7C: Which, if any, of the following services do you regularly use to watch videos or live streams? By regularly we mean once a week or more often.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S7Cr1] Twitch
+ [S7Cr2] TikTok
+ [S7Cr3] Instagram
+ [S7Cr4] Facebook
+ [S7Cr5] iPlayer
+ [S7Cr6] All4
+ [S7Cr7] ITVX/ ITV Hub
+ [S7Cr8] YouTube
+ [S7Cr99] None of these
+ [S7Cr9] RTE Player
+ [S7Cr10] Virgin Media Player
+ [S7Cr11] Sky Go
+ [S7Cr12] DAZN
+
+S7aMask: Hidden to keep possible codes/recodes for S7a
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S7aMaskr1] Netflix
+ [S7aMaskr2] Amazon Prime Video
+ [S7aMaskr3] NOW
+ [S7aMaskr4] Britbox
+ [S7aMaskr5] AppleTV+
+ [S7aMaskr6] Disney+
+ [S7aMaskr7] Discovery+
+ [S7aMaskr8] Paramount+
+ [S7aMaskr9] Amazon Music
+ [S7aMaskr10] Apple Music
+ [S7aMaskr11] Spotify
+ [S7aMaskr12] Xbox Game Pass
+ [S7aMaskr13] PlayStation Plus
+ [S7aMaskr14] DAZN
+ [S7aMaskr15] Sky
+ [S7aMaskr16] Virgin Media
+ [S7aMaskr17] Freeview
+ [S7aMaskr18] EE TV (formerly BT TV)
+ [S7aMaskr19] Freesat
+ [S7aMaskr20] TalkTalk TV
+ [S7aMaskr21] YouView (Standalone box only)
+ [S7aMaskr22] $ {S5.r98.open}
+ [S7aMaskr23] YouTube Premium (no adverts)
+ [S7aMaskr24] Twitch
+ [S7aMaskr25] TikTok
+ [S7aMaskr26] Instagram
+ [S7aMaskr27] Facebook
+ [S7aMaskr28] iPlayer
+ [S7aMaskr29] All4
+ [S7aMaskr30] ITVX/ ITV Hub
+ [S7aMaskr31] YouTube
+
+[S7a]: From the entertainment services below, which would you say you personally use the most often? If you use one or more service a similar amount please choose the service that first comes to mind when thinking about the question.
+Values: 1-36
+ 1=Netflix
+ 2=Amazon Prime Video
+ 3=NOW
+ 4=Britbox
+ 5=AppleTV+
+ 6=Disney+
+ 7=Discovery+
+ 8=Paramount+
+ 9=Amazon Music
+ 10=Apple Music
+ 11=Spotify
+ 12=Xbox Game Pass
+ 13=PlayStation Plus
+ 14=DAZN
+ 15=Sky
+ 16=Virgin Media
+ 17=Freeview
+ 18=EE TV (formerly BT TV)
+ 19=Freesat
+ 20=TalkTalk TV
+ 21=YouView (Standalone box only)
+ 22=$ {S5.r98.open}
+ 23=YouTube Premium (no adverts)
+ 24=Twitch
+ 25=TikTok
+ 26=Instagram
+ 27=Facebook
+ 28=iPlayer
+ 29=All4
+ 30=ITVX/ ITV Hub
+ 31=YouTube
+ 32=Saorview
+ 33=Eir TV
+ 34=Vodafone
+ 35=RTE Player
+ 36=Don't know
+
+S7bc02: Important - And thinking about the same services again, please select those which are important to you and then the service which is most important overall.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S7br1c02] Netflix
+ [S7br2c02] Amazon Prime Video
+ [S7br3c02] NOW
+ [S7br4c02] Britbox
+ [S7br5c02] AppleTV+
+ [S7br6c02] Disney+
+ [S7br7c02] Discovery+
+ [S7br8c02] Paramount+
+ [S7br9c02] Amazon Music
+ [S7br10c02] Apple Music
+ [S7br11c02] Spotify
+ [S7br12c02] Xbox Game Pass
+ [S7br13c02] PlayStation Plus
+ [S7br14c02] DAZN
+ [S7br15c02] Sky
+ [S7br16c02] Virgin Media
+ [S7br17c02] Freeview
+ [S7br18c02] EE TV (formerly BT TV)
+ [S7br19c02] Freesat
+ [S7br20c02] TalkTalk TV
+ [S7br21c02] YouView (Standalone box only)
+ [S7br22c02] $ {S5.r98.open}
+ [S7br23c02] YouTube Premium (no adverts)
+ [S7br24c02] Twitch
+ [S7br25c02] TikTok
+ [S7br26c02] Instagram
+ [S7br27c02] Facebook
+ [S7br28c02] iPlayer
+ [S7br29c02] All4
+ [S7br30c02] ITVX/ ITV Hub
+ [S7br31c02] YouTube
+ [S7br32c02] Saorview
+ [S7br33c02] Eir TV
+ [S7br34c02] Vodafone
+ [S7br35c02] RTE Player
+
+S7bc01: Most Important - And thinking about the same services again, please select those which are important to you and then the service which is most important overall.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S7br1c01] Netflix
+ [S7br2c01] Amazon Prime Video
+ [S7br3c01] NOW
+ [S7br4c01] Britbox
+ [S7br5c01] AppleTV+
+ [S7br6c01] Disney+
+ [S7br7c01] Discovery+
+ [S7br8c01] Paramount+
+ [S7br9c01] Amazon Music
+ [S7br10c01] Apple Music
+ [S7br11c01] Spotify
+ [S7br12c01] Xbox Game Pass
+ [S7br13c01] PlayStation Plus
+ [S7br14c01] DAZN
+ [S7br15c01] Sky
+ [S7br16c01] Virgin Media
+ [S7br17c01] Freeview
+ [S7br18c01] EE TV (formerly BT TV)
+ [S7br19c01] Freesat
+ [S7br20c01] TalkTalk TV
+ [S7br21c01] YouView (Standalone box only)
+ [S7br22c01] $ {S5.r98.open}
+ [S7br23c01] YouTube Premium (no adverts)
+ [S7br24c01] Twitch
+ [S7br25c01] TikTok
+ [S7br26c01] Instagram
+ [S7br27c01] Facebook
+ [S7br28c01] iPlayer
+ [S7br29c01] All4
+ [S7br30c01] ITVX/ ITV Hub
+ [S7br31c01] YouTube
+ [S7br32c01] Saorview
+ [S7br33c01] Eir TV
+ [S7br34c01] Vodafone
+ [S7br35c01] RTE Player
+
+C55: Which, if any, of these providers would you consider using for watching subscription TV or movie services and TV entertainment?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C55r1] Sky
+ [C55r2] Virgin Media
+ [C55r3] Freeview
+ [C55r4] EE TV (formerly BT TV)
+ [C55r5] Freesat
+ [C55r6] TalkTalk TV
+ [C55r7] YouView (Standalone box only)
+ [C55r12] Netflix
+ [C55r10] NOW
+ [C55r14] Amazon Prime Video
+ [C55r9] AppleTV+
+ [C55r15] Disney+
+ [C55r11] YouTube
+ [C55r16] Discovery+
+ [C55r17] Paramount+
+ [C55r99] None of these
+ [C55r18] Eir TV
+ [C55r19] Vodafone
+ [C55r20] Saorview
+
+PR5: Which, if any, of these products and services does your household currently subscribe to through ?
+Values: 1-4
+ 1=Currently subscribe to
+ 2=Previously subscribed to
+ 3=Never subscribed to
+ 4=Don't know
+ [PR5r01] Sky Cinema
+ [PR5r02] Sky Sports
+ [PR5r03] Multiscreen Known as Sky Whole Home
+ [PR5r04] Sky Kids
+ [PR5r05] Sky HD
+ [PR5r06] Sky UHD
+ [PR5r07] Netflix
+ [PR5r08] Disney+
+ [PR5r09] Sports Extra
+
+[NTF1]: Which of the following Netflix subscription packages, if any, do you/ your household pay for?
+Values: 1-6
+ 1=$ {"Standard with adverts at £4.99 – Adverts on service, content in HD and allows two users at one time" if Country.r01 else "Netflix Basic at €8.99"}
+ 2=$ {"Standard at £10.99 – Content in HD and allows two users at one time" if Country.r01 else "Netflix Standard at €14.99"}
+ 3=$ {"Premium at £17.99 – Content in UHD and allows four users at one time" if Country.r01 else "Netflix Premium at €20.99"}
+ 4=Don't pay for a Netflix subscription – I borrow/use someone else's subscription in my household
+ 5=Don't pay for a Netflix subscription – I borrow/use someone else's subscription outside my household
+ 6=Don't know
+
+NTF2: Which of the following services, if any, are set-up in the name of someone outside your household?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [NTF2r1] Amazon Prime Video
+ [NTF2r2] NOW
+ [NTF2r3] AppleTV+
+ [NTF2r4] Disney+
+ [NTF2r99] None of these
+
+C60c02: All important elements - Which, if any, of the following elements are important for a TV entertainment service to include and which is the most important element?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C60r1c02] Great quality shows & programmes
+ [C60r2c02] Wide range of entertainment to choose from
+ [C60r3c02] The TV shows people are talking about
+ [C60r4c02] Unmissable TV shows
+ [C60r5c02] Home to some of my favourite programmes
+ [C60r6c02] Quality original content
+ [C60r7c02] Access to my favourite live sports
+ [C60r8c02] Access to newly released films from the cinema
+ [C60r9c02] Great range of movies to watch at home
+ [C60r10c02] Good range of children's and family-friendly content
+ [C60r11c02] The latest TV series and movies so there's always something new to watch
+ [C60r12c02] All the entertainment channels and apps you use, accessible through one home screen
+ [C60r13c02] Access to a wide range of sports content
+ [C60r14c02] TV shows and movies that aren't available elsewhere
+ [C60r15c02] TV to watch from all over the world
+ [C60r16c02] Old favourites to re-watch
+
+C60c01: Most important element - Which, if any, of the following elements are important for a TV entertainment service to include and which is the most important element?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C60r1c01] Great quality shows & programmes
+ [C60r2c01] Wide range of entertainment to choose from
+ [C60r3c01] The TV shows people are talking about
+ [C60r4c01] Unmissable TV shows
+ [C60r5c01] Home to some of my favourite programmes
+ [C60r6c01] Quality original content
+ [C60r7c01] Access to my favourite live sports
+ [C60r8c01] Access to newly released films from the cinema
+ [C60r9c01] Great range of movies to watch at home
+ [C60r10c01] Good range of children's and family-friendly content
+ [C60r11c01] The latest TV series and movies so there's always something new to watch
+ [C60r12c01] All the entertainment channels and apps you use, accessible through one home screen
+ [C60r13c01] Access to a wide range of sports content
+ [C60r14c01] TV shows and movies that aren't available elsewhere
+ [C60r15c01] TV to watch from all over the world
+ [C60r16c01] Old favourites to re-watch
+
+C61c02: All important features - Which, if any, of the following features of a TV service are you looking for when considering TV entertainment providers and which is the most important feature?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C61r1c02] Easy to cancel when I want to
+ [C61r2c02] Allows you to change your subscription whenever you want
+ [C61r3c02] Offers a quality experience no matter which device you watch on
+ [C61r4c02] Is the most affordable
+ [C61r5c02] Gives me entertainment for an amount I can afford
+ [C61r6c02] Is easy to navigate/use to find something good to watch
+ [C61r7c02] Easy to set up and connect
+ [C61r8c02] Convenient to bundle together with my broadband and/or mobile
+ [C61r9c02] Saves money when bundling together with my broadband and/or mobile
+ [C61r10c02] Makes finding TV easier by bringing different channels and apps together in one place
+ [C61r11c02] Reliable service
+ [C61r12c02] Lets me watch without adverts
+ [C61r13c02] Makes relevant & personalised recommendations
+ [C61r14c02] Easy to record and watch later
+ [C61r15c02] Gives you recommendations of the best content from all your apps and services
+ [C61r16c02] Can use voice control to save time searching for a show
+ [C61r17c02] Let's me add my favourite shows to a playlist
+ [C61r18c02] Gives me a great deal on a great range of TV
+
+C61c01: Most important feature - Which, if any, of the following features of a TV service are you looking for when considering TV entertainment providers and which is the most important feature?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C61r1c01] Easy to cancel when I want to
+ [C61r2c01] Allows you to change your subscription whenever you want
+ [C61r3c01] Offers a quality experience no matter which device you watch on
+ [C61r4c01] Is the most affordable
+ [C61r5c01] Gives me entertainment for an amount I can afford
+ [C61r6c01] Is easy to navigate/use to find something good to watch
+ [C61r7c01] Easy to set up and connect
+ [C61r8c01] Convenient to bundle together with my broadband and/or mobile
+ [C61r9c01] Saves money when bundling together with my broadband and/or mobile
+ [C61r10c01] Makes finding TV easier by bringing different channels and apps together in one place
+ [C61r11c01] Reliable service
+ [C61r12c01] Lets me watch without adverts
+ [C61r13c01] Makes relevant & personalised recommendations
+ [C61r14c01] Easy to record and watch later
+ [C61r15c01] Gives you recommendations of the best content from all your apps and services
+ [C61r16c01] Can use voice control to save time searching for a show
+ [C61r17c01] Let's me add my favourite shows to a playlist
+ [C61r18c01] Gives me a great deal on a great range of TV
+
+C62c02: All important qualities - And what qualities, if any, are important for a TV entertainment service you would consider to have and which is the most important quality?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C62r1c02] Is a leader in technology
+ [C62r2c02] Offers a simple and easy experience
+ [C62r3c02] Offers excellent customer service
+ [C62r4c02] Recognises customers' loyalty
+ [C62r5c02] Is a brand I trust
+ [C62r6c02] Offers customers good value for what they receive
+ [C62r7c02] Connects customers to more of the TV they love
+ [C62r8c02] Constantly innovates to deliver the best TV experience
+ [C62r9c02] Makes it easy to find something to watch
+ [C62r10c02] Offers simple packages that are easy to understand
+ [C62r11c02] Offers content worth paying for
+ [C62r12c02] Is recommended by friends/family/colleagues
+
+C62c01: Most important quality - And what qualities, if any, are important for a TV entertainment service you would consider to have and which is the most important quality?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C62r1c01] Is a leader in technology
+ [C62r2c01] Offers a simple and easy experience
+ [C62r3c01] Offers excellent customer service
+ [C62r4c01] Recognises customers' loyalty
+ [C62r5c01] Is a brand I trust
+ [C62r6c01] Offers customers good value for what they receive
+ [C62r7c01] Connects customers to more of the TV they love
+ [C62r8c01] Constantly innovates to deliver the best TV experience
+ [C62r9c01] Makes it easy to find something to watch
+ [C62r10c01] Offers simple packages that are easy to understand
+ [C62r11c01] Offers content worth paying for
+ [C62r12c01] Is recommended by friends/family/colleagues
+
+C63r1: Great quality shows & programmes - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r1c01] Sky
+ [C63r1c02] Netflix
+ [C63r1c03] Amazon Prime Video
+ [C63r1c04] NOW
+ [C63r1c05] AppleTV+
+ [C63r1c06] Disney+
+ [C63r1c07] Paramount+
+ [C63r1c08] Virgin Media
+ [C63r1c09] EE TV (formerly BT TV)
+ [C63r1c10] BBC
+ [C63r1c11] Channel 4
+ [C63r1c12] ITV
+ [C63r1c13] YouTube
+ [C63r1c99] None of these
+ [C63r1c14] RTE
+ [C63r1c15] TG4
+
+C63r2: Wide range of entertainment to choose from - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r2c01] Sky
+ [C63r2c02] Netflix
+ [C63r2c03] Amazon Prime Video
+ [C63r2c04] NOW
+ [C63r2c05] AppleTV+
+ [C63r2c06] Disney+
+ [C63r2c07] Paramount+
+ [C63r2c08] Virgin Media
+ [C63r2c09] EE TV (formerly BT TV)
+ [C63r2c10] BBC
+ [C63r2c11] Channel 4
+ [C63r2c12] ITV
+ [C63r2c13] YouTube
+ [C63r2c99] None of these
+ [C63r2c14] RTE
+ [C63r2c15] TG4
+
+C63r3: The TV shows people are talking about - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r3c01] Sky
+ [C63r3c02] Netflix
+ [C63r3c03] Amazon Prime Video
+ [C63r3c04] NOW
+ [C63r3c05] AppleTV+
+ [C63r3c06] Disney+
+ [C63r3c07] Paramount+
+ [C63r3c08] Virgin Media
+ [C63r3c09] EE TV (formerly BT TV)
+ [C63r3c10] BBC
+ [C63r3c11] Channel 4
+ [C63r3c12] ITV
+ [C63r3c13] YouTube
+ [C63r3c99] None of these
+ [C63r3c14] RTE
+ [C63r3c15] TG4
+
+C63r4: Unmissable TV shows - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r4c01] Sky
+ [C63r4c02] Netflix
+ [C63r4c03] Amazon Prime Video
+ [C63r4c04] NOW
+ [C63r4c05] AppleTV+
+ [C63r4c06] Disney+
+ [C63r4c07] Paramount+
+ [C63r4c08] Virgin Media
+ [C63r4c09] EE TV (formerly BT TV)
+ [C63r4c10] BBC
+ [C63r4c11] Channel 4
+ [C63r4c12] ITV
+ [C63r4c13] YouTube
+ [C63r4c99] None of these
+ [C63r4c14] RTE
+ [C63r4c15] TG4
+
+C63r5: Home to some of my favourite programmes - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r5c01] Sky
+ [C63r5c02] Netflix
+ [C63r5c03] Amazon Prime Video
+ [C63r5c04] NOW
+ [C63r5c05] AppleTV+
+ [C63r5c06] Disney+
+ [C63r5c07] Paramount+
+ [C63r5c08] Virgin Media
+ [C63r5c09] EE TV (formerly BT TV)
+ [C63r5c10] BBC
+ [C63r5c11] Channel 4
+ [C63r5c12] ITV
+ [C63r5c13] YouTube
+ [C63r5c99] None of these
+ [C63r5c14] RTE
+ [C63r5c15] TG4
+
+C63r6: Quality original content - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r6c01] Sky
+ [C63r6c02] Netflix
+ [C63r6c03] Amazon Prime Video
+ [C63r6c04] NOW
+ [C63r6c05] AppleTV+
+ [C63r6c06] Disney+
+ [C63r6c07] Paramount+
+ [C63r6c08] Virgin Media
+ [C63r6c09] EE TV (formerly BT TV)
+ [C63r6c10] BBC
+ [C63r6c11] Channel 4
+ [C63r6c12] ITV
+ [C63r6c13] YouTube
+ [C63r6c99] None of these
+ [C63r6c14] RTE
+ [C63r6c15] TG4
+
+C63r7: Access to my favourite live sports - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r7c01] Sky
+ [C63r7c02] Netflix
+ [C63r7c03] Amazon Prime Video
+ [C63r7c04] NOW
+ [C63r7c05] AppleTV+
+ [C63r7c06] Disney+
+ [C63r7c07] Paramount+
+ [C63r7c08] Virgin Media
+ [C63r7c09] EE TV (formerly BT TV)
+ [C63r7c10] BBC
+ [C63r7c11] Channel 4
+ [C63r7c12] ITV
+ [C63r7c13] YouTube
+ [C63r7c99] None of these
+ [C63r7c14] RTE
+ [C63r7c15] TG4
+
+C63r8: Access to newly released films from the cinema - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r8c01] Sky
+ [C63r8c02] Netflix
+ [C63r8c03] Amazon Prime Video
+ [C63r8c04] NOW
+ [C63r8c05] AppleTV+
+ [C63r8c06] Disney+
+ [C63r8c07] Paramount+
+ [C63r8c08] Virgin Media
+ [C63r8c09] EE TV (formerly BT TV)
+ [C63r8c10] BBC
+ [C63r8c11] Channel 4
+ [C63r8c12] ITV
+ [C63r8c13] YouTube
+ [C63r8c99] None of these
+ [C63r8c14] RTE
+ [C63r8c15] TG4
+
+C63r9: Great range of movies to watch at home - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r9c01] Sky
+ [C63r9c02] Netflix
+ [C63r9c03] Amazon Prime Video
+ [C63r9c04] NOW
+ [C63r9c05] AppleTV+
+ [C63r9c06] Disney+
+ [C63r9c07] Paramount+
+ [C63r9c08] Virgin Media
+ [C63r9c09] EE TV (formerly BT TV)
+ [C63r9c10] BBC
+ [C63r9c11] Channel 4
+ [C63r9c12] ITV
+ [C63r9c13] YouTube
+ [C63r9c99] None of these
+ [C63r9c14] RTE
+ [C63r9c15] TG4
+
+C63r10: Good range of children's and family-friendly content - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r10c01] Sky
+ [C63r10c02] Netflix
+ [C63r10c03] Amazon Prime Video
+ [C63r10c04] NOW
+ [C63r10c05] AppleTV+
+ [C63r10c06] Disney+
+ [C63r10c07] Paramount+
+ [C63r10c08] Virgin Media
+ [C63r10c09] EE TV (formerly BT TV)
+ [C63r10c10] BBC
+ [C63r10c11] Channel 4
+ [C63r10c12] ITV
+ [C63r10c13] YouTube
+ [C63r10c99] None of these
+ [C63r10c14] RTE
+ [C63r10c15] TG4
+
+C63r11: The latest TV series and movies so there's always something new to watch - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r11c01] Sky
+ [C63r11c02] Netflix
+ [C63r11c03] Amazon Prime Video
+ [C63r11c04] NOW
+ [C63r11c05] AppleTV+
+ [C63r11c06] Disney+
+ [C63r11c07] Paramount+
+ [C63r11c08] Virgin Media
+ [C63r11c09] EE TV (formerly BT TV)
+ [C63r11c10] BBC
+ [C63r11c11] Channel 4
+ [C63r11c12] ITV
+ [C63r11c13] YouTube
+ [C63r11c99] None of these
+ [C63r11c14] RTE
+ [C63r11c15] TG4
+
+C63r12: All the entertainment channels and apps you use, accessible through one home screen - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r12c01] Sky
+ [C63r12c02] Netflix
+ [C63r12c03] Amazon Prime Video
+ [C63r12c04] NOW
+ [C63r12c05] AppleTV+
+ [C63r12c06] Disney+
+ [C63r12c07] Paramount+
+ [C63r12c08] Virgin Media
+ [C63r12c09] EE TV (formerly BT TV)
+ [C63r12c10] BBC
+ [C63r12c11] Channel 4
+ [C63r12c12] ITV
+ [C63r12c13] YouTube
+ [C63r12c99] None of these
+ [C63r12c14] RTE
+ [C63r12c15] TG4
+
+C63r13: Access to a wide range of sports content - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r13c01] Sky
+ [C63r13c02] Netflix
+ [C63r13c03] Amazon Prime Video
+ [C63r13c04] NOW
+ [C63r13c05] AppleTV+
+ [C63r13c06] Disney+
+ [C63r13c07] Paramount+
+ [C63r13c08] Virgin Media
+ [C63r13c09] EE TV (formerly BT TV)
+ [C63r13c10] BBC
+ [C63r13c11] Channel 4
+ [C63r13c12] ITV
+ [C63r13c13] YouTube
+ [C63r13c99] None of these
+ [C63r13c14] RTE
+ [C63r13c15] TG4
+
+C63r14: TV shows and movies that aren't available elsewhere - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r14c01] Sky
+ [C63r14c02] Netflix
+ [C63r14c03] Amazon Prime Video
+ [C63r14c04] NOW
+ [C63r14c05] AppleTV+
+ [C63r14c06] Disney+
+ [C63r14c07] Paramount+
+ [C63r14c08] Virgin Media
+ [C63r14c09] EE TV (formerly BT TV)
+ [C63r14c10] BBC
+ [C63r14c11] Channel 4
+ [C63r14c12] ITV
+ [C63r14c13] YouTube
+ [C63r14c99] None of these
+ [C63r14c14] RTE
+ [C63r14c15] TG4
+
+C63r15: TV to watch from all over the world - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r15c01] Sky
+ [C63r15c02] Netflix
+ [C63r15c03] Amazon Prime Video
+ [C63r15c04] NOW
+ [C63r15c05] AppleTV+
+ [C63r15c06] Disney+
+ [C63r15c07] Paramount+
+ [C63r15c08] Virgin Media
+ [C63r15c09] EE TV (formerly BT TV)
+ [C63r15c10] BBC
+ [C63r15c11] Channel 4
+ [C63r15c12] ITV
+ [C63r15c13] YouTube
+ [C63r15c99] None of these
+ [C63r15c14] RTE
+ [C63r15c15] TG4
+
+C63r16: Old favourites to re-watch - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C63r16c01] Sky
+ [C63r16c02] Netflix
+ [C63r16c03] Amazon Prime Video
+ [C63r16c04] NOW
+ [C63r16c05] AppleTV+
+ [C63r16c06] Disney+
+ [C63r16c07] Paramount+
+ [C63r16c08] Virgin Media
+ [C63r16c09] EE TV (formerly BT TV)
+ [C63r16c10] BBC
+ [C63r16c11] Channel 4
+ [C63r16c12] ITV
+ [C63r16c13] YouTube
+ [C63r16c99] None of these
+ [C63r16c14] RTE
+ [C63r16c15] TG4
+
+C64r1: Easy to cancel when I want to - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r1c01] Sky
+ [C64r1c02] Netflix
+ [C64r1c03] Amazon Prime Video
+ [C64r1c04] NOW
+ [C64r1c05] AppleTV+
+ [C64r1c06] Disney+
+ [C64r1c07] Paramount+
+ [C64r1c08] Virgin Media
+ [C64r1c09] EE TV (formerly BT TV)
+ [C64r1c10] YouTube
+ [C64r1c99] None of these
+ [C64r1c11] Eir TV
+ [C64r1c12] Vodafone
+
+C64r2: Allows you to change your subscription whenever you want - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r2c01] Sky
+ [C64r2c02] Netflix
+ [C64r2c03] Amazon Prime Video
+ [C64r2c04] NOW
+ [C64r2c05] AppleTV+
+ [C64r2c06] Disney+
+ [C64r2c07] Paramount+
+ [C64r2c08] Virgin Media
+ [C64r2c09] EE TV (formerly BT TV)
+ [C64r2c10] YouTube
+ [C64r2c99] None of these
+ [C64r2c11] Eir TV
+ [C64r2c12] Vodafone
+
+C64r3: Offers a quality experience no matter which device you watch on - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r3c01] Sky
+ [C64r3c02] Netflix
+ [C64r3c03] Amazon Prime Video
+ [C64r3c04] NOW
+ [C64r3c05] AppleTV+
+ [C64r3c06] Disney+
+ [C64r3c07] Paramount+
+ [C64r3c08] Virgin Media
+ [C64r3c09] EE TV (formerly BT TV)
+ [C64r3c10] YouTube
+ [C64r3c99] None of these
+ [C64r3c11] Eir TV
+ [C64r3c12] Vodafone
+
+C64r4: Is the most affordable - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r4c01] Sky
+ [C64r4c02] Netflix
+ [C64r4c03] Amazon Prime Video
+ [C64r4c04] NOW
+ [C64r4c05] AppleTV+
+ [C64r4c06] Disney+
+ [C64r4c07] Paramount+
+ [C64r4c08] Virgin Media
+ [C64r4c09] EE TV (formerly BT TV)
+ [C64r4c10] YouTube
+ [C64r4c99] None of these
+ [C64r4c11] Eir TV
+ [C64r4c12] Vodafone
+
+C64r5: Gives me entertainment for an amount I can afford - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r5c01] Sky
+ [C64r5c02] Netflix
+ [C64r5c03] Amazon Prime Video
+ [C64r5c04] NOW
+ [C64r5c05] AppleTV+
+ [C64r5c06] Disney+
+ [C64r5c07] Paramount+
+ [C64r5c08] Virgin Media
+ [C64r5c09] EE TV (formerly BT TV)
+ [C64r5c10] YouTube
+ [C64r5c99] None of these
+ [C64r5c11] Eir TV
+ [C64r5c12] Vodafone
+
+C64r6: Is easy to navigate/use to find something good to watch - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r6c01] Sky
+ [C64r6c02] Netflix
+ [C64r6c03] Amazon Prime Video
+ [C64r6c04] NOW
+ [C64r6c05] AppleTV+
+ [C64r6c06] Disney+
+ [C64r6c07] Paramount+
+ [C64r6c08] Virgin Media
+ [C64r6c09] EE TV (formerly BT TV)
+ [C64r6c10] YouTube
+ [C64r6c99] None of these
+ [C64r6c11] Eir TV
+ [C64r6c12] Vodafone
+
+C64r7: Easy to set up and connect - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r7c01] Sky
+ [C64r7c02] Netflix
+ [C64r7c03] Amazon Prime Video
+ [C64r7c04] NOW
+ [C64r7c05] AppleTV+
+ [C64r7c06] Disney+
+ [C64r7c07] Paramount+
+ [C64r7c08] Virgin Media
+ [C64r7c09] EE TV (formerly BT TV)
+ [C64r7c10] YouTube
+ [C64r7c99] None of these
+ [C64r7c11] Eir TV
+ [C64r7c12] Vodafone
+
+C64r8: Convenient to bundle together with my broadband and/or mobile - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r8c01] Sky
+ [C64r8c02] Netflix
+ [C64r8c03] Amazon Prime Video
+ [C64r8c04] NOW
+ [C64r8c05] AppleTV+
+ [C64r8c06] Disney+
+ [C64r8c07] Paramount+
+ [C64r8c08] Virgin Media
+ [C64r8c09] EE TV (formerly BT TV)
+ [C64r8c10] YouTube
+ [C64r8c99] None of these
+ [C64r8c11] Eir TV
+ [C64r8c12] Vodafone
+
+C64r9: Saves money when bundling together with my broadband and/or mobile - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r9c01] Sky
+ [C64r9c02] Netflix
+ [C64r9c03] Amazon Prime Video
+ [C64r9c04] NOW
+ [C64r9c05] AppleTV+
+ [C64r9c06] Disney+
+ [C64r9c07] Paramount+
+ [C64r9c08] Virgin Media
+ [C64r9c09] EE TV (formerly BT TV)
+ [C64r9c10] YouTube
+ [C64r9c99] None of these
+ [C64r9c11] Eir TV
+ [C64r9c12] Vodafone
+
+C64r10: Makes finding TV easier by bringing different channels and apps together in one place - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r10c01] Sky
+ [C64r10c02] Netflix
+ [C64r10c03] Amazon Prime Video
+ [C64r10c04] NOW
+ [C64r10c05] AppleTV+
+ [C64r10c06] Disney+
+ [C64r10c07] Paramount+
+ [C64r10c08] Virgin Media
+ [C64r10c09] EE TV (formerly BT TV)
+ [C64r10c10] YouTube
+ [C64r10c99] None of these
+ [C64r10c11] Eir TV
+ [C64r10c12] Vodafone
+
+C64r11: Reliable service - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r11c01] Sky
+ [C64r11c02] Netflix
+ [C64r11c03] Amazon Prime Video
+ [C64r11c04] NOW
+ [C64r11c05] AppleTV+
+ [C64r11c06] Disney+
+ [C64r11c07] Paramount+
+ [C64r11c08] Virgin Media
+ [C64r11c09] EE TV (formerly BT TV)
+ [C64r11c10] YouTube
+ [C64r11c99] None of these
+ [C64r11c11] Eir TV
+ [C64r11c12] Vodafone
+
+C64r12: Lets me watch without adverts - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r12c01] Sky
+ [C64r12c02] Netflix
+ [C64r12c03] Amazon Prime Video
+ [C64r12c04] NOW
+ [C64r12c05] AppleTV+
+ [C64r12c06] Disney+
+ [C64r12c07] Paramount+
+ [C64r12c08] Virgin Media
+ [C64r12c09] EE TV (formerly BT TV)
+ [C64r12c10] YouTube
+ [C64r12c99] None of these
+ [C64r12c11] Eir TV
+ [C64r12c12] Vodafone
+
+C64r13: Makes relevant & personalised recommendations - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r13c01] Sky
+ [C64r13c02] Netflix
+ [C64r13c03] Amazon Prime Video
+ [C64r13c04] NOW
+ [C64r13c05] AppleTV+
+ [C64r13c06] Disney+
+ [C64r13c07] Paramount+
+ [C64r13c08] Virgin Media
+ [C64r13c09] EE TV (formerly BT TV)
+ [C64r13c10] YouTube
+ [C64r13c99] None of these
+ [C64r13c11] Eir TV
+ [C64r13c12] Vodafone
+
+C64r14: Easy to record and watch later - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r14c01] Sky
+ [C64r14c02] Netflix
+ [C64r14c03] Amazon Prime Video
+ [C64r14c04] NOW
+ [C64r14c05] AppleTV+
+ [C64r14c06] Disney+
+ [C64r14c07] Paramount+
+ [C64r14c08] Virgin Media
+ [C64r14c09] EE TV (formerly BT TV)
+ [C64r14c10] YouTube
+ [C64r14c99] None of these
+ [C64r14c11] Eir TV
+ [C64r14c12] Vodafone
+
+C64r15: Gives you recommendations of the best content from all your apps and services - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r15c01] Sky
+ [C64r15c02] Netflix
+ [C64r15c03] Amazon Prime Video
+ [C64r15c04] NOW
+ [C64r15c05] AppleTV+
+ [C64r15c06] Disney+
+ [C64r15c07] Paramount+
+ [C64r15c08] Virgin Media
+ [C64r15c09] EE TV (formerly BT TV)
+ [C64r15c10] YouTube
+ [C64r15c99] None of these
+ [C64r15c11] Eir TV
+ [C64r15c12] Vodafone
+
+C64r16: Can use voice control to save time searching for a show - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r16c01] Sky
+ [C64r16c02] Netflix
+ [C64r16c03] Amazon Prime Video
+ [C64r16c04] NOW
+ [C64r16c05] AppleTV+
+ [C64r16c06] Disney+
+ [C64r16c07] Paramount+
+ [C64r16c08] Virgin Media
+ [C64r16c09] EE TV (formerly BT TV)
+ [C64r16c10] YouTube
+ [C64r16c99] None of these
+ [C64r16c11] Eir TV
+ [C64r16c12] Vodafone
+
+C64r17: Let's me add my favourite shows to a playlist - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r17c01] Sky
+ [C64r17c02] Netflix
+ [C64r17c03] Amazon Prime Video
+ [C64r17c04] NOW
+ [C64r17c05] AppleTV+
+ [C64r17c06] Disney+
+ [C64r17c07] Paramount+
+ [C64r17c08] Virgin Media
+ [C64r17c09] EE TV (formerly BT TV)
+ [C64r17c10] YouTube
+ [C64r17c99] None of these
+ [C64r17c11] Eir TV
+ [C64r17c12] Vodafone
+
+C64r18: Gives me a great deal on a great range of TV - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C64r18c01] Sky
+ [C64r18c02] Netflix
+ [C64r18c03] Amazon Prime Video
+ [C64r18c04] NOW
+ [C64r18c05] AppleTV+
+ [C64r18c06] Disney+
+ [C64r18c07] Paramount+
+ [C64r18c08] Virgin Media
+ [C64r18c09] EE TV (formerly BT TV)
+ [C64r18c10] YouTube
+ [C64r18c99] None of these
+ [C64r18c11] Eir TV
+ [C64r18c12] Vodafone
+
+C65r1: Is a leader in technology - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r1c01] Sky
+ [C65r1c02] Netflix
+ [C65r1c03] Amazon Prime Video
+ [C65r1c04] NOW
+ [C65r1c05] AppleTV+
+ [C65r1c06] Disney+
+ [C65r1c07] Paramount+
+ [C65r1c08] Virgin Media
+ [C65r1c09] EE TV (formerly BT TV)
+ [C65r1c10] BBC
+ [C65r1c11] Channel 4
+ [C65r1c12] YouTube
+ [C65r1c99] None of these
+ [C65r1c13] Eir TV
+ [C65r1c14] Vodafone
+
+C65r2: Offers a simple and easy experience - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r2c01] Sky
+ [C65r2c02] Netflix
+ [C65r2c03] Amazon Prime Video
+ [C65r2c04] NOW
+ [C65r2c05] AppleTV+
+ [C65r2c06] Disney+
+ [C65r2c07] Paramount+
+ [C65r2c08] Virgin Media
+ [C65r2c09] EE TV (formerly BT TV)
+ [C65r2c10] BBC
+ [C65r2c11] Channel 4
+ [C65r2c12] YouTube
+ [C65r2c99] None of these
+ [C65r2c13] Eir TV
+ [C65r2c14] Vodafone
+
+C65r3: Offers excellent customer service - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r3c01] Sky
+ [C65r3c02] Netflix
+ [C65r3c03] Amazon Prime Video
+ [C65r3c04] NOW
+ [C65r3c05] AppleTV+
+ [C65r3c06] Disney+
+ [C65r3c07] Paramount+
+ [C65r3c08] Virgin Media
+ [C65r3c09] EE TV (formerly BT TV)
+ [C65r3c10] BBC
+ [C65r3c11] Channel 4
+ [C65r3c12] YouTube
+ [C65r3c99] None of these
+ [C65r3c13] Eir TV
+ [C65r3c14] Vodafone
+
+C65r4: Recognises customers' loyalty - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r4c01] Sky
+ [C65r4c02] Netflix
+ [C65r4c03] Amazon Prime Video
+ [C65r4c04] NOW
+ [C65r4c05] AppleTV+
+ [C65r4c06] Disney+
+ [C65r4c07] Paramount+
+ [C65r4c08] Virgin Media
+ [C65r4c09] EE TV (formerly BT TV)
+ [C65r4c10] BBC
+ [C65r4c11] Channel 4
+ [C65r4c12] YouTube
+ [C65r4c99] None of these
+ [C65r4c13] Eir TV
+ [C65r4c14] Vodafone
+
+C65r5: Is a brand I trust - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r5c01] Sky
+ [C65r5c02] Netflix
+ [C65r5c03] Amazon Prime Video
+ [C65r5c04] NOW
+ [C65r5c05] AppleTV+
+ [C65r5c06] Disney+
+ [C65r5c07] Paramount+
+ [C65r5c08] Virgin Media
+ [C65r5c09] EE TV (formerly BT TV)
+ [C65r5c10] BBC
+ [C65r5c11] Channel 4
+ [C65r5c12] YouTube
+ [C65r5c99] None of these
+ [C65r5c13] Eir TV
+ [C65r5c14] Vodafone
+
+C65r6: Offers customers good value for what they receive - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r6c01] Sky
+ [C65r6c02] Netflix
+ [C65r6c03] Amazon Prime Video
+ [C65r6c04] NOW
+ [C65r6c05] AppleTV+
+ [C65r6c06] Disney+
+ [C65r6c07] Paramount+
+ [C65r6c08] Virgin Media
+ [C65r6c09] EE TV (formerly BT TV)
+ [C65r6c10] BBC
+ [C65r6c11] Channel 4
+ [C65r6c12] YouTube
+ [C65r6c99] None of these
+ [C65r6c13] Eir TV
+ [C65r6c14] Vodafone
+
+C65r7: Connects customers to more of the TV they love - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r7c01] Sky
+ [C65r7c02] Netflix
+ [C65r7c03] Amazon Prime Video
+ [C65r7c04] NOW
+ [C65r7c05] AppleTV+
+ [C65r7c06] Disney+
+ [C65r7c07] Paramount+
+ [C65r7c08] Virgin Media
+ [C65r7c09] EE TV (formerly BT TV)
+ [C65r7c10] BBC
+ [C65r7c11] Channel 4
+ [C65r7c12] YouTube
+ [C65r7c99] None of these
+ [C65r7c13] Eir TV
+ [C65r7c14] Vodafone
+
+C65r8: Constantly innovates to deliver the best TV experience - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r8c01] Sky
+ [C65r8c02] Netflix
+ [C65r8c03] Amazon Prime Video
+ [C65r8c04] NOW
+ [C65r8c05] AppleTV+
+ [C65r8c06] Disney+
+ [C65r8c07] Paramount+
+ [C65r8c08] Virgin Media
+ [C65r8c09] EE TV (formerly BT TV)
+ [C65r8c10] BBC
+ [C65r8c11] Channel 4
+ [C65r8c12] YouTube
+ [C65r8c99] None of these
+ [C65r8c13] Eir TV
+ [C65r8c14] Vodafone
+
+C65r9: Makes it easy to find something to watch - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r9c01] Sky
+ [C65r9c02] Netflix
+ [C65r9c03] Amazon Prime Video
+ [C65r9c04] NOW
+ [C65r9c05] AppleTV+
+ [C65r9c06] Disney+
+ [C65r9c07] Paramount+
+ [C65r9c08] Virgin Media
+ [C65r9c09] EE TV (formerly BT TV)
+ [C65r9c10] BBC
+ [C65r9c11] Channel 4
+ [C65r9c12] YouTube
+ [C65r9c99] None of these
+ [C65r9c13] Eir TV
+ [C65r9c14] Vodafone
+
+C65r10: Offers simple packages that are easy to understand - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r10c01] Sky
+ [C65r10c02] Netflix
+ [C65r10c03] Amazon Prime Video
+ [C65r10c04] NOW
+ [C65r10c05] AppleTV+
+ [C65r10c06] Disney+
+ [C65r10c07] Paramount+
+ [C65r10c08] Virgin Media
+ [C65r10c09] EE TV (formerly BT TV)
+ [C65r10c10] BBC
+ [C65r10c11] Channel 4
+ [C65r10c12] YouTube
+ [C65r10c99] None of these
+ [C65r10c13] Eir TV
+ [C65r10c14] Vodafone
+
+C65r11: Offers content worth paying for - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r11c01] Sky
+ [C65r11c02] Netflix
+ [C65r11c03] Amazon Prime Video
+ [C65r11c04] NOW
+ [C65r11c05] AppleTV+
+ [C65r11c06] Disney+
+ [C65r11c07] Paramount+
+ [C65r11c08] Virgin Media
+ [C65r11c09] EE TV (formerly BT TV)
+ [C65r11c10] BBC
+ [C65r11c11] Channel 4
+ [C65r11c12] YouTube
+ [C65r11c99] None of these
+ [C65r11c13] Eir TV
+ [C65r11c14] Vodafone
+
+C65r12: Is recommended by friends/family/colleagues - Please select the providers that you feel are associated with each of the following statements.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [C65r12c01] Sky
+ [C65r12c02] Netflix
+ [C65r12c03] Amazon Prime Video
+ [C65r12c04] NOW
+ [C65r12c05] AppleTV+
+ [C65r12c06] Disney+
+ [C65r12c07] Paramount+
+ [C65r12c08] Virgin Media
+ [C65r12c09] EE TV (formerly BT TV)
+ [C65r12c10] BBC
+ [C65r12c11] Channel 4
+ [C65r12c12] YouTube
+ [C65r12c99] None of these
+ [C65r12c13] Eir TV
+ [C65r12c14] Vodafone
+
+EM2_1_r01: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r01r01] Trendy
+ [EM2_1_r01r02] Serious
+ [EM2_1_r01r03] Reliable
+ [EM2_1_r01r04] Principled
+ [EM2_1_r01r05] Passionate
+ [EM2_1_r01r06] Original
+ [EM2_1_r01r07] Intelligent
+ [EM2_1_r01r08] Idealistic
+ [EM2_1_r01r09] Honest
+ [EM2_1_r01r10] Fun
+ [EM2_1_r01r11] Friendly
+ [EM2_1_r01r12] Exciting
+ [EM2_1_r01r13] Confident
+ [EM2_1_r01r14] Caring
+ [EM2_1_r01r15] Bold
+ [EM2_1_r01r16] Adventurous
+ [EM2_1_r01r17] Creative
+ [EM2_1_r01r18] Brave
+ [EM2_1_r01r19] Warm
+ [EM2_1_r01r20] Liberal
+ [EM2_1_r01r21] Modest
+ [EM2_1_r01r99] None of these
+
+EM2_2_r01: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r01r22] Assertive
+ [EM2_2_r01r23] Entertaining
+ [EM2_2_r01r24] Optimistic
+ [EM2_2_r01r25] Dramatic
+ [EM2_2_r01r26] Premium
+ [EM2_2_r01r27] Cinematic
+ [EM2_2_r01r28] Old fashioned
+ [EM2_2_r01r29] Irritating
+ [EM2_2_r01r30] Boring
+ [EM2_2_r01r31] Edgy
+ [EM2_2_r01r32] Sophisticated
+ [EM2_2_r01r33] Calm
+ [EM2_2_r01r34] Relaxing
+ [EM2_2_r01r35] Energetic
+ [EM2_2_r01r36] Cool
+ [EM2_2_r01r37] Uplifting
+ [EM2_2_r01r38] Thrilling
+ [EM2_2_r01r39] Modern
+ [EM2_2_r01r40] Grown-up
+ [EM2_2_r01r99] None of these
+
+EM2_1_r02: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r02r01] Trendy
+ [EM2_1_r02r02] Serious
+ [EM2_1_r02r03] Reliable
+ [EM2_1_r02r04] Principled
+ [EM2_1_r02r05] Passionate
+ [EM2_1_r02r06] Original
+ [EM2_1_r02r07] Intelligent
+ [EM2_1_r02r08] Idealistic
+ [EM2_1_r02r09] Honest
+ [EM2_1_r02r10] Fun
+ [EM2_1_r02r11] Friendly
+ [EM2_1_r02r12] Exciting
+ [EM2_1_r02r13] Confident
+ [EM2_1_r02r14] Caring
+ [EM2_1_r02r15] Bold
+ [EM2_1_r02r16] Adventurous
+ [EM2_1_r02r17] Creative
+ [EM2_1_r02r18] Brave
+ [EM2_1_r02r19] Warm
+ [EM2_1_r02r20] Liberal
+ [EM2_1_r02r21] Modest
+ [EM2_1_r02r99] None of these
+
+EM2_2_r02: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r02r22] Assertive
+ [EM2_2_r02r23] Entertaining
+ [EM2_2_r02r24] Optimistic
+ [EM2_2_r02r25] Dramatic
+ [EM2_2_r02r26] Premium
+ [EM2_2_r02r27] Cinematic
+ [EM2_2_r02r28] Old fashioned
+ [EM2_2_r02r29] Irritating
+ [EM2_2_r02r30] Boring
+ [EM2_2_r02r31] Edgy
+ [EM2_2_r02r32] Sophisticated
+ [EM2_2_r02r33] Calm
+ [EM2_2_r02r34] Relaxing
+ [EM2_2_r02r35] Energetic
+ [EM2_2_r02r36] Cool
+ [EM2_2_r02r37] Uplifting
+ [EM2_2_r02r38] Thrilling
+ [EM2_2_r02r39] Modern
+ [EM2_2_r02r40] Grown-up
+ [EM2_2_r02r99] None of these
+
+EM2_1_r03: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r03r01] Trendy
+ [EM2_1_r03r02] Serious
+ [EM2_1_r03r03] Reliable
+ [EM2_1_r03r04] Principled
+ [EM2_1_r03r05] Passionate
+ [EM2_1_r03r06] Original
+ [EM2_1_r03r07] Intelligent
+ [EM2_1_r03r08] Idealistic
+ [EM2_1_r03r09] Honest
+ [EM2_1_r03r10] Fun
+ [EM2_1_r03r11] Friendly
+ [EM2_1_r03r12] Exciting
+ [EM2_1_r03r13] Confident
+ [EM2_1_r03r14] Caring
+ [EM2_1_r03r15] Bold
+ [EM2_1_r03r16] Adventurous
+ [EM2_1_r03r17] Creative
+ [EM2_1_r03r18] Brave
+ [EM2_1_r03r19] Warm
+ [EM2_1_r03r20] Liberal
+ [EM2_1_r03r21] Modest
+ [EM2_1_r03r99] None of these
+
+EM2_2_r03: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r03r22] Assertive
+ [EM2_2_r03r23] Entertaining
+ [EM2_2_r03r24] Optimistic
+ [EM2_2_r03r25] Dramatic
+ [EM2_2_r03r26] Premium
+ [EM2_2_r03r27] Cinematic
+ [EM2_2_r03r28] Old fashioned
+ [EM2_2_r03r29] Irritating
+ [EM2_2_r03r30] Boring
+ [EM2_2_r03r31] Edgy
+ [EM2_2_r03r32] Sophisticated
+ [EM2_2_r03r33] Calm
+ [EM2_2_r03r34] Relaxing
+ [EM2_2_r03r35] Energetic
+ [EM2_2_r03r36] Cool
+ [EM2_2_r03r37] Uplifting
+ [EM2_2_r03r38] Thrilling
+ [EM2_2_r03r39] Modern
+ [EM2_2_r03r40] Grown-up
+ [EM2_2_r03r99] None of these
+
+EM2_1_r04: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r04r01] Trendy
+ [EM2_1_r04r02] Serious
+ [EM2_1_r04r03] Reliable
+ [EM2_1_r04r04] Principled
+ [EM2_1_r04r05] Passionate
+ [EM2_1_r04r06] Original
+ [EM2_1_r04r07] Intelligent
+ [EM2_1_r04r08] Idealistic
+ [EM2_1_r04r09] Honest
+ [EM2_1_r04r10] Fun
+ [EM2_1_r04r11] Friendly
+ [EM2_1_r04r12] Exciting
+ [EM2_1_r04r13] Confident
+ [EM2_1_r04r14] Caring
+ [EM2_1_r04r15] Bold
+ [EM2_1_r04r16] Adventurous
+ [EM2_1_r04r17] Creative
+ [EM2_1_r04r18] Brave
+ [EM2_1_r04r19] Warm
+ [EM2_1_r04r20] Liberal
+ [EM2_1_r04r21] Modest
+ [EM2_1_r04r99] None of these
+
+EM2_2_r04: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r04r22] Assertive
+ [EM2_2_r04r23] Entertaining
+ [EM2_2_r04r24] Optimistic
+ [EM2_2_r04r25] Dramatic
+ [EM2_2_r04r26] Premium
+ [EM2_2_r04r27] Cinematic
+ [EM2_2_r04r28] Old fashioned
+ [EM2_2_r04r29] Irritating
+ [EM2_2_r04r30] Boring
+ [EM2_2_r04r31] Edgy
+ [EM2_2_r04r32] Sophisticated
+ [EM2_2_r04r33] Calm
+ [EM2_2_r04r34] Relaxing
+ [EM2_2_r04r35] Energetic
+ [EM2_2_r04r36] Cool
+ [EM2_2_r04r37] Uplifting
+ [EM2_2_r04r38] Thrilling
+ [EM2_2_r04r39] Modern
+ [EM2_2_r04r40] Grown-up
+ [EM2_2_r04r99] None of these
+
+EM2_1_r05: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r05r01] Trendy
+ [EM2_1_r05r02] Serious
+ [EM2_1_r05r03] Reliable
+ [EM2_1_r05r04] Principled
+ [EM2_1_r05r05] Passionate
+ [EM2_1_r05r06] Original
+ [EM2_1_r05r07] Intelligent
+ [EM2_1_r05r08] Idealistic
+ [EM2_1_r05r09] Honest
+ [EM2_1_r05r10] Fun
+ [EM2_1_r05r11] Friendly
+ [EM2_1_r05r12] Exciting
+ [EM2_1_r05r13] Confident
+ [EM2_1_r05r14] Caring
+ [EM2_1_r05r15] Bold
+ [EM2_1_r05r16] Adventurous
+ [EM2_1_r05r17] Creative
+ [EM2_1_r05r18] Brave
+ [EM2_1_r05r19] Warm
+ [EM2_1_r05r20] Liberal
+ [EM2_1_r05r21] Modest
+ [EM2_1_r05r99] None of these
+
+EM2_2_r05: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r05r22] Assertive
+ [EM2_2_r05r23] Entertaining
+ [EM2_2_r05r24] Optimistic
+ [EM2_2_r05r25] Dramatic
+ [EM2_2_r05r26] Premium
+ [EM2_2_r05r27] Cinematic
+ [EM2_2_r05r28] Old fashioned
+ [EM2_2_r05r29] Irritating
+ [EM2_2_r05r30] Boring
+ [EM2_2_r05r31] Edgy
+ [EM2_2_r05r32] Sophisticated
+ [EM2_2_r05r33] Calm
+ [EM2_2_r05r34] Relaxing
+ [EM2_2_r05r35] Energetic
+ [EM2_2_r05r36] Cool
+ [EM2_2_r05r37] Uplifting
+ [EM2_2_r05r38] Thrilling
+ [EM2_2_r05r39] Modern
+ [EM2_2_r05r40] Grown-up
+ [EM2_2_r05r99] None of these
+
+EM2_1_r06: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r06r01] Trendy
+ [EM2_1_r06r02] Serious
+ [EM2_1_r06r03] Reliable
+ [EM2_1_r06r04] Principled
+ [EM2_1_r06r05] Passionate
+ [EM2_1_r06r06] Original
+ [EM2_1_r06r07] Intelligent
+ [EM2_1_r06r08] Idealistic
+ [EM2_1_r06r09] Honest
+ [EM2_1_r06r10] Fun
+ [EM2_1_r06r11] Friendly
+ [EM2_1_r06r12] Exciting
+ [EM2_1_r06r13] Confident
+ [EM2_1_r06r14] Caring
+ [EM2_1_r06r15] Bold
+ [EM2_1_r06r16] Adventurous
+ [EM2_1_r06r17] Creative
+ [EM2_1_r06r18] Brave
+ [EM2_1_r06r19] Warm
+ [EM2_1_r06r20] Liberal
+ [EM2_1_r06r21] Modest
+ [EM2_1_r06r99] None of these
+
+EM2_2_r06: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r06r22] Assertive
+ [EM2_2_r06r23] Entertaining
+ [EM2_2_r06r24] Optimistic
+ [EM2_2_r06r25] Dramatic
+ [EM2_2_r06r26] Premium
+ [EM2_2_r06r27] Cinematic
+ [EM2_2_r06r28] Old fashioned
+ [EM2_2_r06r29] Irritating
+ [EM2_2_r06r30] Boring
+ [EM2_2_r06r31] Edgy
+ [EM2_2_r06r32] Sophisticated
+ [EM2_2_r06r33] Calm
+ [EM2_2_r06r34] Relaxing
+ [EM2_2_r06r35] Energetic
+ [EM2_2_r06r36] Cool
+ [EM2_2_r06r37] Uplifting
+ [EM2_2_r06r38] Thrilling
+ [EM2_2_r06r39] Modern
+ [EM2_2_r06r40] Grown-up
+ [EM2_2_r06r99] None of these
+
+EM2_1_r07: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r07r01] Trendy
+ [EM2_1_r07r02] Serious
+ [EM2_1_r07r03] Reliable
+ [EM2_1_r07r04] Principled
+ [EM2_1_r07r05] Passionate
+ [EM2_1_r07r06] Original
+ [EM2_1_r07r07] Intelligent
+ [EM2_1_r07r08] Idealistic
+ [EM2_1_r07r09] Honest
+ [EM2_1_r07r10] Fun
+ [EM2_1_r07r11] Friendly
+ [EM2_1_r07r12] Exciting
+ [EM2_1_r07r13] Confident
+ [EM2_1_r07r14] Caring
+ [EM2_1_r07r15] Bold
+ [EM2_1_r07r16] Adventurous
+ [EM2_1_r07r17] Creative
+ [EM2_1_r07r18] Brave
+ [EM2_1_r07r19] Warm
+ [EM2_1_r07r20] Liberal
+ [EM2_1_r07r21] Modest
+ [EM2_1_r07r99] None of these
+
+EM2_2_r07: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r07r22] Assertive
+ [EM2_2_r07r23] Entertaining
+ [EM2_2_r07r24] Optimistic
+ [EM2_2_r07r25] Dramatic
+ [EM2_2_r07r26] Premium
+ [EM2_2_r07r27] Cinematic
+ [EM2_2_r07r28] Old fashioned
+ [EM2_2_r07r29] Irritating
+ [EM2_2_r07r30] Boring
+ [EM2_2_r07r31] Edgy
+ [EM2_2_r07r32] Sophisticated
+ [EM2_2_r07r33] Calm
+ [EM2_2_r07r34] Relaxing
+ [EM2_2_r07r35] Energetic
+ [EM2_2_r07r36] Cool
+ [EM2_2_r07r37] Uplifting
+ [EM2_2_r07r38] Thrilling
+ [EM2_2_r07r39] Modern
+ [EM2_2_r07r40] Grown-up
+ [EM2_2_r07r99] None of these
+
+EM2_1_r08: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r08r01] Trendy
+ [EM2_1_r08r02] Serious
+ [EM2_1_r08r03] Reliable
+ [EM2_1_r08r04] Principled
+ [EM2_1_r08r05] Passionate
+ [EM2_1_r08r06] Original
+ [EM2_1_r08r07] Intelligent
+ [EM2_1_r08r08] Idealistic
+ [EM2_1_r08r09] Honest
+ [EM2_1_r08r10] Fun
+ [EM2_1_r08r11] Friendly
+ [EM2_1_r08r12] Exciting
+ [EM2_1_r08r13] Confident
+ [EM2_1_r08r14] Caring
+ [EM2_1_r08r15] Bold
+ [EM2_1_r08r16] Adventurous
+ [EM2_1_r08r17] Creative
+ [EM2_1_r08r18] Brave
+ [EM2_1_r08r19] Warm
+ [EM2_1_r08r20] Liberal
+ [EM2_1_r08r21] Modest
+ [EM2_1_r08r99] None of these
+
+EM2_2_r08: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r08r22] Assertive
+ [EM2_2_r08r23] Entertaining
+ [EM2_2_r08r24] Optimistic
+ [EM2_2_r08r25] Dramatic
+ [EM2_2_r08r26] Premium
+ [EM2_2_r08r27] Cinematic
+ [EM2_2_r08r28] Old fashioned
+ [EM2_2_r08r29] Irritating
+ [EM2_2_r08r30] Boring
+ [EM2_2_r08r31] Edgy
+ [EM2_2_r08r32] Sophisticated
+ [EM2_2_r08r33] Calm
+ [EM2_2_r08r34] Relaxing
+ [EM2_2_r08r35] Energetic
+ [EM2_2_r08r36] Cool
+ [EM2_2_r08r37] Uplifting
+ [EM2_2_r08r38] Thrilling
+ [EM2_2_r08r39] Modern
+ [EM2_2_r08r40] Grown-up
+ [EM2_2_r08r99] None of these
+
+EM2_1_r09: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r09r01] Trendy
+ [EM2_1_r09r02] Serious
+ [EM2_1_r09r03] Reliable
+ [EM2_1_r09r04] Principled
+ [EM2_1_r09r05] Passionate
+ [EM2_1_r09r06] Original
+ [EM2_1_r09r07] Intelligent
+ [EM2_1_r09r08] Idealistic
+ [EM2_1_r09r09] Honest
+ [EM2_1_r09r10] Fun
+ [EM2_1_r09r11] Friendly
+ [EM2_1_r09r12] Exciting
+ [EM2_1_r09r13] Confident
+ [EM2_1_r09r14] Caring
+ [EM2_1_r09r15] Bold
+ [EM2_1_r09r16] Adventurous
+ [EM2_1_r09r17] Creative
+ [EM2_1_r09r18] Brave
+ [EM2_1_r09r19] Warm
+ [EM2_1_r09r20] Liberal
+ [EM2_1_r09r21] Modest
+ [EM2_1_r09r99] None of these
+
+EM2_2_r09: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r09r22] Assertive
+ [EM2_2_r09r23] Entertaining
+ [EM2_2_r09r24] Optimistic
+ [EM2_2_r09r25] Dramatic
+ [EM2_2_r09r26] Premium
+ [EM2_2_r09r27] Cinematic
+ [EM2_2_r09r28] Old fashioned
+ [EM2_2_r09r29] Irritating
+ [EM2_2_r09r30] Boring
+ [EM2_2_r09r31] Edgy
+ [EM2_2_r09r32] Sophisticated
+ [EM2_2_r09r33] Calm
+ [EM2_2_r09r34] Relaxing
+ [EM2_2_r09r35] Energetic
+ [EM2_2_r09r36] Cool
+ [EM2_2_r09r37] Uplifting
+ [EM2_2_r09r38] Thrilling
+ [EM2_2_r09r39] Modern
+ [EM2_2_r09r40] Grown-up
+ [EM2_2_r09r99] None of these
+
+EM2_1_r10: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_1_r10r01] Trendy
+ [EM2_1_r10r02] Serious
+ [EM2_1_r10r03] Reliable
+ [EM2_1_r10r04] Principled
+ [EM2_1_r10r05] Passionate
+ [EM2_1_r10r06] Original
+ [EM2_1_r10r07] Intelligent
+ [EM2_1_r10r08] Idealistic
+ [EM2_1_r10r09] Honest
+ [EM2_1_r10r10] Fun
+ [EM2_1_r10r11] Friendly
+ [EM2_1_r10r12] Exciting
+ [EM2_1_r10r13] Confident
+ [EM2_1_r10r14] Caring
+ [EM2_1_r10r15] Bold
+ [EM2_1_r10r16] Adventurous
+ [EM2_1_r10r17] Creative
+ [EM2_1_r10r18] Brave
+ [EM2_1_r10r19] Warm
+ [EM2_1_r10r20] Liberal
+ [EM2_1_r10r21] Modest
+ [EM2_1_r10r99] None of these
+
+EM2_2_r10: We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_2_r10r22] Assertive
+ [EM2_2_r10r23] Entertaining
+ [EM2_2_r10r24] Optimistic
+ [EM2_2_r10r25] Dramatic
+ [EM2_2_r10r26] Premium
+ [EM2_2_r10r27] Cinematic
+ [EM2_2_r10r28] Old fashioned
+ [EM2_2_r10r29] Irritating
+ [EM2_2_r10r30] Boring
+ [EM2_2_r10r31] Edgy
+ [EM2_2_r10r32] Sophisticated
+ [EM2_2_r10r33] Calm
+ [EM2_2_r10r34] Relaxing
+ [EM2_2_r10r35] Energetic
+ [EM2_2_r10r36] Cool
+ [EM2_2_r10r37] Uplifting
+ [EM2_2_r10r38] Thrilling
+ [EM2_2_r10r39] Modern
+ [EM2_2_r10r40] Grown-up
+ [EM2_2_r10r99] None of these
+
+EM2_allr01: Trendy - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr01c01] Sky
+ [EM2_allr01c02] Netflix
+ [EM2_allr01c03] Amazon Prime Video
+ [EM2_allr01c04] Disney +
+ [EM2_allr01c05] BBC
+ [EM2_allr01c06] Paramount+
+ [EM2_allr01c07] Now
+ [EM2_allr01c08] Apple TV+
+ [EM2_allr01c09] Virgin Media
+ [EM2_allr01c10] BT
+
+EM2_allr02: Serious - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr02c01] Sky
+ [EM2_allr02c02] Netflix
+ [EM2_allr02c03] Amazon Prime Video
+ [EM2_allr02c04] Disney +
+ [EM2_allr02c05] BBC
+ [EM2_allr02c06] Paramount+
+ [EM2_allr02c07] Now
+ [EM2_allr02c08] Apple TV+
+ [EM2_allr02c09] Virgin Media
+ [EM2_allr02c10] BT
+
+EM2_allr03: Reliable - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr03c01] Sky
+ [EM2_allr03c02] Netflix
+ [EM2_allr03c03] Amazon Prime Video
+ [EM2_allr03c04] Disney +
+ [EM2_allr03c05] BBC
+ [EM2_allr03c06] Paramount+
+ [EM2_allr03c07] Now
+ [EM2_allr03c08] Apple TV+
+ [EM2_allr03c09] Virgin Media
+ [EM2_allr03c10] BT
+
+EM2_allr04: Principled - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr04c01] Sky
+ [EM2_allr04c02] Netflix
+ [EM2_allr04c03] Amazon Prime Video
+ [EM2_allr04c04] Disney +
+ [EM2_allr04c05] BBC
+ [EM2_allr04c06] Paramount+
+ [EM2_allr04c07] Now
+ [EM2_allr04c08] Apple TV+
+ [EM2_allr04c09] Virgin Media
+ [EM2_allr04c10] BT
+
+EM2_allr05: Passionate - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr05c01] Sky
+ [EM2_allr05c02] Netflix
+ [EM2_allr05c03] Amazon Prime Video
+ [EM2_allr05c04] Disney +
+ [EM2_allr05c05] BBC
+ [EM2_allr05c06] Paramount+
+ [EM2_allr05c07] Now
+ [EM2_allr05c08] Apple TV+
+ [EM2_allr05c09] Virgin Media
+ [EM2_allr05c10] BT
+
+EM2_allr06: Original - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr06c01] Sky
+ [EM2_allr06c02] Netflix
+ [EM2_allr06c03] Amazon Prime Video
+ [EM2_allr06c04] Disney +
+ [EM2_allr06c05] BBC
+ [EM2_allr06c06] Paramount+
+ [EM2_allr06c07] Now
+ [EM2_allr06c08] Apple TV+
+ [EM2_allr06c09] Virgin Media
+ [EM2_allr06c10] BT
+
+EM2_allr07: Intelligent - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr07c01] Sky
+ [EM2_allr07c02] Netflix
+ [EM2_allr07c03] Amazon Prime Video
+ [EM2_allr07c04] Disney +
+ [EM2_allr07c05] BBC
+ [EM2_allr07c06] Paramount+
+ [EM2_allr07c07] Now
+ [EM2_allr07c08] Apple TV+
+ [EM2_allr07c09] Virgin Media
+ [EM2_allr07c10] BT
+
+EM2_allr08: Idealistic - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr08c01] Sky
+ [EM2_allr08c02] Netflix
+ [EM2_allr08c03] Amazon Prime Video
+ [EM2_allr08c04] Disney +
+ [EM2_allr08c05] BBC
+ [EM2_allr08c06] Paramount+
+ [EM2_allr08c07] Now
+ [EM2_allr08c08] Apple TV+
+ [EM2_allr08c09] Virgin Media
+ [EM2_allr08c10] BT
+
+EM2_allr09: Honest - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr09c01] Sky
+ [EM2_allr09c02] Netflix
+ [EM2_allr09c03] Amazon Prime Video
+ [EM2_allr09c04] Disney +
+ [EM2_allr09c05] BBC
+ [EM2_allr09c06] Paramount+
+ [EM2_allr09c07] Now
+ [EM2_allr09c08] Apple TV+
+ [EM2_allr09c09] Virgin Media
+ [EM2_allr09c10] BT
+
+EM2_allr10: Fun - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr10c01] Sky
+ [EM2_allr10c02] Netflix
+ [EM2_allr10c03] Amazon Prime Video
+ [EM2_allr10c04] Disney +
+ [EM2_allr10c05] BBC
+ [EM2_allr10c06] Paramount+
+ [EM2_allr10c07] Now
+ [EM2_allr10c08] Apple TV+
+ [EM2_allr10c09] Virgin Media
+ [EM2_allr10c10] BT
+
+EM2_allr11: Friendly - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr11c01] Sky
+ [EM2_allr11c02] Netflix
+ [EM2_allr11c03] Amazon Prime Video
+ [EM2_allr11c04] Disney +
+ [EM2_allr11c05] BBC
+ [EM2_allr11c06] Paramount+
+ [EM2_allr11c07] Now
+ [EM2_allr11c08] Apple TV+
+ [EM2_allr11c09] Virgin Media
+ [EM2_allr11c10] BT
+
+EM2_allr12: Exciting - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr12c01] Sky
+ [EM2_allr12c02] Netflix
+ [EM2_allr12c03] Amazon Prime Video
+ [EM2_allr12c04] Disney +
+ [EM2_allr12c05] BBC
+ [EM2_allr12c06] Paramount+
+ [EM2_allr12c07] Now
+ [EM2_allr12c08] Apple TV+
+ [EM2_allr12c09] Virgin Media
+ [EM2_allr12c10] BT
+
+EM2_allr13: Confident - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr13c01] Sky
+ [EM2_allr13c02] Netflix
+ [EM2_allr13c03] Amazon Prime Video
+ [EM2_allr13c04] Disney +
+ [EM2_allr13c05] BBC
+ [EM2_allr13c06] Paramount+
+ [EM2_allr13c07] Now
+ [EM2_allr13c08] Apple TV+
+ [EM2_allr13c09] Virgin Media
+ [EM2_allr13c10] BT
+
+EM2_allr14: Caring - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr14c01] Sky
+ [EM2_allr14c02] Netflix
+ [EM2_allr14c03] Amazon Prime Video
+ [EM2_allr14c04] Disney +
+ [EM2_allr14c05] BBC
+ [EM2_allr14c06] Paramount+
+ [EM2_allr14c07] Now
+ [EM2_allr14c08] Apple TV+
+ [EM2_allr14c09] Virgin Media
+ [EM2_allr14c10] BT
+
+EM2_allr15: Bold - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr15c01] Sky
+ [EM2_allr15c02] Netflix
+ [EM2_allr15c03] Amazon Prime Video
+ [EM2_allr15c04] Disney +
+ [EM2_allr15c05] BBC
+ [EM2_allr15c06] Paramount+
+ [EM2_allr15c07] Now
+ [EM2_allr15c08] Apple TV+
+ [EM2_allr15c09] Virgin Media
+ [EM2_allr15c10] BT
+
+EM2_allr16: Adventurous - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr16c01] Sky
+ [EM2_allr16c02] Netflix
+ [EM2_allr16c03] Amazon Prime Video
+ [EM2_allr16c04] Disney +
+ [EM2_allr16c05] BBC
+ [EM2_allr16c06] Paramount+
+ [EM2_allr16c07] Now
+ [EM2_allr16c08] Apple TV+
+ [EM2_allr16c09] Virgin Media
+ [EM2_allr16c10] BT
+
+EM2_allr17: Creative - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr17c01] Sky
+ [EM2_allr17c02] Netflix
+ [EM2_allr17c03] Amazon Prime Video
+ [EM2_allr17c04] Disney +
+ [EM2_allr17c05] BBC
+ [EM2_allr17c06] Paramount+
+ [EM2_allr17c07] Now
+ [EM2_allr17c08] Apple TV+
+ [EM2_allr17c09] Virgin Media
+ [EM2_allr17c10] BT
+
+EM2_allr18: Brave - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr18c01] Sky
+ [EM2_allr18c02] Netflix
+ [EM2_allr18c03] Amazon Prime Video
+ [EM2_allr18c04] Disney +
+ [EM2_allr18c05] BBC
+ [EM2_allr18c06] Paramount+
+ [EM2_allr18c07] Now
+ [EM2_allr18c08] Apple TV+
+ [EM2_allr18c09] Virgin Media
+ [EM2_allr18c10] BT
+
+EM2_allr19: Warm - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr19c01] Sky
+ [EM2_allr19c02] Netflix
+ [EM2_allr19c03] Amazon Prime Video
+ [EM2_allr19c04] Disney +
+ [EM2_allr19c05] BBC
+ [EM2_allr19c06] Paramount+
+ [EM2_allr19c07] Now
+ [EM2_allr19c08] Apple TV+
+ [EM2_allr19c09] Virgin Media
+ [EM2_allr19c10] BT
+
+EM2_allr20: Liberal - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr20c01] Sky
+ [EM2_allr20c02] Netflix
+ [EM2_allr20c03] Amazon Prime Video
+ [EM2_allr20c04] Disney +
+ [EM2_allr20c05] BBC
+ [EM2_allr20c06] Paramount+
+ [EM2_allr20c07] Now
+ [EM2_allr20c08] Apple TV+
+ [EM2_allr20c09] Virgin Media
+ [EM2_allr20c10] BT
+
+EM2_allr21: Modest - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr21c01] Sky
+ [EM2_allr21c02] Netflix
+ [EM2_allr21c03] Amazon Prime Video
+ [EM2_allr21c04] Disney +
+ [EM2_allr21c05] BBC
+ [EM2_allr21c06] Paramount+
+ [EM2_allr21c07] Now
+ [EM2_allr21c08] Apple TV+
+ [EM2_allr21c09] Virgin Media
+ [EM2_allr21c10] BT
+
+EM2_allr22: Assertive - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr22c01] Sky
+ [EM2_allr22c02] Netflix
+ [EM2_allr22c03] Amazon Prime Video
+ [EM2_allr22c04] Disney +
+ [EM2_allr22c05] BBC
+ [EM2_allr22c06] Paramount+
+ [EM2_allr22c07] Now
+ [EM2_allr22c08] Apple TV+
+ [EM2_allr22c09] Virgin Media
+ [EM2_allr22c10] BT
+
+EM2_allr23: Entertaining - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr23c01] Sky
+ [EM2_allr23c02] Netflix
+ [EM2_allr23c03] Amazon Prime Video
+ [EM2_allr23c04] Disney +
+ [EM2_allr23c05] BBC
+ [EM2_allr23c06] Paramount+
+ [EM2_allr23c07] Now
+ [EM2_allr23c08] Apple TV+
+ [EM2_allr23c09] Virgin Media
+ [EM2_allr23c10] BT
+
+EM2_allr24: Optimistic - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr24c01] Sky
+ [EM2_allr24c02] Netflix
+ [EM2_allr24c03] Amazon Prime Video
+ [EM2_allr24c04] Disney +
+ [EM2_allr24c05] BBC
+ [EM2_allr24c06] Paramount+
+ [EM2_allr24c07] Now
+ [EM2_allr24c08] Apple TV+
+ [EM2_allr24c09] Virgin Media
+ [EM2_allr24c10] BT
+
+EM2_allr25: Dramatic - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr25c01] Sky
+ [EM2_allr25c02] Netflix
+ [EM2_allr25c03] Amazon Prime Video
+ [EM2_allr25c04] Disney +
+ [EM2_allr25c05] BBC
+ [EM2_allr25c06] Paramount+
+ [EM2_allr25c07] Now
+ [EM2_allr25c08] Apple TV+
+ [EM2_allr25c09] Virgin Media
+ [EM2_allr25c10] BT
+
+EM2_allr26: Premium - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr26c01] Sky
+ [EM2_allr26c02] Netflix
+ [EM2_allr26c03] Amazon Prime Video
+ [EM2_allr26c04] Disney +
+ [EM2_allr26c05] BBC
+ [EM2_allr26c06] Paramount+
+ [EM2_allr26c07] Now
+ [EM2_allr26c08] Apple TV+
+ [EM2_allr26c09] Virgin Media
+ [EM2_allr26c10] BT
+
+EM2_allr27: Cinematic - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr27c01] Sky
+ [EM2_allr27c02] Netflix
+ [EM2_allr27c03] Amazon Prime Video
+ [EM2_allr27c04] Disney +
+ [EM2_allr27c05] BBC
+ [EM2_allr27c06] Paramount+
+ [EM2_allr27c07] Now
+ [EM2_allr27c08] Apple TV+
+ [EM2_allr27c09] Virgin Media
+ [EM2_allr27c10] BT
+
+EM2_allr28: Old fashioned - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr28c01] Sky
+ [EM2_allr28c02] Netflix
+ [EM2_allr28c03] Amazon Prime Video
+ [EM2_allr28c04] Disney +
+ [EM2_allr28c05] BBC
+ [EM2_allr28c06] Paramount+
+ [EM2_allr28c07] Now
+ [EM2_allr28c08] Apple TV+
+ [EM2_allr28c09] Virgin Media
+ [EM2_allr28c10] BT
+
+EM2_allr29: Irritating - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr29c01] Sky
+ [EM2_allr29c02] Netflix
+ [EM2_allr29c03] Amazon Prime Video
+ [EM2_allr29c04] Disney +
+ [EM2_allr29c05] BBC
+ [EM2_allr29c06] Paramount+
+ [EM2_allr29c07] Now
+ [EM2_allr29c08] Apple TV+
+ [EM2_allr29c09] Virgin Media
+ [EM2_allr29c10] BT
+
+EM2_allr30: Boring - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr30c01] Sky
+ [EM2_allr30c02] Netflix
+ [EM2_allr30c03] Amazon Prime Video
+ [EM2_allr30c04] Disney +
+ [EM2_allr30c05] BBC
+ [EM2_allr30c06] Paramount+
+ [EM2_allr30c07] Now
+ [EM2_allr30c08] Apple TV+
+ [EM2_allr30c09] Virgin Media
+ [EM2_allr30c10] BT
+
+EM2_allr31: Edgy - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr31c01] Sky
+ [EM2_allr31c02] Netflix
+ [EM2_allr31c03] Amazon Prime Video
+ [EM2_allr31c04] Disney +
+ [EM2_allr31c05] BBC
+ [EM2_allr31c06] Paramount+
+ [EM2_allr31c07] Now
+ [EM2_allr31c08] Apple TV+
+ [EM2_allr31c09] Virgin Media
+ [EM2_allr31c10] BT
+
+EM2_allr32: Sophisticated - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr32c01] Sky
+ [EM2_allr32c02] Netflix
+ [EM2_allr32c03] Amazon Prime Video
+ [EM2_allr32c04] Disney +
+ [EM2_allr32c05] BBC
+ [EM2_allr32c06] Paramount+
+ [EM2_allr32c07] Now
+ [EM2_allr32c08] Apple TV+
+ [EM2_allr32c09] Virgin Media
+ [EM2_allr32c10] BT
+
+EM2_allr33: Calm - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr33c01] Sky
+ [EM2_allr33c02] Netflix
+ [EM2_allr33c03] Amazon Prime Video
+ [EM2_allr33c04] Disney +
+ [EM2_allr33c05] BBC
+ [EM2_allr33c06] Paramount+
+ [EM2_allr33c07] Now
+ [EM2_allr33c08] Apple TV+
+ [EM2_allr33c09] Virgin Media
+ [EM2_allr33c10] BT
+
+EM2_allr34: Relaxing - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr34c01] Sky
+ [EM2_allr34c02] Netflix
+ [EM2_allr34c03] Amazon Prime Video
+ [EM2_allr34c04] Disney +
+ [EM2_allr34c05] BBC
+ [EM2_allr34c06] Paramount+
+ [EM2_allr34c07] Now
+ [EM2_allr34c08] Apple TV+
+ [EM2_allr34c09] Virgin Media
+ [EM2_allr34c10] BT
+
+EM2_allr35: Energetic - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr35c01] Sky
+ [EM2_allr35c02] Netflix
+ [EM2_allr35c03] Amazon Prime Video
+ [EM2_allr35c04] Disney +
+ [EM2_allr35c05] BBC
+ [EM2_allr35c06] Paramount+
+ [EM2_allr35c07] Now
+ [EM2_allr35c08] Apple TV+
+ [EM2_allr35c09] Virgin Media
+ [EM2_allr35c10] BT
+
+EM2_allr36: Cool - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr36c01] Sky
+ [EM2_allr36c02] Netflix
+ [EM2_allr36c03] Amazon Prime Video
+ [EM2_allr36c04] Disney +
+ [EM2_allr36c05] BBC
+ [EM2_allr36c06] Paramount+
+ [EM2_allr36c07] Now
+ [EM2_allr36c08] Apple TV+
+ [EM2_allr36c09] Virgin Media
+ [EM2_allr36c10] BT
+
+EM2_allr37: Uplifting - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr37c01] Sky
+ [EM2_allr37c02] Netflix
+ [EM2_allr37c03] Amazon Prime Video
+ [EM2_allr37c04] Disney +
+ [EM2_allr37c05] BBC
+ [EM2_allr37c06] Paramount+
+ [EM2_allr37c07] Now
+ [EM2_allr37c08] Apple TV+
+ [EM2_allr37c09] Virgin Media
+ [EM2_allr37c10] BT
+
+EM2_allr38: Thrilling - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr38c01] Sky
+ [EM2_allr38c02] Netflix
+ [EM2_allr38c03] Amazon Prime Video
+ [EM2_allr38c04] Disney +
+ [EM2_allr38c05] BBC
+ [EM2_allr38c06] Paramount+
+ [EM2_allr38c07] Now
+ [EM2_allr38c08] Apple TV+
+ [EM2_allr38c09] Virgin Media
+ [EM2_allr38c10] BT
+
+EM2_allr39: Modern - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr39c01] Sky
+ [EM2_allr39c02] Netflix
+ [EM2_allr39c03] Amazon Prime Video
+ [EM2_allr39c04] Disney +
+ [EM2_allr39c05] BBC
+ [EM2_allr39c06] Paramount+
+ [EM2_allr39c07] Now
+ [EM2_allr39c08] Apple TV+
+ [EM2_allr39c09] Virgin Media
+ [EM2_allr39c10] BT
+
+EM2_allr40: Grown-up - EM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [EM2_allr40c01] Sky
+ [EM2_allr40c02] Netflix
+ [EM2_allr40c03] Amazon Prime Video
+ [EM2_allr40c04] Disney +
+ [EM2_allr40c05] BBC
+ [EM2_allr40c06] Paramount+
+ [EM2_allr40c07] Now
+ [EM2_allr40c08] Apple TV+
+ [EM2_allr40c09] Virgin Media
+ [EM2_allr40c10] BT
+
+vEM2_allr01: Sky - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr01c01] Trendy
+ [vEM2_allr01c02] Serious
+ [vEM2_allr01c03] Reliable
+ [vEM2_allr01c04] Principled
+ [vEM2_allr01c05] Passionate
+ [vEM2_allr01c06] Original
+ [vEM2_allr01c07] Intelligent
+ [vEM2_allr01c08] Idealistic
+ [vEM2_allr01c09] Honest
+ [vEM2_allr01c10] Fun
+ [vEM2_allr01c11] Friendly
+ [vEM2_allr01c12] Exciting
+ [vEM2_allr01c13] Confident
+ [vEM2_allr01c14] Caring
+ [vEM2_allr01c15] Bold
+ [vEM2_allr01c16] Adventurous
+ [vEM2_allr01c17] Creative
+ [vEM2_allr01c18] Brave
+ [vEM2_allr01c19] Warm
+ [vEM2_allr01c20] Liberal
+ [vEM2_allr01c21] Modest
+ [vEM2_allr01c22] Assertive
+ [vEM2_allr01c23] Entertaining
+ [vEM2_allr01c24] Optimistic
+ [vEM2_allr01c25] Dramatic
+ [vEM2_allr01c26] Premium
+ [vEM2_allr01c27] Cinematic
+ [vEM2_allr01c28] Old fashioned
+ [vEM2_allr01c29] Irritating
+ [vEM2_allr01c30] Boring
+ [vEM2_allr01c31] Edgy
+ [vEM2_allr01c32] Sophisticated
+ [vEM2_allr01c33] Calm
+ [vEM2_allr01c34] Relaxing
+ [vEM2_allr01c35] Energetic
+ [vEM2_allr01c36] Cool
+ [vEM2_allr01c37] Uplifting
+ [vEM2_allr01c38] Thrilling
+ [vEM2_allr01c39] Modern
+ [vEM2_allr01c40] Grown-up
+
+vEM2_allr02: Netflix - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr02c01] Trendy
+ [vEM2_allr02c02] Serious
+ [vEM2_allr02c03] Reliable
+ [vEM2_allr02c04] Principled
+ [vEM2_allr02c05] Passionate
+ [vEM2_allr02c06] Original
+ [vEM2_allr02c07] Intelligent
+ [vEM2_allr02c08] Idealistic
+ [vEM2_allr02c09] Honest
+ [vEM2_allr02c10] Fun
+ [vEM2_allr02c11] Friendly
+ [vEM2_allr02c12] Exciting
+ [vEM2_allr02c13] Confident
+ [vEM2_allr02c14] Caring
+ [vEM2_allr02c15] Bold
+ [vEM2_allr02c16] Adventurous
+ [vEM2_allr02c17] Creative
+ [vEM2_allr02c18] Brave
+ [vEM2_allr02c19] Warm
+ [vEM2_allr02c20] Liberal
+ [vEM2_allr02c21] Modest
+ [vEM2_allr02c22] Assertive
+ [vEM2_allr02c23] Entertaining
+ [vEM2_allr02c24] Optimistic
+ [vEM2_allr02c25] Dramatic
+ [vEM2_allr02c26] Premium
+ [vEM2_allr02c27] Cinematic
+ [vEM2_allr02c28] Old fashioned
+ [vEM2_allr02c29] Irritating
+ [vEM2_allr02c30] Boring
+ [vEM2_allr02c31] Edgy
+ [vEM2_allr02c32] Sophisticated
+ [vEM2_allr02c33] Calm
+ [vEM2_allr02c34] Relaxing
+ [vEM2_allr02c35] Energetic
+ [vEM2_allr02c36] Cool
+ [vEM2_allr02c37] Uplifting
+ [vEM2_allr02c38] Thrilling
+ [vEM2_allr02c39] Modern
+ [vEM2_allr02c40] Grown-up
+
+vEM2_allr03: Amazon Prime Video - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr03c01] Trendy
+ [vEM2_allr03c02] Serious
+ [vEM2_allr03c03] Reliable
+ [vEM2_allr03c04] Principled
+ [vEM2_allr03c05] Passionate
+ [vEM2_allr03c06] Original
+ [vEM2_allr03c07] Intelligent
+ [vEM2_allr03c08] Idealistic
+ [vEM2_allr03c09] Honest
+ [vEM2_allr03c10] Fun
+ [vEM2_allr03c11] Friendly
+ [vEM2_allr03c12] Exciting
+ [vEM2_allr03c13] Confident
+ [vEM2_allr03c14] Caring
+ [vEM2_allr03c15] Bold
+ [vEM2_allr03c16] Adventurous
+ [vEM2_allr03c17] Creative
+ [vEM2_allr03c18] Brave
+ [vEM2_allr03c19] Warm
+ [vEM2_allr03c20] Liberal
+ [vEM2_allr03c21] Modest
+ [vEM2_allr03c22] Assertive
+ [vEM2_allr03c23] Entertaining
+ [vEM2_allr03c24] Optimistic
+ [vEM2_allr03c25] Dramatic
+ [vEM2_allr03c26] Premium
+ [vEM2_allr03c27] Cinematic
+ [vEM2_allr03c28] Old fashioned
+ [vEM2_allr03c29] Irritating
+ [vEM2_allr03c30] Boring
+ [vEM2_allr03c31] Edgy
+ [vEM2_allr03c32] Sophisticated
+ [vEM2_allr03c33] Calm
+ [vEM2_allr03c34] Relaxing
+ [vEM2_allr03c35] Energetic
+ [vEM2_allr03c36] Cool
+ [vEM2_allr03c37] Uplifting
+ [vEM2_allr03c38] Thrilling
+ [vEM2_allr03c39] Modern
+ [vEM2_allr03c40] Grown-up
+
+vEM2_allr04: Disney + - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr04c01] Trendy
+ [vEM2_allr04c02] Serious
+ [vEM2_allr04c03] Reliable
+ [vEM2_allr04c04] Principled
+ [vEM2_allr04c05] Passionate
+ [vEM2_allr04c06] Original
+ [vEM2_allr04c07] Intelligent
+ [vEM2_allr04c08] Idealistic
+ [vEM2_allr04c09] Honest
+ [vEM2_allr04c10] Fun
+ [vEM2_allr04c11] Friendly
+ [vEM2_allr04c12] Exciting
+ [vEM2_allr04c13] Confident
+ [vEM2_allr04c14] Caring
+ [vEM2_allr04c15] Bold
+ [vEM2_allr04c16] Adventurous
+ [vEM2_allr04c17] Creative
+ [vEM2_allr04c18] Brave
+ [vEM2_allr04c19] Warm
+ [vEM2_allr04c20] Liberal
+ [vEM2_allr04c21] Modest
+ [vEM2_allr04c22] Assertive
+ [vEM2_allr04c23] Entertaining
+ [vEM2_allr04c24] Optimistic
+ [vEM2_allr04c25] Dramatic
+ [vEM2_allr04c26] Premium
+ [vEM2_allr04c27] Cinematic
+ [vEM2_allr04c28] Old fashioned
+ [vEM2_allr04c29] Irritating
+ [vEM2_allr04c30] Boring
+ [vEM2_allr04c31] Edgy
+ [vEM2_allr04c32] Sophisticated
+ [vEM2_allr04c33] Calm
+ [vEM2_allr04c34] Relaxing
+ [vEM2_allr04c35] Energetic
+ [vEM2_allr04c36] Cool
+ [vEM2_allr04c37] Uplifting
+ [vEM2_allr04c38] Thrilling
+ [vEM2_allr04c39] Modern
+ [vEM2_allr04c40] Grown-up
+
+vEM2_allr05: BBC - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr05c01] Trendy
+ [vEM2_allr05c02] Serious
+ [vEM2_allr05c03] Reliable
+ [vEM2_allr05c04] Principled
+ [vEM2_allr05c05] Passionate
+ [vEM2_allr05c06] Original
+ [vEM2_allr05c07] Intelligent
+ [vEM2_allr05c08] Idealistic
+ [vEM2_allr05c09] Honest
+ [vEM2_allr05c10] Fun
+ [vEM2_allr05c11] Friendly
+ [vEM2_allr05c12] Exciting
+ [vEM2_allr05c13] Confident
+ [vEM2_allr05c14] Caring
+ [vEM2_allr05c15] Bold
+ [vEM2_allr05c16] Adventurous
+ [vEM2_allr05c17] Creative
+ [vEM2_allr05c18] Brave
+ [vEM2_allr05c19] Warm
+ [vEM2_allr05c20] Liberal
+ [vEM2_allr05c21] Modest
+ [vEM2_allr05c22] Assertive
+ [vEM2_allr05c23] Entertaining
+ [vEM2_allr05c24] Optimistic
+ [vEM2_allr05c25] Dramatic
+ [vEM2_allr05c26] Premium
+ [vEM2_allr05c27] Cinematic
+ [vEM2_allr05c28] Old fashioned
+ [vEM2_allr05c29] Irritating
+ [vEM2_allr05c30] Boring
+ [vEM2_allr05c31] Edgy
+ [vEM2_allr05c32] Sophisticated
+ [vEM2_allr05c33] Calm
+ [vEM2_allr05c34] Relaxing
+ [vEM2_allr05c35] Energetic
+ [vEM2_allr05c36] Cool
+ [vEM2_allr05c37] Uplifting
+ [vEM2_allr05c38] Thrilling
+ [vEM2_allr05c39] Modern
+ [vEM2_allr05c40] Grown-up
+
+vEM2_allr06: Paramount+ - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr06c01] Trendy
+ [vEM2_allr06c02] Serious
+ [vEM2_allr06c03] Reliable
+ [vEM2_allr06c04] Principled
+ [vEM2_allr06c05] Passionate
+ [vEM2_allr06c06] Original
+ [vEM2_allr06c07] Intelligent
+ [vEM2_allr06c08] Idealistic
+ [vEM2_allr06c09] Honest
+ [vEM2_allr06c10] Fun
+ [vEM2_allr06c11] Friendly
+ [vEM2_allr06c12] Exciting
+ [vEM2_allr06c13] Confident
+ [vEM2_allr06c14] Caring
+ [vEM2_allr06c15] Bold
+ [vEM2_allr06c16] Adventurous
+ [vEM2_allr06c17] Creative
+ [vEM2_allr06c18] Brave
+ [vEM2_allr06c19] Warm
+ [vEM2_allr06c20] Liberal
+ [vEM2_allr06c21] Modest
+ [vEM2_allr06c22] Assertive
+ [vEM2_allr06c23] Entertaining
+ [vEM2_allr06c24] Optimistic
+ [vEM2_allr06c25] Dramatic
+ [vEM2_allr06c26] Premium
+ [vEM2_allr06c27] Cinematic
+ [vEM2_allr06c28] Old fashioned
+ [vEM2_allr06c29] Irritating
+ [vEM2_allr06c30] Boring
+ [vEM2_allr06c31] Edgy
+ [vEM2_allr06c32] Sophisticated
+ [vEM2_allr06c33] Calm
+ [vEM2_allr06c34] Relaxing
+ [vEM2_allr06c35] Energetic
+ [vEM2_allr06c36] Cool
+ [vEM2_allr06c37] Uplifting
+ [vEM2_allr06c38] Thrilling
+ [vEM2_allr06c39] Modern
+ [vEM2_allr06c40] Grown-up
+
+vEM2_allr07: Now - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr07c01] Trendy
+ [vEM2_allr07c02] Serious
+ [vEM2_allr07c03] Reliable
+ [vEM2_allr07c04] Principled
+ [vEM2_allr07c05] Passionate
+ [vEM2_allr07c06] Original
+ [vEM2_allr07c07] Intelligent
+ [vEM2_allr07c08] Idealistic
+ [vEM2_allr07c09] Honest
+ [vEM2_allr07c10] Fun
+ [vEM2_allr07c11] Friendly
+ [vEM2_allr07c12] Exciting
+ [vEM2_allr07c13] Confident
+ [vEM2_allr07c14] Caring
+ [vEM2_allr07c15] Bold
+ [vEM2_allr07c16] Adventurous
+ [vEM2_allr07c17] Creative
+ [vEM2_allr07c18] Brave
+ [vEM2_allr07c19] Warm
+ [vEM2_allr07c20] Liberal
+ [vEM2_allr07c21] Modest
+ [vEM2_allr07c22] Assertive
+ [vEM2_allr07c23] Entertaining
+ [vEM2_allr07c24] Optimistic
+ [vEM2_allr07c25] Dramatic
+ [vEM2_allr07c26] Premium
+ [vEM2_allr07c27] Cinematic
+ [vEM2_allr07c28] Old fashioned
+ [vEM2_allr07c29] Irritating
+ [vEM2_allr07c30] Boring
+ [vEM2_allr07c31] Edgy
+ [vEM2_allr07c32] Sophisticated
+ [vEM2_allr07c33] Calm
+ [vEM2_allr07c34] Relaxing
+ [vEM2_allr07c35] Energetic
+ [vEM2_allr07c36] Cool
+ [vEM2_allr07c37] Uplifting
+ [vEM2_allr07c38] Thrilling
+ [vEM2_allr07c39] Modern
+ [vEM2_allr07c40] Grown-up
+
+vEM2_allr08: Apple TV+ - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr08c01] Trendy
+ [vEM2_allr08c02] Serious
+ [vEM2_allr08c03] Reliable
+ [vEM2_allr08c04] Principled
+ [vEM2_allr08c05] Passionate
+ [vEM2_allr08c06] Original
+ [vEM2_allr08c07] Intelligent
+ [vEM2_allr08c08] Idealistic
+ [vEM2_allr08c09] Honest
+ [vEM2_allr08c10] Fun
+ [vEM2_allr08c11] Friendly
+ [vEM2_allr08c12] Exciting
+ [vEM2_allr08c13] Confident
+ [vEM2_allr08c14] Caring
+ [vEM2_allr08c15] Bold
+ [vEM2_allr08c16] Adventurous
+ [vEM2_allr08c17] Creative
+ [vEM2_allr08c18] Brave
+ [vEM2_allr08c19] Warm
+ [vEM2_allr08c20] Liberal
+ [vEM2_allr08c21] Modest
+ [vEM2_allr08c22] Assertive
+ [vEM2_allr08c23] Entertaining
+ [vEM2_allr08c24] Optimistic
+ [vEM2_allr08c25] Dramatic
+ [vEM2_allr08c26] Premium
+ [vEM2_allr08c27] Cinematic
+ [vEM2_allr08c28] Old fashioned
+ [vEM2_allr08c29] Irritating
+ [vEM2_allr08c30] Boring
+ [vEM2_allr08c31] Edgy
+ [vEM2_allr08c32] Sophisticated
+ [vEM2_allr08c33] Calm
+ [vEM2_allr08c34] Relaxing
+ [vEM2_allr08c35] Energetic
+ [vEM2_allr08c36] Cool
+ [vEM2_allr08c37] Uplifting
+ [vEM2_allr08c38] Thrilling
+ [vEM2_allr08c39] Modern
+ [vEM2_allr08c40] Grown-up
+
+vEM2_allr09: Virgin Media - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr09c01] Trendy
+ [vEM2_allr09c02] Serious
+ [vEM2_allr09c03] Reliable
+ [vEM2_allr09c04] Principled
+ [vEM2_allr09c05] Passionate
+ [vEM2_allr09c06] Original
+ [vEM2_allr09c07] Intelligent
+ [vEM2_allr09c08] Idealistic
+ [vEM2_allr09c09] Honest
+ [vEM2_allr09c10] Fun
+ [vEM2_allr09c11] Friendly
+ [vEM2_allr09c12] Exciting
+ [vEM2_allr09c13] Confident
+ [vEM2_allr09c14] Caring
+ [vEM2_allr09c15] Bold
+ [vEM2_allr09c16] Adventurous
+ [vEM2_allr09c17] Creative
+ [vEM2_allr09c18] Brave
+ [vEM2_allr09c19] Warm
+ [vEM2_allr09c20] Liberal
+ [vEM2_allr09c21] Modest
+ [vEM2_allr09c22] Assertive
+ [vEM2_allr09c23] Entertaining
+ [vEM2_allr09c24] Optimistic
+ [vEM2_allr09c25] Dramatic
+ [vEM2_allr09c26] Premium
+ [vEM2_allr09c27] Cinematic
+ [vEM2_allr09c28] Old fashioned
+ [vEM2_allr09c29] Irritating
+ [vEM2_allr09c30] Boring
+ [vEM2_allr09c31] Edgy
+ [vEM2_allr09c32] Sophisticated
+ [vEM2_allr09c33] Calm
+ [vEM2_allr09c34] Relaxing
+ [vEM2_allr09c35] Energetic
+ [vEM2_allr09c36] Cool
+ [vEM2_allr09c37] Uplifting
+ [vEM2_allr09c38] Thrilling
+ [vEM2_allr09c39] Modern
+ [vEM2_allr09c40] Grown-up
+
+vEM2_allr10: BT - vEM2_all
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vEM2_allr10c01] Trendy
+ [vEM2_allr10c02] Serious
+ [vEM2_allr10c03] Reliable
+ [vEM2_allr10c04] Principled
+ [vEM2_allr10c05] Passionate
+ [vEM2_allr10c06] Original
+ [vEM2_allr10c07] Intelligent
+ [vEM2_allr10c08] Idealistic
+ [vEM2_allr10c09] Honest
+ [vEM2_allr10c10] Fun
+ [vEM2_allr10c11] Friendly
+ [vEM2_allr10c12] Exciting
+ [vEM2_allr10c13] Confident
+ [vEM2_allr10c14] Caring
+ [vEM2_allr10c15] Bold
+ [vEM2_allr10c16] Adventurous
+ [vEM2_allr10c17] Creative
+ [vEM2_allr10c18] Brave
+ [vEM2_allr10c19] Warm
+ [vEM2_allr10c20] Liberal
+ [vEM2_allr10c21] Modest
+ [vEM2_allr10c22] Assertive
+ [vEM2_allr10c23] Entertaining
+ [vEM2_allr10c24] Optimistic
+ [vEM2_allr10c25] Dramatic
+ [vEM2_allr10c26] Premium
+ [vEM2_allr10c27] Cinematic
+ [vEM2_allr10c28] Old fashioned
+ [vEM2_allr10c29] Irritating
+ [vEM2_allr10c30] Boring
+ [vEM2_allr10c31] Edgy
+ [vEM2_allr10c32] Sophisticated
+ [vEM2_allr10c33] Calm
+ [vEM2_allr10c34] Relaxing
+ [vEM2_allr10c35] Energetic
+ [vEM2_allr10c36] Cool
+ [vEM2_allr10c37] Uplifting
+ [vEM2_allr10c38] Thrilling
+ [vEM2_allr10c39] Modern
+ [vEM2_allr10c40] Grown-up
+
+CT1: Below is a list of TV shows, which, if any, have you heard of before today?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT1r01] White Lotus
+ [CT1r02] Euphoria
+ [CT1r03] Gangs of London
+ [CT1r04] House of the Dragon
+ [CT1r05] The Last of Us
+ [CT1r06] Succession
+ [CT1r07] Stranger Things
+ [CT1r08] Bridgerton
+ [CT1r09] True Detective
+ [CT1r10] Masters of the Air
+ [CT1r11] Squid Game
+ [CT1r12] And Just Like That
+ [CT1r13] Yellowstone
+ [CT1r14] The Marvelous Mrs Maisel
+ [CT1r15] Sex Education
+ [CT1r16] The Mandalorian
+ [CT1r17] Shogun
+ [CT1r18] The Crown
+ [CT1r99] None of these
+
+possibleCT1: Hidden to keep possible shows
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [possibleCT1r01] White Lotus
+ [possibleCT1r02] Euphoria
+ [possibleCT1r03] Gangs of London
+ [possibleCT1r04] House of the Dragon
+ [possibleCT1r05] The Last of Us
+ [possibleCT1r06] Succession
+ [possibleCT1r07] Stranger Things
+ [possibleCT1r08] Bridgerton
+ [possibleCT1r09] True Detective
+ [possibleCT1r10] Masters of the Air
+ [possibleCT1r11] Squid Game
+ [possibleCT1r12] And Just Like That
+ [possibleCT1r13] Yellowstone
+ [possibleCT1r14] The Marvelous Mrs Maisel
+ [possibleCT1r15] Sex Education
+ [possibleCT1r16] The Mandalorian
+ [possibleCT1r17] Shogun
+ [possibleCT1r18] The Crown
+
+selectedCT1: Hidden to keep selected shows
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [selectedCT1r01] White Lotus
+ [selectedCT1r02] Euphoria
+ [selectedCT1r03] Gangs of London
+ [selectedCT1r04] House of the Dragon
+ [selectedCT1r05] The Last of Us
+ [selectedCT1r06] Succession
+ [selectedCT1r07] Stranger Things
+ [selectedCT1r08] Bridgerton
+ [selectedCT1r09] True Detective
+ [selectedCT1r10] Masters of the Air
+ [selectedCT1r11] Squid Game
+ [selectedCT1r12] And Just Like That
+ [selectedCT1r13] Yellowstone
+ [selectedCT1r14] The Marvelous Mrs Maisel
+ [selectedCT1r15] Sex Education
+ [selectedCT1r16] The Mandalorian
+ [selectedCT1r17] Shogun
+ [selectedCT1r18] The Crown
+
+CT2r01: White Lotus - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r01c01] Sky
+ [CT2r01c02] Netflix
+ [CT2r01c03] Amazon Prime Video
+ [CT2r01c04] Disney+
+ [CT2r01c05] BBC
+ [CT2r01c06] Paramount+
+ [CT2r01c07] NOW
+ [CT2r01c08] AppleTV+
+ [CT2r01c09] HBO
+ [CT2r01c97] Don't know
+ [CT2r01c99] None of these
+ [CT2r01c10] RTE
+
+CT2r02: Euphoria - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r02c01] Sky
+ [CT2r02c02] Netflix
+ [CT2r02c03] Amazon Prime Video
+ [CT2r02c04] Disney+
+ [CT2r02c05] BBC
+ [CT2r02c06] Paramount+
+ [CT2r02c07] NOW
+ [CT2r02c08] AppleTV+
+ [CT2r02c09] HBO
+ [CT2r02c97] Don't know
+ [CT2r02c99] None of these
+ [CT2r02c10] RTE
+
+CT2r03: Gangs of London - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r03c01] Sky
+ [CT2r03c02] Netflix
+ [CT2r03c03] Amazon Prime Video
+ [CT2r03c04] Disney+
+ [CT2r03c05] BBC
+ [CT2r03c06] Paramount+
+ [CT2r03c07] NOW
+ [CT2r03c08] AppleTV+
+ [CT2r03c09] HBO
+ [CT2r03c97] Don't know
+ [CT2r03c99] None of these
+ [CT2r03c10] RTE
+
+CT2r04: House of the Dragon - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r04c01] Sky
+ [CT2r04c02] Netflix
+ [CT2r04c03] Amazon Prime Video
+ [CT2r04c04] Disney+
+ [CT2r04c05] BBC
+ [CT2r04c06] Paramount+
+ [CT2r04c07] NOW
+ [CT2r04c08] AppleTV+
+ [CT2r04c09] HBO
+ [CT2r04c97] Don't know
+ [CT2r04c99] None of these
+ [CT2r04c10] RTE
+
+CT2r05: The Last of Us - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r05c01] Sky
+ [CT2r05c02] Netflix
+ [CT2r05c03] Amazon Prime Video
+ [CT2r05c04] Disney+
+ [CT2r05c05] BBC
+ [CT2r05c06] Paramount+
+ [CT2r05c07] NOW
+ [CT2r05c08] AppleTV+
+ [CT2r05c09] HBO
+ [CT2r05c97] Don't know
+ [CT2r05c99] None of these
+ [CT2r05c10] RTE
+
+CT2r06: Succession - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r06c01] Sky
+ [CT2r06c02] Netflix
+ [CT2r06c03] Amazon Prime Video
+ [CT2r06c04] Disney+
+ [CT2r06c05] BBC
+ [CT2r06c06] Paramount+
+ [CT2r06c07] NOW
+ [CT2r06c08] AppleTV+
+ [CT2r06c09] HBO
+ [CT2r06c97] Don't know
+ [CT2r06c99] None of these
+ [CT2r06c10] RTE
+
+CT2r07: Stranger Things - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r07c01] Sky
+ [CT2r07c02] Netflix
+ [CT2r07c03] Amazon Prime Video
+ [CT2r07c04] Disney+
+ [CT2r07c05] BBC
+ [CT2r07c06] Paramount+
+ [CT2r07c07] NOW
+ [CT2r07c08] AppleTV+
+ [CT2r07c09] HBO
+ [CT2r07c97] Don't know
+ [CT2r07c99] None of these
+ [CT2r07c10] RTE
+
+CT2r08: Bridgerton - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r08c01] Sky
+ [CT2r08c02] Netflix
+ [CT2r08c03] Amazon Prime Video
+ [CT2r08c04] Disney+
+ [CT2r08c05] BBC
+ [CT2r08c06] Paramount+
+ [CT2r08c07] NOW
+ [CT2r08c08] AppleTV+
+ [CT2r08c09] HBO
+ [CT2r08c97] Don't know
+ [CT2r08c99] None of these
+ [CT2r08c10] RTE
+
+CT2r09: True Detective - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r09c01] Sky
+ [CT2r09c02] Netflix
+ [CT2r09c03] Amazon Prime Video
+ [CT2r09c04] Disney+
+ [CT2r09c05] BBC
+ [CT2r09c06] Paramount+
+ [CT2r09c07] NOW
+ [CT2r09c08] AppleTV+
+ [CT2r09c09] HBO
+ [CT2r09c97] Don't know
+ [CT2r09c99] None of these
+ [CT2r09c10] RTE
+
+CT2r10: Masters of the Air - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r10c01] Sky
+ [CT2r10c02] Netflix
+ [CT2r10c03] Amazon Prime Video
+ [CT2r10c04] Disney+
+ [CT2r10c05] BBC
+ [CT2r10c06] Paramount+
+ [CT2r10c07] NOW
+ [CT2r10c08] AppleTV+
+ [CT2r10c09] HBO
+ [CT2r10c97] Don't know
+ [CT2r10c99] None of these
+ [CT2r10c10] RTE
+
+CT2r11: Squid Game - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r11c01] Sky
+ [CT2r11c02] Netflix
+ [CT2r11c03] Amazon Prime Video
+ [CT2r11c04] Disney+
+ [CT2r11c05] BBC
+ [CT2r11c06] Paramount+
+ [CT2r11c07] NOW
+ [CT2r11c08] AppleTV+
+ [CT2r11c09] HBO
+ [CT2r11c97] Don't know
+ [CT2r11c99] None of these
+ [CT2r11c10] RTE
+
+CT2r12: And Just Like That - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r12c01] Sky
+ [CT2r12c02] Netflix
+ [CT2r12c03] Amazon Prime Video
+ [CT2r12c04] Disney+
+ [CT2r12c05] BBC
+ [CT2r12c06] Paramount+
+ [CT2r12c07] NOW
+ [CT2r12c08] AppleTV+
+ [CT2r12c09] HBO
+ [CT2r12c97] Don't know
+ [CT2r12c99] None of these
+ [CT2r12c10] RTE
+
+CT2r13: Yellowstone - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r13c01] Sky
+ [CT2r13c02] Netflix
+ [CT2r13c03] Amazon Prime Video
+ [CT2r13c04] Disney+
+ [CT2r13c05] BBC
+ [CT2r13c06] Paramount+
+ [CT2r13c07] NOW
+ [CT2r13c08] AppleTV+
+ [CT2r13c09] HBO
+ [CT2r13c97] Don't know
+ [CT2r13c99] None of these
+ [CT2r13c10] RTE
+
+CT2r14: The Marvelous Mrs Maisel - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r14c01] Sky
+ [CT2r14c02] Netflix
+ [CT2r14c03] Amazon Prime Video
+ [CT2r14c04] Disney+
+ [CT2r14c05] BBC
+ [CT2r14c06] Paramount+
+ [CT2r14c07] NOW
+ [CT2r14c08] AppleTV+
+ [CT2r14c09] HBO
+ [CT2r14c97] Don't know
+ [CT2r14c99] None of these
+ [CT2r14c10] RTE
+
+CT2r15: Sex Education - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r15c01] Sky
+ [CT2r15c02] Netflix
+ [CT2r15c03] Amazon Prime Video
+ [CT2r15c04] Disney+
+ [CT2r15c05] BBC
+ [CT2r15c06] Paramount+
+ [CT2r15c07] NOW
+ [CT2r15c08] AppleTV+
+ [CT2r15c09] HBO
+ [CT2r15c97] Don't know
+ [CT2r15c99] None of these
+ [CT2r15c10] RTE
+
+CT2r16: The Mandalorian - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r16c01] Sky
+ [CT2r16c02] Netflix
+ [CT2r16c03] Amazon Prime Video
+ [CT2r16c04] Disney+
+ [CT2r16c05] BBC
+ [CT2r16c06] Paramount+
+ [CT2r16c07] NOW
+ [CT2r16c08] AppleTV+
+ [CT2r16c09] HBO
+ [CT2r16c97] Don't know
+ [CT2r16c99] None of these
+ [CT2r16c10] RTE
+
+CT2r17: Shogun - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r17c01] Sky
+ [CT2r17c02] Netflix
+ [CT2r17c03] Amazon Prime Video
+ [CT2r17c04] Disney+
+ [CT2r17c05] BBC
+ [CT2r17c06] Paramount+
+ [CT2r17c07] NOW
+ [CT2r17c08] AppleTV+
+ [CT2r17c09] HBO
+ [CT2r17c97] Don't know
+ [CT2r17c99] None of these
+ [CT2r17c10] RTE
+
+CT2r18: The Crown - Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT2r18c01] Sky
+ [CT2r18c02] Netflix
+ [CT2r18c03] Amazon Prime Video
+ [CT2r18c04] Disney+
+ [CT2r18c05] BBC
+ [CT2r18c06] Paramount+
+ [CT2r18c07] NOW
+ [CT2r18c08] AppleTV+
+ [CT2r18c09] HBO
+ [CT2r18c97] Don't know
+ [CT2r18c99] None of these
+ [CT2r18c10] RTE
+
+CT3a: When thinking about the kinds of shows you really love to watch, which of the following genres are most important to you?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT3ar01] American Drama
+ [CT3ar02] British Drama
+ [CT3ar03] American Comedy
+ [CT3ar04] British Comedy
+ [CT3ar05] Documentaries (e.g. sport, culture, history)
+ [CT3ar06] Reality (e.g. fly on the wall and scripted reality)
+ [CT3ar07] Entertainment (e.g. talent and skill contests, panel & talk shows, game shows etc..)
+ [CT3ar08] Foreign language Drama
+ [CT3ar09] Arts & Culture (e.g. music, dance, opera, art)
+ [CT3ar10] Nature & Wildlife programmes
+ [CT3ar11] True Crime
+ [CT3ar12] Children's TV
+ [CT3ar98] Something else (please specify)
+ [CT3ar99] None of these
+ [CT3ar13] Irish Drama
+ [CT3ar14] Irish Comedy
+
+[CT3ar98oe]: When thinking about the kinds of shows you really love to watch, which of the following genres are most important to you? - Something else (please specify)
+Open text response
+
+CT3: And for those different genres of TV entertainment please select which services you feel have the best shows in that genre.
+Values: 1-13
+ 1=Sky
+ 2=Netflix
+ 3=Amazon Prime Video
+ 4=Disney+
+ 5=BBC
+ 6=Paramount+
+ 7=NOW
+ 8=AppleTV+
+ 9=Channel 4
+ 10=ITV
+ 11=RTE
+ 12=TG4
+ 13=Don't know
+ [CT3r01] American Drama
+ [CT3r02] British Drama
+ [CT3r03] American Comedy
+ [CT3r04] British Comedy
+ [CT3r05] Documentaries (e.g. sport, culture, history)
+ [CT3r06] Reality (e.g. fly on the wall and scripted reality)
+ [CT3r07] Entertainment (e.g. talent and skill contests, panel & talk shows, game shows etc..)
+ [CT3r08] Foreign language Drama
+ [CT3r09] Arts & Culture (e.g. music, dance, opera, art)
+ [CT3r10] Nature & Wildlife programmes
+ [CT3r11] True Crime
+ [CT3r12] Children's TV
+ [CT3r13] Irish Drama
+ [CT3r14] Irish Comedy
+
+[CT5]: When you are looking for a new TV show to watch what is your preferred way of finding that programme? Please think about occasions when you are looking for something exciting to watch not occasions when you are willing to watch whatever is available.
+Values: 1-15
+ 1=TV providers website
+ 2=Best show lists on websites and web browsers (e.g. google)
+ 3=Apps which detail the shows available (e.g. JustWatch)
+ 4=Content rating websites (e.g. IMDb)
+ 5=Recommendations shown to me on the homescreen of the TV services
+ 6=Recommendations emailed to me by a TV provider
+ 7=Recommendations from online celebrities / influencers on social media
+ 8=Recommendations from online people I personally know on social media
+ 9=Recommendations in person
+ 10=Recommendations from paper versions of magazines/newspapers
+ 11=Recommendations from online versions of magazines/newspapers
+ 12=Looking through available shows on my TV service
+ 13=Looking through the TV guide on my TV service
+ 14=Somewhere else (please specify)
+ 15=Don't tend to actively search for new shows
+
+[CT5r98oe]: When you are looking for a new TV show to watch what is your preferred way of finding that programme? Please think about occasions when you are looking for something exciting to watch not occasions when you are willing to watch whatever is available. - Somewhere else (please specify)
+Open text response
+
+CT6: Considering the following devices that allow you to access entertainment, which, if any, of the following devices do you feel are good at bringing all the content you like, from all the services you use, into one integrated service?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [CT6r01] Sky Glass / Sky Stream
+ [CT6r02] Sky Q
+ [CT6r03] Chromecast with Google TV
+ [CT6r04] Apple TV box
+ [CT6r05] Amazon Fire stick
+ [CT6r06] Roku box
+ [CT6r07] Samsung smart TV
+ [CT6r08] LG smart TV
+ [CT6r09] Smart phones
+ [CT6r10] Tablets/iPads
+ [CT6r11] Laptops
+ [CT6r98] Something else (please specify)
+ [CT6r97] Don't know
+ [CT6r99] None of these
+
+[CT6r98oe]: Considering the following devices that allow you to access entertainment, which, if any, of the following devices do you feel are good at bringing all the content you like, from all the services you use, into one integrated service? - Something else (please specify)
+Open text response
+
+K12: When you are looking for a new entertainment service, what is your MOST preferred method for conducting research about the options available and your MOST preferred method for making the purchase itself?
+Values: 1-8
+ 1=Through a website
+ 2=Through an app
+ 3=Over the phone
+ 4=Visiting a retailer face to face
+ 5=Recommendations on social media
+ 6=Recommendations in person
+ 7=None of these
+ 8=Don't know
+ [K12r1] Preferred method when RESEARCHING providers
+ [K12r2] Preferred method when PURCHASING
+
+[PC1]: And once you've signed up to an entertainment service, what is your preferred method of contacting them; if you have a query or issue? If you don't have any entertainment service currently, please think of a time when you did.
+Values: 1-7
+ 1=Through their website / live online chat
+ 2=Over the phone
+ 3=In a retail store/stand
+ 4=Through a service app
+ 5=Through social media
+ 6=Through email
+ 7=Never need to contact providers myself / Never had one in the past
+
+[PC2]: When you signed up to Sky which method did you use to make the final transaction?
+Values: 1-6
+ 1=Through the Sky website
+ 2=Over the phone
+ 3=In a Sky store
+ 4=At a Sky retail strand
+ 5=Through a non-Sky retailer
+ 6=Don't recall
+
+AD1: And still thinking about entertainment providers, which, if any, do you recall seeing or hearing information about in the last 3 months? This could be information you received in any way e.g. TV advertising, banners on websites, social media posts, news coverage, in a shop or conversations with friends and so on.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD1r01] Sky
+ [AD1r02] Netflix
+ [AD1r03] Amazon Prime Video
+ [AD1r04] Disney+
+ [AD1r05] Paramount
+ [AD1r06] NOW
+ [AD1r07] Apple TV
+ [AD1r08] Virgin Media
+ [AD1r09] EE TV (formerly BT TV)
+ [AD1r10] HBO
+ [AD1r99] None of these
+
+AD2r01: Sky - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r01c01] TV / Radio advert
+ [AD2r01c02] Magazine / Newspaper advert (offline)
+ [AD2r01c03] Online advert
+ [AD2r01c04] Social media advert
+ [AD2r01c05] Social media post (not from a friend)
+ [AD2r01c06] Influencer recommendation
+ [AD2r01c07] Friend/acquaintance recommendation online / social media
+ [AD2r01c08] Friend/acquaintance recommendation in person
+ [AD2r01c09] In a shop / retail stand
+ [AD2r01c10] From news coverage
+ [AD2r01c11] Advert outside (e.g. billboard, or screen)
+ [AD2r01c98] Somewhere else
+ [AD2r01c97] Don't know
+
+AD2r02: Netflix - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r02c01] TV / Radio advert
+ [AD2r02c02] Magazine / Newspaper advert (offline)
+ [AD2r02c03] Online advert
+ [AD2r02c04] Social media advert
+ [AD2r02c05] Social media post (not from a friend)
+ [AD2r02c06] Influencer recommendation
+ [AD2r02c07] Friend/acquaintance recommendation online / social media
+ [AD2r02c08] Friend/acquaintance recommendation in person
+ [AD2r02c09] In a shop / retail stand
+ [AD2r02c10] From news coverage
+ [AD2r02c11] Advert outside (e.g. billboard, or screen)
+ [AD2r02c98] Somewhere else
+ [AD2r02c97] Don't know
+
+AD2r03: Amazon Prime Video - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r03c01] TV / Radio advert
+ [AD2r03c02] Magazine / Newspaper advert (offline)
+ [AD2r03c03] Online advert
+ [AD2r03c04] Social media advert
+ [AD2r03c05] Social media post (not from a friend)
+ [AD2r03c06] Influencer recommendation
+ [AD2r03c07] Friend/acquaintance recommendation online / social media
+ [AD2r03c08] Friend/acquaintance recommendation in person
+ [AD2r03c09] In a shop / retail stand
+ [AD2r03c10] From news coverage
+ [AD2r03c11] Advert outside (e.g. billboard, or screen)
+ [AD2r03c98] Somewhere else
+ [AD2r03c97] Don't know
+
+AD2r04: Disney+ - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r04c01] TV / Radio advert
+ [AD2r04c02] Magazine / Newspaper advert (offline)
+ [AD2r04c03] Online advert
+ [AD2r04c04] Social media advert
+ [AD2r04c05] Social media post (not from a friend)
+ [AD2r04c06] Influencer recommendation
+ [AD2r04c07] Friend/acquaintance recommendation online / social media
+ [AD2r04c08] Friend/acquaintance recommendation in person
+ [AD2r04c09] In a shop / retail stand
+ [AD2r04c10] From news coverage
+ [AD2r04c11] Advert outside (e.g. billboard, or screen)
+ [AD2r04c98] Somewhere else
+ [AD2r04c97] Don't know
+
+AD2r05: Paramount - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r05c01] TV / Radio advert
+ [AD2r05c02] Magazine / Newspaper advert (offline)
+ [AD2r05c03] Online advert
+ [AD2r05c04] Social media advert
+ [AD2r05c05] Social media post (not from a friend)
+ [AD2r05c06] Influencer recommendation
+ [AD2r05c07] Friend/acquaintance recommendation online / social media
+ [AD2r05c08] Friend/acquaintance recommendation in person
+ [AD2r05c09] In a shop / retail stand
+ [AD2r05c10] From news coverage
+ [AD2r05c11] Advert outside (e.g. billboard, or screen)
+ [AD2r05c98] Somewhere else
+ [AD2r05c97] Don't know
+
+AD2r06: NOW - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r06c01] TV / Radio advert
+ [AD2r06c02] Magazine / Newspaper advert (offline)
+ [AD2r06c03] Online advert
+ [AD2r06c04] Social media advert
+ [AD2r06c05] Social media post (not from a friend)
+ [AD2r06c06] Influencer recommendation
+ [AD2r06c07] Friend/acquaintance recommendation online / social media
+ [AD2r06c08] Friend/acquaintance recommendation in person
+ [AD2r06c09] In a shop / retail stand
+ [AD2r06c10] From news coverage
+ [AD2r06c11] Advert outside (e.g. billboard, or screen)
+ [AD2r06c98] Somewhere else
+ [AD2r06c97] Don't know
+
+AD2r07: Apple TV - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r07c01] TV / Radio advert
+ [AD2r07c02] Magazine / Newspaper advert (offline)
+ [AD2r07c03] Online advert
+ [AD2r07c04] Social media advert
+ [AD2r07c05] Social media post (not from a friend)
+ [AD2r07c06] Influencer recommendation
+ [AD2r07c07] Friend/acquaintance recommendation online / social media
+ [AD2r07c08] Friend/acquaintance recommendation in person
+ [AD2r07c09] In a shop / retail stand
+ [AD2r07c10] From news coverage
+ [AD2r07c11] Advert outside (e.g. billboard, or screen)
+ [AD2r07c98] Somewhere else
+ [AD2r07c97] Don't know
+
+AD2r08: Virgin Media - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r08c01] TV / Radio advert
+ [AD2r08c02] Magazine / Newspaper advert (offline)
+ [AD2r08c03] Online advert
+ [AD2r08c04] Social media advert
+ [AD2r08c05] Social media post (not from a friend)
+ [AD2r08c06] Influencer recommendation
+ [AD2r08c07] Friend/acquaintance recommendation online / social media
+ [AD2r08c08] Friend/acquaintance recommendation in person
+ [AD2r08c09] In a shop / retail stand
+ [AD2r08c10] From news coverage
+ [AD2r08c11] Advert outside (e.g. billboard, or screen)
+ [AD2r08c98] Somewhere else
+ [AD2r08c97] Don't know
+
+AD2r09: EE TV (formerly BT TV) - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r09c01] TV / Radio advert
+ [AD2r09c02] Magazine / Newspaper advert (offline)
+ [AD2r09c03] Online advert
+ [AD2r09c04] Social media advert
+ [AD2r09c05] Social media post (not from a friend)
+ [AD2r09c06] Influencer recommendation
+ [AD2r09c07] Friend/acquaintance recommendation online / social media
+ [AD2r09c08] Friend/acquaintance recommendation in person
+ [AD2r09c09] In a shop / retail stand
+ [AD2r09c10] From news coverage
+ [AD2r09c11] Advert outside (e.g. billboard, or screen)
+ [AD2r09c98] Somewhere else
+ [AD2r09c97] Don't know
+
+AD2r10: HBO - And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD2r10c01] TV / Radio advert
+ [AD2r10c02] Magazine / Newspaper advert (offline)
+ [AD2r10c03] Online advert
+ [AD2r10c04] Social media advert
+ [AD2r10c05] Social media post (not from a friend)
+ [AD2r10c06] Influencer recommendation
+ [AD2r10c07] Friend/acquaintance recommendation online / social media
+ [AD2r10c08] Friend/acquaintance recommendation in person
+ [AD2r10c09] In a shop / retail stand
+ [AD2r10c10] From news coverage
+ [AD2r10c11] Advert outside (e.g. billboard, or screen)
+ [AD2r10c98] Somewhere else
+ [AD2r10c97] Don't know
+
+AD3: And which service provider(s) advertising, if any, felt really interesting and relevant to you?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [AD3r01] Sky
+ [AD3r02] Netflix
+ [AD3r03] Amazon Prime Video
+ [AD3r04] Disney+
+ [AD3r05] Paramount
+ [AD3r06] NOW
+ [AD3r07] Apple TV
+ [AD3r08] Virgin Media
+ [AD3r09] EE TV (formerly BT TV)
+ [AD3r10] HBO
+ [AD3r97] Don't know
+ [AD3r99] None of these
+
+[SK1A]: To the best of your knowledge, please list what you think is included in the package if you took Sky TVs entry level subscription?
+Open text response
+
+SK7c1: 5 years' time - Looking to the future now. Which, if any, of the following do you expect to apply to you in 5 years' time and then in 10 years' time from today.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SK7r1c1] Expect to be living in $ {"the UK" if Country.r01 else "Ireland"}
+ [SK7r2c1] Expect to be living with a partner/spouse
+ [SK7r3c1] Expect to have children aged under 18 in the home
+ [SK7r4c1] Expect to have a lot more disposable income than today
+ [SK7r5c1] Expect to have a lot less disposable income than today
+ [SK7r6c1] Expect to have my own home (buying with mortgage or own outright)
+ [SK7r99c1] None of these
+
+SK7c2: 10 years' time - Looking to the future now. Which, if any, of the following do you expect to apply to you in 5 years' time and then in 10 years' time from today.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SK7r1c2] Expect to be living in $ {"the UK" if Country.r01 else "Ireland"}
+ [SK7r2c2] Expect to be living with a partner/spouse
+ [SK7r3c2] Expect to have children aged under 18 in the home
+ [SK7r4c2] Expect to have a lot more disposable income than today
+ [SK7r5c2] Expect to have a lot less disposable income than today
+ [SK7r6c2] Expect to have my own home (buying with mortgage or own outright)
+ [SK7r99c2] None of these
+
+SK1: Now for something a little different. Picture now how you expect your life to change over time. Thinking ahead 5 years and then 10 years. Do you think you would be more or less likely to subscribe to Sky TV than you would be today?
+Values: 1-6
+ 1=Much less likely
+ 2=Little less likely
+ 3=Just as likely
+ 4=Little more likely
+ 5=Much more likely
+ 6=Don't know
+ [SK1r01] 5 years' time
+ [SK1r02] 10 years' time
+
+[SK3]: If you became the main decision maker over which TV services to take tomorrow, how likely would you be to subscribe to Sky TV? Assume that your household didn't currently have Sky.
+Values: 0-10
+
+SK4: ? Assume that the service is similar to what it is today.
+Values: 0-10
+ [SK4r1] 5 years' time
+ [SK4r2] 10 years' time
+
+SK5c02: All reasons - And why do you feel you would be unlikely to be subscribing to Sky in 10 years' time?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SK5r1c02] Don't expect I would be able to afford it
+ [SK5r2c02] Poor value for money compared to other services
+ [SK5r3c02] Don't like services with long term contracts
+ [SK5r4c02] Don't expect to watch enough TV to justify the expense
+ [SK5r5c02] I expect to get enough of what I need from other services
+ [SK5r6c02] Just don't like Sky as a company
+ [SK5r7c02] Don't want to pay for any TV in the future
+ [SK5r8c02] Had bad experience with Sky before
+ [SK5r9c02] Sky seems old fashioned / will be out of date in 10 years
+ [SK5r10c02] Don't know what programmes Sky offers
+ [SK5r11c02] I expect other services will still have better programmes than Sky in 10 years
+ [SK5r12c02] Sky doesn't offer anything worth having beyond sport
+ [SK5r13c02] Expect to have things I will need to prioritise my spending on
+ [SK5r14c02] Expect to be watching less TV in 10 years' time
+ [SK5r15c02] Other TV services are better for families / larger households
+ [SK5r16c02] Expect all TVs will offer the functionality Sky has today as standard in future
+ [SK5r98c02] Other (please specify)
+
+SK5c01: Main reason - And why do you feel you would be unlikely to be subscribing to Sky in 10 years' time?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SK5r1c01] Don't expect I would be able to afford it
+ [SK5r2c01] Poor value for money compared to other services
+ [SK5r3c01] Don't like services with long term contracts
+ [SK5r4c01] Don't expect to watch enough TV to justify the expense
+ [SK5r5c01] I expect to get enough of what I need from other services
+ [SK5r6c01] Just don't like Sky as a company
+ [SK5r7c01] Don't want to pay for any TV in the future
+ [SK5r8c01] Had bad experience with Sky before
+ [SK5r9c01] Sky seems old fashioned / will be out of date in 10 years
+ [SK5r10c01] Don't know what programmes Sky offers
+ [SK5r11c01] I expect other services will still have better programmes than Sky in 10 years
+ [SK5r12c01] Sky doesn't offer anything worth having beyond sport
+ [SK5r13c01] Expect to have things I will need to prioritise my spending on
+ [SK5r14c01] Expect to be watching less TV in 10 years' time
+ [SK5r15c01] Other TV services are better for families / larger households
+ [SK5r16c01] Expect all TVs will offer the functionality Sky has today as standard in future
+ [SK5r98c01] Other (please specify)
+
+[SK5r98oe]: And why do you feel you would be unlikely to be subscribing to Sky in 10 years' time? - Other (please specify)
+Open text response
+
+SK6c02: All reasons - And why do you think you might be subscribing to Sky in 10 years' time ?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SK6r1c02] Expect to be able to afford it then
+ [SK6r2c02] Expect I will no longer be living with people who don't want Sky
+ [SK6r3c02] Enjoyed having Sky when I was growing up
+ [SK6r4c02] Sky is a good service for families / larger households
+ [SK6r5c02] Sky is a service I've always wanted to have
+ [SK6r6c02] Sky seems to be modernising its service so expect it will be the best all round TV service in 10 years
+ [SK6r7c02] Expect Sky programmes to be much better in the future
+ [SK6r8c02] To get access to kids programmes
+ [SK6r9c02] To be able to watch sport in different rooms in the home
+ [SK6r10c02] To get access to Sky Go
+ [SK6r11c02] Expect to be able to prioritise spending on Sky TV in 10 years
+ [SK6r12c02] Expect TV will be a more important part of my life in 10 years
+ [SK6r13c02] Expect others in the household will want Sky
+ [SK6r98c02] Other (please specify)
+
+SK6c01: Main reason - And why do you think you might be subscribing to Sky in 10 years' time ?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SK6r1c01] Expect to be able to afford it then
+ [SK6r2c01] Expect I will no longer be living with people who don't want Sky
+ [SK6r3c01] Enjoyed having Sky when I was growing up
+ [SK6r4c01] Sky is a good service for families / larger households
+ [SK6r5c01] Sky is a service I've always wanted to have
+ [SK6r6c01] Sky seems to be modernising its service so expect it will be the best all round TV service in 10 years
+ [SK6r7c01] Expect Sky programmes to be much better in the future
+ [SK6r8c01] To get access to kids programmes
+ [SK6r9c01] To be able to watch sport in different rooms in the home
+ [SK6r10c01] To get access to Sky Go
+ [SK6r11c01] Expect to be able to prioritise spending on Sky TV in 10 years
+ [SK6r12c01] Expect TV will be a more important part of my life in 10 years
+ [SK6r13c01] Expect others in the household will want Sky
+ [SK6r98c01] Other (please specify)
+
+[SK6r98oe]: And why do you think you might be subscribing to Sky in 10 years' time ? - Other (please specify)
+Open text response
+
+SK8: Thinking now about how you feel about Sky today compared to how you felt about them in the past please answer to what extent you agree or disagree with each of the following statements.
+Values: 1-6
+ 1=Strongly disagree
+ 2=Tend to disagree
+ 3=Neither agree nor disagree
+ 4=Tend to agree
+ 5=Strongly agree
+ 6=Don't know
+ [SK8r01] My impression of Sky has improved over time
+ [SK8r02] Sky is more relevant to me today than in the past
+ [SK8r03] Sky has more content I want to watch than in the past
+ [SK8r04] Sky feels like a more modern company today than it was before
+ [SK8r05] My desire to get Sky is much higher today than it was in the past
+
+S17: Which of the following services, if any, have you had access to previously? Please choose all the services you had access to previously even if it was a long time ago.
+Values: 1-4
+ 1=Subscribed to and paid towards previously
+ 2=Had access to, but did not pay towards previously
+ 3=Never had access to
+ 4=Currently have
+ [S17r01] Sky TV with Sky Broadband
+ [S17r02] Sky without Sky Broadband
+ [S17r03] Sky Broadband $ {"without Sky TV" if not S5.r1 else ""}
+ [S17r04] NOW
+
+S17A: And how long ago did your access to this service end?
+Values: 1-7
+ 1=Within the last 3 months
+ 2=Within the last 12 months
+ 3=1 to 2 years ago
+ 4=3 to 4 years ago
+ 5=5 to 10 years ago
+ 6=More than 10 years ago
+ 7=Can't recall
+ [S17Ar01] Sky TV and Sky Broadband
+ [S17Ar02] Sky TV
+ [S17Ar03] Sky Broadband
+ [S17Ar04] NOW
+
+S17B: From the following please select what life stage you were at when you first had access to Sky TV?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S17Br01] At home when I was growing up
+ [S17Br02] When I first moved out of home
+ [S17Br03] A little later once I/we could afford it
+ [S17Br04] A little later once I bought my own home
+ [S17Br05] After I started a family
+ [S17Br06] Later on in life
+ [S17Br98] A different point in life (please specify)
+
+[S17Br98oe]: From the following please select what life stage you were at when you first had access to Sky TV? - A different point in life (please specify)
+Open text response
+
+S17c: And now from the following please select what life stage you were at when you first paid, at least in part, for Sky TV?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S17cr01] When I lived at home
+ [S17cr02] When I first moved out of home
+ [S17cr03] A little later once I/we could afford it
+ [S17cr04] A little later once I bought my own home
+ [S17cr05] After I started a family
+ [S17cr06] Later on in life
+ [S17cr98] A different point in life (please specify)
+ [S17cr99] Never personally paid for Sky
+
+[S17cr98oe]: And now from the following please select what life stage you were at when you first paid, at least in part, for Sky TV? - A different point in life (please specify)
+Open text response
+
+[S17cOE]: In your own words please can you explain why you had not had Sky before this point?
+Open text response
+
+[A1]: Thinking now about a Sky TV subscription, at what price per month would you consider to be so low that you would question the quality of what was included and would be suspicious of what was in the small print of the offer? Please think about the cost of the basic Sky TV subscription only not including Sky Sports or Sky Cinema and not broadband services that you might take on top.
+Values: 0-200
+
+[A2]: And at what monthly price would you consider a Sky TV subscription to be a bargain — great value for money. Remember think about the cost of the basic Sky TV subscription only not including Sky Sports or Sky Cinema and not broadband services that you might take on top.
+Values: 0-200
+
+[A3]: And at what monthly price would you consider a Sky TV subscription to be starting to get expensive, so that it is not out of the question, but you would have to give it some thought before taking it? Remember think about the cost of the basic Sky TV subscription only not including Sky Sports or Sky Cinema and not broadband services that you might take on top.
+Values: 0-200
+
+[A4]: And at what monthly price would you consider a Sky TV subscription to be too expensive, so that you would no longer consider taking it. Remember think about the cost of the basic Sky TV subscription only not including Sky Sports or Sky Cinema and not broadband services that you might take on top.
+Values: 0-200
+
+[A5]: Still thinking about this product, how likely would you be to take a Sky TV subscription in the next 12 months at the following price: ?
+Values: 0-10
+
+[A6]: And how likely would you be to take a Sky TV subscription in the next 12 months at the following price ?
+Values: 0-10
+
+QTV: When you think of Sky what is your opinion on each of the following. For each please indicate whether this is a Sky strength and whether it is worth paying for?
+Values: 1-5
+ 1=This is aSky strength and is worth paying for
+ 2=This is aSky strength, but it is not worth paying for
+ 3=This is anot a Sky strength, but it is still worth paying for
+ 4=This is anot a Sky strength and it is not worth paying for
+ 5=Don't know enough to say
+ [QTVc01] Sky TV offers many shows and channels that are to Sky (and can't be accessed elsewhere)
+ [QTVc02] Sky TV helps you find something to watch from a variety of different providers, including other services you subscribe to (e.g. Sky channels, streaming services, free to air services etc…)
+ [QTVc03] Sky TV allows you to watch flexibly when and where you want
+
+[SG1]: How would you describe your knowledge of Sky Go?
+Values: 1-5
+ 1=Never heard of it
+ 2=I've only heard of the name
+ 3=I know roughly how it works but I don't know more than that
+ 4=I could describe the service to someone else
+ 5=I'm confident I know a lot about the service
+
+SG2: 
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SG2r99] No one in household uses/used Sky Go
+ [SG2r1] Myself
+ [SG2r2] Young adults (age 18-30) in the home
+ [SG2r3] Children in the home
+ [SG2r4] Other adults in the home
+ [SG2r5] Young adults (age 18-30) living out of the home
+ [SG2r6] Children living out of the home
+ [SG2r7] Other adults living out of the home
+ [SG2r97] Don't know
+
+SG3: 
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SG3r1] Don't know enough about Sky Go
+ [SG3r2] Don't know where to access Sky Go
+ [SG3r3] Don't have a device to use Sky Go on
+ [SG3r4] It was hard to find the programmes I wanted
+ [SG3r5] The app would be slow or crash
+ [SG3r6] Doesn't have the programmes I want to watch
+ [SG3r7] No logins available for me to use (others are using)
+ [SG3r8] Have no need to use
+ [SG3r9] Didn't realise it was available to Sky customers for free
+ [SG3r98] Something else (please specify)
+ [SG3r97] Don't know
+
+[SG3r98oe]: - Something else (please specify)
+Open text response
+
+SG4: 
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [SG4r1] To watch what I want when others are not interested (e.g. Sport)
+ [SG4r2] To watch what I want when the TV(s) is/ are in use by others
+ [SG4r3] To watch Sky TV when I'm staying away from home
+ [SG4r4] To watch Sky TV when I'm out and about
+ [SG4r5] To watch in a room without a TV (e.g. bedroom)
+ [SG4r98] Something else (please specify)
+ [SG4r97] Don't know
+
+[SG4r98oe]: - Something else (please specify)
+Open text response
+
+[SG5]: To what extent do you agree or disagree with the following statement: The Sky Go service means I/everyone in the household can get a lot of use from the Sky subscription.
+Values: 1-5
+ 1=Strongly disagree
+ 2=Tend to disagree
+ 3=Neither agree nor disagree
+ 4=Tend to agree
+ 5=Strongly agree
+
+[SG6]: To what extent do you agree or disagree with the following statement: The fact that the Sky Go service is included as standard with a Sky TV subscription makes me more likely to take Sky TV in the future.
+Values: 1-5
+ 1=Strongly disagree
+ 2=Tend to disagree
+ 3=Neither agree nor disagree
+ 4=Tend to agree
+ 5=Strongly agree
+
+randomRowsQCS1: Hidden to randomize rows and columns
+Values: 1-2
+ 1=1st
+ 2=2nd
+ [randomRowsQCS1r01] 1
+ [randomRowsQCS1r02] 2
+ [randomRowsQCS1r03] 3
+ [randomRowsQCS1r04] 4
+ [randomRowsQCS1r05] 5
+ [randomRowsQCS1r06] 6
+ [randomRowsQCS1r07] 7
+ [randomRowsQCS1r08] 8
+ [randomRowsQCS1r09] 9
+ [randomRowsQCS1r10] 10
+
+QCS1_1: To what extent do you agree or disagree with the following statements regarding TV and TV services?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS1_1r01] I find new content to watch based on recommendations from family and friends
+ [QCS1_1r02] I find new content to watch based on social media recommendations
+ [QCS1_1r03] I often share TV service accounts with people I know to save money
+ [QCS1_1r04] What I choose to watch says a lot about my personality and interests
+ [QCS1_1r05] I'm willing to pay more for a TV service that allows me to see content from different TV services all in one place so it is easy to decide what to watch
+ [QCS1_1r06] I always watch new TV shows/films to stay up to date with the latest content
+ [QCS1_1r07] With so many streaming TV services available today traditional pay TV services (e.g. Sky TV, Virgin Media) feel irrelevant
+ [QCS1_1r08] I'm willing to pay more for a TV service that offers something for everyone using the service (e.g. a range of genres and types of content i.e. TV shows, movies and sport)
+ [QCS1_1r09] I like platforms that allow user profiles for personalised watching
+ [QCS1_1r10] With the range of unofficial sources for content available I'm less likely to pay for TV than before. By unofficial sources we mean watching content through sources other than official live TV, paid TV services, streaming services or the cinema.
+
+QCS1_2: To what extent do you agree or disagree with the following statements regarding TV and TV services?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS1_2r01] I find new content to watch based on recommendations from family and friends
+ [QCS1_2r02] I find new content to watch based on social media recommendations
+ [QCS1_2r03] I often share TV service accounts with people I know to save money
+ [QCS1_2r04] What I choose to watch says a lot about my personality and interests
+ [QCS1_2r05] I'm willing to pay more for a TV service that allows me to see content from different TV services all in one place so it is easy to decide what to watch
+ [QCS1_2r06] I always watch new TV shows/films to stay up to date with the latest content
+ [QCS1_2r07] With so many streaming TV services available today traditional pay TV services (e.g. Sky TV, Virgin Media) feel irrelevant
+ [QCS1_2r08] I'm willing to pay more for a TV service that offers something for everyone using the service (e.g. a range of genres and types of content i.e. TV shows, movies and sport)
+ [QCS1_2r09] I like platforms that allow user profiles for personalised watching
+ [QCS1_2r10] With the range of unofficial sources for content available I'm less likely to pay for TV than before. By unofficial sources we mean watching content through sources other than official live TV, paid TV services, streaming services or the cinema.
+
+QCS1: To what extent do you agree or disagree with the following statements regarding TV and TV services?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS1r01] I find new content to watch based on recommendations from family and friends
+ [QCS1r02] I find new content to watch based on social media recommendations
+ [QCS1r03] I often share TV service accounts with people I know to save money
+ [QCS1r04] What I choose to watch says a lot about my personality and interests
+ [QCS1r05] I'm willing to pay more for a TV service that allows me to see content from different TV services all in one place so it is easy to decide what to watch
+ [QCS1r06] I always watch new TV shows/films to stay up to date with the latest content
+ [QCS1r07] With so many streaming TV services available today traditional pay TV services (e.g. Sky TV, Virgin Media) feel irrelevant
+ [QCS1r08] I'm willing to pay more for a TV service that offers something for everyone using the service (e.g. a range of genres and types of content i.e. TV shows, movies and sport)
+ [QCS1r09] I like platforms that allow user profiles for personalised watching
+ [QCS1r10] With the range of unofficial sources for content available I'm less likely to pay for TV than before. By unofficial sources we mean watching content through sources other than official live TV, paid TV services, streaming services or the cinema.
+
+QHB1: Thinking of a typical week how often would you do each of the following?
+Values: 1-7
+ 1=More than once a day
+ 2=Once a day
+ 3=4-6 times a week
+ 4=2-3 times a week
+ 5=Once a week
+ 6=Less often
+ 7=Never
+ [QHB1r01] Watch live TV
+ [QHB1r02] Watch programmes that you have recorded
+ [QHB1r03] Watch TV on demand (e.g. Catch-up episodes, box sets or films)
+ [QHB1r04] Watch Streaming services (e.g Netflix, Prime)
+ [QHB1r05] Watch short online clips of no longer than a minute, often one after another (e.g. YouTube shorts, Instagram reels, Tik Tok)
+ [QHB1r06] Watch longer videos online (e.g. YouTube, Facebook, Tik Tok)
+ [QHB1r07] Listen to Podcasts
+ [QHB1r08] Listen to music online (e.g Spotify, iTunes)
+ [QHB1r09] Listen to the radio
+ [QHB1r10] Watch live news on TV
+ [QHB1r11] Watch live sport on TV
+ [QHB1r12] Use websites, apps or a device that allow you to watch paid content online for free
+
+QTVW: To what extent do you agree or disagree with the following statements regarding watching TV?
+Values: 1-8
+ 1=1 Strongly disagree
+ 2=2
+ 3=3
+ 4=4 Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7Strongly agree
+ 8=Don't know
+ [QTVWr01] Watching TV together is an important family/household activity
+ [QTVWr02] I enjoy talking about my favourite shows
+ [QTVWr03] Some TV programmes are just better to watch on the big screen
+ [QTVWr04] I often discuss the shows I watch on social media
+ [QTVWr05] To get the best programmes you have to pay for them
+ [QTVWr06] I don't have time to waste on TV that isn't great
+ [QTVWr07] I'm satisfied with the amount of TV content I have access to
+ [QTVWr08] There are so many services offering TV content these days it's hard to know which ones to get
+ [QTVWr09] Trying to find TV shows I want to watch is a hassle
+ [QTVWr10] Trying to find movies I want to watch is a hassle
+
+[QTOFF1]: Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+Values: 1-7
+ 1=1 – I prefer to take all the TV services I want from one company with one bill
+ 2=2
+ 3=3
+ 4=4 - Neither/No Preference
+ 5=5
+ 6=6
+ 7=7 - I prefer the flexibility of taking and dropping TV services from different providers depending on what TV programmes and movies they have available
+
+[QTOFF3]: Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+Values: 1-7
+ 1=1 – I am interested in watching specific shows and I change my TV services based on whether they have them or not
+ 2=2
+ 3=3
+ 4=4 - Neither/No Preference
+ 5=5
+ 6=6
+ 7=7 – I need access to everything that's out there, so when I or my household want to watch something it will be there
+
+[QTOFF4]: Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+Values: 1-7
+ 1=1 - I'm willing to pay more for a service which brings all the TV programmes and movies I like together into one easy to use service on my TV
+ 2=2
+ 3=3
+ 4=4 - Neither/No Preference
+ 5=5
+ 6=6
+ 7=7 - I'm happy to switch between different devices/services to find the TV programmes/movies I'm looking for, especially if it saves me money
+
+[QTOFF5]: Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+Values: 1-7
+ 1=1 - I would rather sign up to a TV service that gives access to just on demand content
+ 2=2
+ 3=3
+ 4=4 - Neither/No Preference
+ 5=5
+ 6=6
+ 7=7 - I would rather sign up to a TV service that gives access to all channels and services
+
+[QTOFF6]: Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+Values: 1-7
+ 1=1 - I'm only interested in watching programmes on my main TV
+ 2=2
+ 3=3
+ 4=4 - Neither/No Preference
+ 5=5
+ 6=6
+ 7=7 - I am willing to pay extra so that I am able watch programmes on multiple screens and different devices
+
+[QTOFF7]: Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+Values: 1-7
+ 1=1 - I don't want to pay for extra features or functionality e.g. voice search, picture and sound quality
+ 2=2
+ 3=3
+ 4=4 - Neither/No Preference
+ 5=5
+ 6=6
+ 7=7 - I would be prepared to pay for enhanced product features or functionality, to improve my TV viewing experience e.g. voice search, picture and sound quality
+
+[QTOFF8]: Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+Values: 1-7
+ 1=1 - I prefer to watch full length TV episodes/films
+ 2=2
+ 3=3
+ 4=4 - Neither/No Preference
+ 5=5
+ 6=6
+ 7=7 - I prefer to watch short clips
+
+QCS2_1: To what extent do you agree or disagree with the following statements regarding TV and TV services?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4 - Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS2_1r01] I am more likely to consider a TV service if it has exclusive content you can't find elsewhere
+ [QCS2_1r02] The ability to download content to watch offline is important to me
+ [QCS2_1r03] I am willing to pay more for services that adapt to my viewing habits and recommend relevant content
+ [QCS2_1r04] I like TV services that offer lots of content from a unique genre or category (e.g. true crime, anime, horror etc)
+ [QCS2_1r05] I prefer to watch all episodes of a season at once (rather than watch something over weeks/months)
+ [QCS2_1r06] I would be very interested in a TV service that bundles multiple streaming and TV services together into one package and one bill
+ [QCS2_1r07] I'm more likely to watch TV on a laptop, tablet or mobile than on a TV set
+ [QCS2_1r08] There are certain types of TV content that is best when watching together
+ [QCS2_1r09] It's essential that the TV service I subscribe to also has a great app experience for me to watch content on
+ [QCS2_1r10] The amount of UHD/4K content available is important when I consider a TV service
+
+QCS2_2: To what extent do you agree or disagree with the following statements regarding TV and TV services?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4 - Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS2_2r01] I am more likely to consider a TV service if it has exclusive content you can't find elsewhere
+ [QCS2_2r02] The ability to download content to watch offline is important to me
+ [QCS2_2r03] I am willing to pay more for services that adapt to my viewing habits and recommend relevant content
+ [QCS2_2r04] I like TV services that offer lots of content from a unique genre or category (e.g. true crime, anime, horror etc)
+ [QCS2_2r05] I prefer to watch all episodes of a season at once (rather than watch something over weeks/months)
+ [QCS2_2r06] I would be very interested in a TV service that bundles multiple streaming and TV services together into one package and one bill
+ [QCS2_2r07] I'm more likely to watch TV on a laptop, tablet or mobile than on a TV set
+ [QCS2_2r08] There are certain types of TV content that is best when watching together
+ [QCS2_2r09] It's essential that the TV service I subscribe to also has a great app experience for me to watch content on
+ [QCS2_2r10] The amount of UHD/4K content available is important when I consider a TV service
+
+QCS2: To what extent do you agree or disagree with the following statements regarding TV and TV services?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4 - Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS2r01] I am more likely to consider a TV service if it has exclusive content you can't find elsewhere
+ [QCS2r02] The ability to download content to watch offline is important to me
+ [QCS2r03] I am willing to pay more for services that adapt to my viewing habits and recommend relevant content
+ [QCS2r04] I like TV services that offer lots of content from a unique genre or category (e.g. true crime, anime, horror etc)
+ [QCS2r05] I prefer to watch all episodes of a season at once (rather than watch something over weeks/months)
+ [QCS2r06] I would be very interested in a TV service that bundles multiple streaming and TV services together into one package and one bill
+ [QCS2r07] I'm more likely to watch TV on a laptop, tablet or mobile than on a TV set
+ [QCS2r08] There are certain types of TV content that is best when watching together
+ [QCS2r09] It's essential that the TV service I subscribe to also has a great app experience for me to watch content on
+ [QCS2r10] The amount of UHD/4K content available is important when I consider a TV service
+
+CHP1: Below are different elements that can form part of a TV service. Imagine you have 100 chips to spend, next to each element please enter how many chips you would be willing to spend to get a TV service which included that element. If it isn't important to you at all you can enter 0 next to it.
+Values: 0-100
+ [CHP1r01] Content: The TV content you want to watch
+ [CHP1r02] Aggregation: Ability to get recommendations of the best content from all your apps and services all in one place
+ [CHP1r03] Flexibility: A flexible service which allows you to change your subscription whenever you want and doesn't lock you down to a long contract
+ [CHP1r04] Functionality: A service which offers additional functionality, such as voice control, ability to watch on multiple devices, pause & rewind live TV etc…
+
+QWTPA: How much extra, if anything, would you be willing to pay for a TV service that has the following feature or service?
+Values: 1-9
+ 1=I would expect this to be available as a standard feature when subscribing to the service
+ 2=Wouldn't pay anything for this
+ 3=$ {"£" if Country.r01 else "€"}1 a month
+ 4=$ {"£" if Country.r01 else "€"}2 a month
+ 5=$ {"£" if Country.r01 else "€"}3 a month
+ 6=$ {"£" if Country.r01 else "€"}4 a month
+ 7=$ {"£" if Country.r01 else "€"}5 a month
+ 8=$ {"£" if Country.r01 else "€"}10 a month
+ 9=More than $ {"£" if Country.r01 else "€"}10
+ [QWTPAr01] Has a single easy-to-navigate homepage that brings together content from all providers
+ [QWTPAr02] Integrates all my different TV and broadband subscriptions into one monthly bill
+ [QWTPAr03] That you can control with your voice
+ [QWTPAr04] That allows you to pause and rewind live TV
+ [QWTPAr05] Allows you to record live TV
+ [QWTPAr06] Ability to watch your subscription on an app when you're away from the main screen
+ [QWTPAr07] The highest quality picture- so you experience the best possible picture quality
+
+QWTPB: How much would you be willing to pay to get access to the TV shows available on the following services? Just think about access to the TV shows themselves; not any additional functionality that might come with the service.
+Values: 1-12
+ 1=Not willing to pay anything extra at all
+ 2=$ {"£" if Country.r01 else "€"}1 a month
+ 3=$ {"£" if Country.r01 else "€"}2 a month
+ 4=$ {"£" if Country.r01 else "€"}3 a month
+ 5=$ {"£" if Country.r01 else "€"}4 a month
+ 6=$ {"£" if Country.r01 else "€"}5 a month
+ 7=$ {"£" if Country.r01 else "€"}6 a month
+ 8=$ {"£" if Country.r01 else "€"}7 a month
+ 9=$ {"£" if Country.r01 else "€"}8 a month
+ 10=$ {"£" if Country.r01 else "€"}9 a month
+ 11=$ {"£" if Country.r01 else "€"}10 a month
+ 12=More than $ {"£" if Country.r01 else "€"}10
+ [QWTPBr1] Sky TV
+ [QWTPBr2] Netflix
+ [QWTPBr3] Disney+
+
+QCS3_1: To what extent do you agree or disagree with the following statements?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4 - Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS3_1r01] I prefer services with advanced features like voice search
+ [QCS3_1r02] It's important for me to be able to switch seamlessly from one device to another when watching TV
+ [QCS3_1r03] I'm more interested in other media entertainment (e.g. video gaming, music, radio, podcasts) than watching TV
+ [QCS3_1r04] Content on YouTube feels more relatable than on TV
+ [QCS3_1r05] Social media is the best place to find the most talked about shows/films
+ [QCS3_1r06] I'm willing to tolerate advertising if I can get a cheaper price for a TV service
+ [QCS3_1r07] I will only pay for a TV service if I know they have excellent customer service
+ [QCS3_1r08] I couldn't live without TV
+ [QCS3_1r09] I would prefer a TV service that also includes non-TV content e.g. cloud gaming, access to music and fitness apps, etc
+ [QCS3_1r10] Watching things on social media helps me unwind after a long day
+
+QCS3_2: To what extent do you agree or disagree with the following statements?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4 - Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS3_2r01] I prefer services with advanced features like voice search
+ [QCS3_2r02] It's important for me to be able to switch seamlessly from one device to another when watching TV
+ [QCS3_2r03] I'm more interested in other media entertainment (e.g. video gaming, music, radio, podcasts) than watching TV
+ [QCS3_2r04] Content on YouTube feels more relatable than on TV
+ [QCS3_2r05] Social media is the best place to find the most talked about shows/films
+ [QCS3_2r06] I'm willing to tolerate advertising if I can get a cheaper price for a TV service
+ [QCS3_2r07] I will only pay for a TV service if I know they have excellent customer service
+ [QCS3_2r08] I couldn't live without TV
+ [QCS3_2r09] I would prefer a TV service that also includes non-TV content e.g. cloud gaming, access to music and fitness apps, etc
+ [QCS3_2r10] Watching things on social media helps me unwind after a long day
+
+QCS3: To what extent do you agree or disagree with the following statements regarding TV and TV services?
+Values: 1-8
+ 1=1 - Strongly disagree
+ 2=2
+ 3=3
+ 4=4 - Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7 - Strongly agree
+ 8=Don't know
+ [QCS3r01] I prefer services with advanced features like voice search
+ [QCS3r02] It's important for me to be able to switch seamlessly from one device to another when watching TV
+ [QCS3r03] I'm more interested in other media entertainment (e.g. video gaming, music, radio, podcasts) than watching TV
+ [QCS3r04] Content on YouTube feels more relatable than on TV
+ [QCS3r05] Social media is the best place to find the most talked about shows/films
+ [QCS3r06] I'm willing to tolerate advertising if I can get a cheaper price for a TV service
+ [QCS3r07] I will only pay for a TV service if I know they have excellent customer service
+ [QCS3r08] I couldn't live without TV
+ [QCS3r09] I would prefer a TV service that also includes non-TV content e.g. cloud gaming, access to music and fitness apps, etc
+ [QCS3r10] Watching things on social media helps me unwind after a long day
+
+[BB1]: Which of these providers, if any, is currently your main home broadband service provider?
+Values: 1-18
+ 1=Sky
+ 2=Virgin Media
+ 3=BT
+ 4=TalkTalk
+ 5=EE
+ 6=Plusnet
+ 7=O2
+ 8=Vodafone
+ 9=NOW Broadband
+ 10=Utility Warehouse
+ 11=Shell Energy (formerly Post Office)
+ 12=Eir
+ 13=Magnet
+ 14=Imagine
+ 15=Digiweb
+ 16=Pure Telecom
+ 17=Other (please specify)
+ 18=I don't have broadband at home
+
+[BB1r98oe]: Which of these providers, if any, is currently your main home broadband service provider? - Other (please specify)
+Open text response
+
+[BB2]: Do you currently receive a fibre broadband package from your current provider?
+Values: 1-3
+ 1=Yes
+ 2=No
+ 3=Don't know
+
+[BB3]: You mentioned that your household is currently using fibre broadband. Which type of fibre broadband & download speeds do you take from your provider?
+Values: 1-4
+ 1=Average download speeds below 35 Mbps
+ 2=Average download speeds 35-99 Mbps (often called Superfast broadband)
+ 3=Average download speeds of 100 Mbps or higher (often called Ultrafast broadband)
+ 4=Don't know
+
+[BB4]: What type of Ultrafast broadband does your household currently have?
+Values: 1-6
+ 1=100 to 199 Mbps
+ 2=200 to 299 Mbps
+ 3=300 to 499 Mbps
+ 4=500 to 899 Mbps
+ 5=900 Mbps or higher
+ 6=Don't know
+
+[BB_DUMMY]: BB speeds
+Values: 1-8
+ 1=Below 35 Mbps
+ 2=35 to 99 Mbps
+ 3=100 to 199 Mbps
+ 4=200 to 299 Mbps
+ 5=300 to 499 Mbps
+ 6=500 to 899 Mbps
+ 7=900 Mbps or higher
+ 8=Don't know
+
+[MO1]: Which of these providers, if any, is currently your main mobile provider of your personal mobile phone?
+Values: 1-23
+ 1=Sky Mobile
+ 2=Three
+ 3=Vodafone
+ 4=EE
+ 5=Virgin Mobile
+ 6=BT Mobile
+ 7=TalkTalk Mobile
+ 8=Tesco Mobile
+ 9=GiffGaff
+ 10=iD Mobile
+ 11=Plusnet
+ 12=Smarty
+ 13=Voxi
+ 14=O2
+ 15=Eir
+ 16=Virgin Media
+ 17=Fortyeight
+ 18=Clear Mobile
+ 19=GoMo
+ 20=An Post Mobile
+ 21=Lycamobile
+ 22=Other (please specify)
+ 23=I don't use a mobile phone
+
+[MO1r98oe]: Which of these providers, if any, is currently your main mobile provider of your personal mobile phone? - Other (please specify)
+Open text response
+
+PS1a: We're now going to show you some personality traits. Please select all those traits which you feel best describe yourself. Feel free to select as many as you like.
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [PS1ar01] Trendy
+ [PS1ar02] Serious
+ [PS1ar03] Reliable
+ [PS1ar04] Principled
+ [PS1ar05] Passionate
+ [PS1ar06] Original
+ [PS1ar07] Intelligent
+ [PS1ar08] Idealistic
+ [PS1ar09] Honest
+ [PS1ar10] Fun
+ [PS1ar11] Friendly
+ [PS1ar99] None of these
+
+[D2]: Which of the following best describes your home?
+Values: 1-6
+ 1=Detatched house
+ 2=Semi-detached house
+ 3=Terraced house
+ 4=Flat
+ 5=Bungalow
+ 6=Other
+
+[D3]: Which of the following best describe your living circumstances?
+Values: 1-6
+ 1=Renting
+ 2=Buying home with a mortgage
+ 3=Own home outright
+ 4=Pay towards costs
+ 5=Stay for free
+ 6=Other
+
+[D4]: And when is your current rental contract expiring?
+Values: 1-7
+ 1=0-3 months
+ 2=4-6 months
+ 3=7-12 months
+ 4=13–18 months
+ 5=18-24 months
+ 6=More than 24 months
+ 7=Other
+
+[FP2]: How willing are you to pay for TV?
+Values: 1-7
+ 1=If I didn't have to I would never pay for TV, not even the license fee. 1
+ 2=2
+ 3=3
+ 4=4
+ 5=5
+ 6=6
+ 7=I would pay whatever it takes, within reason, to get the right TV service7
+
+[L17]: How willing are you to commit to a 12-month contract for your ideal TV service?
+Values: 1-7
+ 1=I'd only ever considerPay as You Go 1
+ 2=2
+ 3=3
+ 4=4
+ 5=5
+ 6=6
+ 7=I'd be willing to commit to a 12-month contract7
+
+FP3: Please tell us the extent to which you agree or disagree with each of the following statements.
+Values: 1-7
+ 1=1 Definitely disagree
+ 2=2
+ 3=3
+ 4=4 Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7Definitely agree
+ [FP3r1] I am happy to take up a TV service for a short time such as Netflix or NOW to watch a particular programme
+ [FP3r2] Apart from sports and news, I rarely watch live TV
+ [FP3r3] I prefer to watch my favourite programmes live
+ [FP3r4] I prefer to watch my favourite programmes from recordings on my PVR (e.g. Sky+ Box, $ {"TiVo" if Country.r01 else "Virgin Horizon Box"})
+ [FP3r5] I try to never miss my favourite TV programmes
+ [FP3r6] Being able to access related sites and apps while watching TV improves my viewing experience
+
+L19: Please tell us the extent to which you agree or disagree with each of the following statements about broadband.
+Values: 1-7
+ 1=1 Definitely disagree
+ 2=2
+ 3=3
+ 4=4 Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7 Definitely agree
+ [L19r1] I'd rather do without my TV service than my broadband
+ [L19r2] I prefer to take broadband and TV services from one provider if possible (rather than having different services from a variety of providers)
+ [L19r3] Having broadband at home is important for my job
+ [L19r4] I choose my broadband provider firstly based on the TV I want
+ [L19r5] In this day and age, I cannot manage without the internet
+ [L19r6] I'd consider a broadband service that didn't come with a home telephone service
+ [L19r7] When I'm at home, it's important for me to connect my mobile phone to my WiFi
+
+L20: And to what extent do you agree or disagree with each of these statements about broadband companies and services?
+Values: 1-7
+ 1=1Definitely disagree
+ 2=2
+ 3=3
+ 4=4Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7Definitely agree
+ [L20r1] Price is the most important thing when choosing my broadband provider
+ [L20r2] I don't need a home phone as I have a mobile phone
+ [L20r3] My home broadband needs to allow lots of people/devices to be connected at once
+ [L20r4] I would use my home phone more if I didn't get nuisance calls
+
+L7: Please indicate the extent to which you agree or disagree with each of the following statements.
+Values: 1-7
+ 1=1Definitely disagree
+ 2=2
+ 3=3
+ 4=4Neither agree nor disagree
+ 5=5
+ 6=6
+ 7=7DefinitelyAgree
+ [L7r1] I love to buy new gadgets and appliances
+ [L7r2] It is important my household is equipped with the latest technology
+ [L7r3] I prefer to spend a quiet evening at home than go out
+ [L7r4] I consider myself to be a creative person
+ [L7r5] I enjoy spending time with my family
+ [L7r6] It's worth spending money on the nice things in life
+ [L7r7] I am a TV addict
+ [L7r8] It is important to be well informed about things
+ [L7r9] I feel bombarded by advertising
+ [L7r10] I tend to spend money without thinking
+ [L7r11] I like to follow a well organised routine
+ [L7r12] I am usually the first amongst friends to know what's going on
+ [L7r13] I like taking risks
+ [L7r14] How I spend my time is more important than the money I make
+ [L7r15] I tend to spend a lot of time researching the best deals before choosing a new product or service
+ [L7r16] Paying a lot more for a big name brand is a waste of money
+
+TPSeg: Please tell us the extent to which you agree or disagree with each of these statements about broadband.
+Values: 1-5
+ 1=Definitely disagree
+ 2=Tend to disagree
+ 3=Neither agree nor disagree
+ 4=Tend to agree
+ 5=Definitely agree
+ [TPSegL18_r1] I am happy to take up a TV service for a short time such as Netflix or NOW TV to watch a particular programme
+ [TPSegL18_r6] Being able to access related sites and apps while watching TV improves my viewing experience
+ [TPSegL18_r2] Apart from sports and news, I rarely watch live TV
+ [TPSegL18_r3] I prefer to watch my favourite programmes live
+ [TPSegL18_r4] I prefer to watch my favourite programmes from recordings on my PVR (e.g. Sky+ Box, TiVo)
+ [TPSegL18_r5] I try to never miss my favourite TV programmes
+ [TPSegL19_r3] Having broadband at home is important for my job
+ [TPSegL20_r2] I don't need a home phone as I have a mobile phone
+ [TPSegL19_r5] In this day and age, I cannot manage without the internet
+ [TPSegL19_r4] I choose my broadband provider firstly based on the TV I want
+ [TPSegL19_r1] I'd rather do without my TV service than my broadband
+ [TPSegL19_r2] I prefer to take broadband and TV services from one provider if possible (rather than having different services from a variety of providers)
+ [TPSegL20_r1] Price is the most important thing when choosing my broadband provider
+ [TPSegL16_0] How willing are you to pay for TV?
+ [TPSegL17_0] How willing are you to commit to a 12-month contract for your ideal TV service?
+
+[TriplePlaySegments]: Hidden to keep the Triple Play Segments
+Values: 1-10
+ 1=Seg1 - Speak & Surf (Comms only)
+ 2=Seg2 - Speak & Surf (Comms & TV)
+ 3=Seg3 - Streamers First (Uncommitted)
+ 4=Seg4 - Streamers First (Committed)
+ 5=Seg5 - TV Lovers (TV First)
+ 6=Seg6 - TV Lovers (TV Bundlers)
+ 7=Seg7 - Triple Play (At Home)
+ 8=Seg8 - Triple Play (Everywhere)
+ 9=Low Standard Deviation
+ 10=Missing Data
+
+[ConsumersSegments]: Hidden to keep the Triple Play Segments
+Values: 1-6
+ 1=Seg1 - Freedom Seekers
+ 2=Seg2 - Streamers First
+ 3=Seg3 - Best of Everything
+ 4=Seg4 - Classic Big Screeners
+ 5=Seg5 - Speak & Surf
+ 6=No segment defined
+
+SegmentCalculatedTP: Segment
+Open text response
+ [SegmentCalculatedTPr01] Seg1 - Speak & Surf (Comms only)
+ [SegmentCalculatedTPr02] Seg2 - Speak & Surf (Comms & TV)
+ [SegmentCalculatedTPr03] Seg3 - Streamers First (Uncommitted)
+ [SegmentCalculatedTPr04] Seg4 - Streamers First (Committed)
+ [SegmentCalculatedTPr05] Seg5 - TV Lovers (TV First)
+ [SegmentCalculatedTPr06] Seg6 - TV Lovers (TV Bundlers)
+ [SegmentCalculatedTPr07] Seg7 - Triple Play (At Home)
+ [SegmentCalculatedTPr08] Seg8 - Triple Play (Everywhere)
+ [SegmentCalculatedTPr98] Low Standard Deviation
+ [SegmentCalculatedTPr99] Missing Data
+
+DevMeansProbTP: Sample Deviation and Mean
+Open text response
+ [DevMeansProbTPStdevBatt1] Stdev Batt 1
+ [DevMeansProbTPStdevBatt2] Stdev Batt 2
+ [DevMeansProbTPMeanBatt1] Mean Batt 1
+ [DevMeansProbTPMeanBatt2] Mean Batt 2
+ [DevMeansProbTPProbability] Probability
+ [DevMeansProbTPVersion] Version
+
+[F7]: Which of the following best describes your current living arrangement?
+Values: 1-6
+ 1=Live with partner
+ 2=Live with relatives
+ 3=Live with friends
+ 4=Share with others
+ 5=I live alone
+ 6=I prefer not to say
+
+[DHOUSEHOLD]: Dummy to allocate house sharing
+Values: 1-4
+ 1=Single
+ 2=Families
+ 3=Sharers
+ 4=Unknown
+
+[G1]: How many adults, aged 18 or over, including yourself, are there in your household?
+Values: 1-10
+
+G6: And what age(s) are they?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [G6r01] 18-24
+ [G6r02] 25-34
+ [G6r03] 35-44
+ [G6r04] 45-54
+ [G6r05] 55-64
+ [G6r06] 65-74
+ [G6r07] 75+
+ [G6r97] Prefer not to say
+
+[G2]: What is your annual household income before tax?
+Values: 1-10
+ 1=Less than £15,000
+ 2=£15,001-£20,000
+ 3=£20,001-£30,000
+ 4=£30,001-£40,000
+ 5=£40,001-£50,000
+ 6=£50,001-£75,000
+ 7=£75,001-£100,000
+ 8=Over £100,000
+ 9=I don't know
+ 10=I'd rather not say
+
+[K5]: Are there any children aged under 18 in your household or are you regularly visited (i.e. at least once a week) by children under 18 (e.g. grandchildren, children you care for etc.)?
+Values: 1-3
+ 1=Yes
+ 2=No
+ 3=Prefer not to say
+
+K6: And what age(s) are they?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [K6r01] 0-2 years
+ [K6r02] 3-5 years
+ [K6r03] 6-9 years
+ [K6r04] 10-14 years
+ [K6r05] 15-17 years
+
+[M5]: Which of the following best describes your occupation? If you are now retired with a private pension, please state your previous occupation.
+Values: 1-12
+ 1=Semi or unskilled manual work (e.g. Manual workers, all apprentices to be skilled trades, Caretaker, Park keeper, non-HGV driver, shop assistant)
+ 2=Skilled manual worker (e.g. Skilled Bricklayer, Carpenter, Plumber, Painter, Bus/Ambulance Driver, HGV driver, AA patrolman, pub/bar worker, etc)
+ 3=Supervisory or clerical/junior managerial/professional/administrative (e.g. Office worker, Student Doctor, Foreman with 25+ employees, salesperson, etc)
+ 4=Intermediate managerial/professional/administrative (e.g. Newly qualified (under 3 years) doctor, Solicitor, Board director small organisation, middle manager in large organisation, principle officer in civil service/local government)
+ 5=Higher managerial/professional/administrative (e.g. Established doctor, Solicitor, Board Director in a large organisation (200+ employees, top level civil servant/public service employee))
+ 6=Student
+ 7=Casual worker – not in permanent employment
+ 8=Housewife/Homemaker
+ 9=Retired and living on state pension
+ 10=Unemployed or not working due to long-term sickness
+ 11=Full-time carer of other household member
+ 12=I prefer not to say
+
+[DUMMY_M5]: DUMMY FOR M5
+Values: 1-6
+ 1=A = Senior managerial or professional
+ 2=B = Intermediate managerial
+ 3=C1 = Supervisor; clerical etc/Student
+ 4=C2 = Manual Worker (with qualifications)
+ 5=D = Manual Worker (w/o quals)
+ 6=E = Unemployed/Retired
+
+[endTime]: End time after last question
+Values: -99999-999999
+
+[vlist]: Participant source
+Values: 1-5
+ 1=Sky (list=1)
+ 2=Dynata UK (list=2)
+ 3=Dynata ROI (list=3)
+ 4=NOW TV (list=4)
+ 5=Stakeholder with no logins testing (list=5)
+
+[qtime]: Total Interview Time
+Values: -99999-999999
+
+[vos]: Operating System
+Values: 1-16
+ 1=Windows 95
+ 2=Windows 98
+ 3=Windows 8
+ 4=Windows 10
+ 5=Windows 7
+ 6=Windows Vista
+ 7=Windows 2003
+ 8=Windows XP
+ 9=Windows 2000
+ 10=Microsoft Windows NT 4.0
+ 11=Windows ME
+ 12=iPhone/iPad
+ 13=Mac OS X or older
+ 14=Other Mobile
+ 15=Linux, UNIX
+ 16=Other
+
+[vosr15oe]: Operating System - Other
+Open text response
+
+[vbrowser]: Browser
+Values: 1-16
+ 1=Opera
+ 2=MS Edge
+ 3=MSIE 11
+ 4=MSIE 10.x
+ 5=MSIE 9.x
+ 6=MSIE 8.x
+ 7=MSIE 7.x
+ 8=MSIE 6.x
+ 9=MSIE 5.x or older
+ 10=Chrome
+ 11=Safari
+ 12=Firefox
+ 13=Other Mozilla or Netscape
+ 14=Mobile
+ 15=Text Browser
+ 16=Other
+
+[vbrowserr15oe]: Browser - Other
+Open text response
+
+[vmobiledevice]: Mobile device category
+Values: 1-5
+ 1=Smartphone
+ 2=Featurephone
+ 3=Tablet
+ 4=Other mobile
+ 5=Desktop
+
+[vmobileos]: Mobile OS
+Values: 1-6
+ 1=iOS
+ 2=Android
+ 3=Symbian
+ 4=Windows Phone
+ 5=Blackberry
+ 6=Other/Desktop
+
+[start_date]: Survey start time
+Open text response
+
+[vdropout]: Last seen question
+Values: 1-138
+ 1=(intro) Comment element
+ 2=(S1) What is your gender?
+ 3=(S2) And how old are you?
+ 4=(S2b) Which of the following age bands do you fall into?
+ 5=(S3) And where do you live?
+ 6=(S4ROI) And where do you live?
+ 7=(S4INFO) Comment element
+ 8=(S4) Which of the following, best describes your involvement in household decisions concerning providers used for TV, broadband and your own mobile phone service? If you don't currently use one of the services think about who is responsible for the decision not to use the service.
+ 9=(S4a,S4b) And now thinking about the TV sets that you have in your home. To what extent do you get to decide what is watched on those TVs?
+ 10=(A19a) How would you describe your knowledge of the following services and the TV shows they give access to?
+ 11=(A19b) How would you describe your knowledge of the following services and the Sports they offer?
+ 12=(S5) Which of the following TV service providers do you use as your main home TV provider?
+ 13=(S6) Which one of the following are you using to access Sky TV?
+ 14=(SMC) Do you have $ {"a Multiscreen box" if S6.r1 else ""}$ {"a Q Mini box" if S6.r2 else ""}$ {"a Sky Stream Puck" if S6.r3 else ""}$ {"additional Sky Stream boxes" if S6.r4 else ""} with your Sky subscription?
+ 15=(TRAP1) Now we just want to ask a quick test question. From the list shown below, please select the answer which is not an animal.
+ 16=(INTRO2) Comment element
+ 17=(PR2) How long has your household been a TV customer of Sky? Please answer based on the whole time your household has continuously been a TV customer, even if at a previous address.
+ 18=(PR3) How likely are you to get your main TV services from each of the following companies in the next 12 months?
+ 19=(PR4) On a scale of 1 to 10, where 1 is extremely unlikely and 10 is extremely likely, how likely are you to still be using the following TV service provider in 12 months' time?
+ 20=(INTROS7) Comment element
+ 21=(S7) From the provider(s) below, please indicate which, if any, you currently subscribe to or have access to?
+ 22=(S7C) Which, if any, of the following services do you regularly use to watch videos or live streams? By regularly we mean once a week or more often.
+ 23=(S7a) From the entertainment services below, which would you say you personally use the most often? If you use one or more service a similar amount please choose the service that first comes to mind when thinking about the question.
+ 24=(S7b) And thinking about the same services again, please select those which are important to you and then the service which is most important overall.
+ 25=(C55) Which, if any, of these providers would you consider using for watching subscription TV or movie services and TV entertainment?
+ 26=(PR5) Which, if any, of these products and services does your household currently subscribe to through $ {S5.selected.o.alt}?
+ 27=(NTF1) Which of the following Netflix subscription packages, if any, do you/ your household pay for?
+ 28=(NTF2) Which of the following services, if any, are set-up in the name of someone outside your household?
+ 29=(TRAP2) blue Please tell us which colour the square above is.
+ 30=(TVINTRO) Comment element
+ 31=(C60) Which, if any, of the following elements are important for a TV entertainment service to include and which is the most important element?
+ 32=(C61) Which, if any, of the following features of a TV service are you looking for when considering TV entertainment providers and which is the most important feature?
+ 33=(C62) And what qualities, if any, are important for a TV entertainment service you would consider to have and which is the most important quality?
+ 34=(C63) Please select the providers that you feel are associated with each of the following statements.
+ 35=(C64) Please select the providers that you feel are associated with each of the following statements.
+ 36=(C65) Please select the providers that you feel are associated with each of the following statements.
+ 37=(EM2_1_r01) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.Sky_s}
+ 38=(EM2_2_r01) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.Sky_s}
+ 39=(EM2_1_r02) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.Netflix_s}
+ 40=(EM2_2_r02) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.Netflix_s}
+ 41=(EM2_1_r03) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.AmazonPIV_s}
+ 42=(EM2_2_r03) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.AmazonPIV_s}
+ 43=(EM2_1_r04) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.disneyplus_s}
+ 44=(EM2_2_r04) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.disneyplus_s}
+ 45=(EM2_1_r05) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.bbc_s}
+ 46=(EM2_2_r05) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.bbc_s}
+ 47=(EM2_1_r06) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.ParamountPlus_s}
+ 48=(EM2_2_r06) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.ParamountPlus_s}
+ 49=(EM2_1_r07) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.NOW_s}
+ 50=(EM2_2_r07) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.NOW_s}
+ 51=(EM2_1_r08) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.appletvplus_s}
+ 52=(EM2_2_r08) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.appletvplus_s}
+ 53=(EM2_1_r09) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.VirginMedia_s}
+ 54=(EM2_2_r09) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.VirginMedia_s}
+ 55=(EM2_1_r10) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.BTTV_s}
+ 56=(EM2_2_r10) We are now going to show a set of words that people have used to describe different TV services. In each case we'd like you to select the words you most strongly associate with each service. $ {res.BTTV_s}
+ 57=(CT1) Below is a list of TV shows, which, if any, have you heard of before today?
+ 58=(CT2) Of the shows you are aware of, for each one please choose the service(s) you associate that show with.
+ 59=(CT3a) When thinking about the kinds of shows you really love to watch, which of the following genres are most important to you?
+ 60=(CT3) And for those different genres of TV entertainment please select which services you feel have the best shows in that genre.
+ 61=(CT5) When you are looking for a new TV show to watch what is your preferred way of finding that programme? Please think about occasions when you are looking for something exciting to watch not occasions when you are willing to watch whatever is available.
+ 62=(CT6) Considering the following devices that allow you to access entertainment, which, if any, of the following devices do you feel are good at bringing all the content you like, from all the services you use, into one integrated service?
+ 63=(INTRO3) Comment element
+ 64=(K12) When you are looking for a new entertainment service, what is your MOST preferred method for conducting research about the options available and your MOST preferred method for making the purchase itself?
+ 65=(PC1) And once you've signed up to an entertainment service, what is your preferred method of contacting them; if you have a query or issue? If you don't have any entertainment service currently, please think of a time when you did.
+ 66=(PC2) When you signed up to Sky which method did you use to make the final transaction?
+ 67=(AD1) And still thinking about entertainment providers, which, if any, do you recall seeing or hearing information about in the last 3 months? This could be information you received in any way e.g. TV advertising, banners on websites, social media posts, news coverage, in a shop or conversations with friends and so on.
+ 68=(AD2) And where do you recall having seen/heard information about this/ these service(s) in the last 3 months?
+ 69=(AD3) And which service provider(s) advertising, if any, felt really interesting and relevant to you?
+ 70=(BDF1) Thanks for all your answers so far. Before today have you heard of the brand Apple?
+ 71=(INTRO31) Comment element
+ 72=(SK1A) To the best of your knowledge, please list what you think is included in the package if you took Sky TVs entry level subscription?
+ 73=(SK7) Looking to the future now. Which, if any, of the following do you expect to apply to you in 5 years' time and then in 10 years' time from today.
+ 74=(SK1) Now for something a little different. Picture now how you expect your life to change over time. Thinking ahead 5 years and then 10 years. Do you think you would be more or less likely to subscribe to Sky TV than you would be today?
+ 75=(SK3) If you became the main decision maker over which TV services to take tomorrow, how likely would you be to subscribe to Sky TV? Assume that your household didn't currently have Sky.
+ 76=(SK4) $ {"Picture now how you expect your life to change over time. Thinking ahead 5 years and then 10 years. How likely do you think you are to be subscribing to Sky in" if S4.r03.c01 or S4.r04.c01 or S4.r05.c01 else ""} $ {"And how likely do you think you are to be subscribing to Sky in " if S4.r01.c01 or S4.r02.c01 else ""}$ {"5 years' time" if (S4.r04.c01 or S4.r05.c01) or (SK1.r01.c04 or SK1.r01.c05) else ""} $ {"10 years' time" if (S4.r04.c01 or S4.r05.c01) or (SK1.r02.c04 or SK1.r02.c05) else ""}? Assume that the service is similar to what it is today.
+ 77=(SK5) And why do you feel you would be unlikely to be subscribing to Sky in 10 years' time?
+ 78=(SK6) And why do you think you might be subscribing to Sky in 10 years' time $ {"even though you don't subscribe today" if not S5.r1 else ""}?
+ 79=(SK8) Thinking now about how you feel about Sky today compared to how you felt about them in the past please answer to what extent you agree or disagree with each of the following statements.
+ 80=(S16) Were you aware that NOW is owned by Sky?
+ 81=(S17) Which of the following services, if any, have you had access to previously? Please choose all the services you had access to previously even if it was a long time ago.
+ 82=(S17A) And how long ago did your access to this service end?
+ 83=(S17B) From the following please select what life stage you were at when you first had access to Sky TV?
+ 84=(S17c) And now from the following please select what life stage you were at when you first paid, at least in part, for Sky TV?
+ 85=(S17cOE) In your own words please can you explain why you had not had Sky before this point?
+ 86=(A1,A2,A3,A4) Thinking now about a Sky TV subscription, at what price per month would you consider to be so low that you would question the quality of what was included and would be suspicious of what was in the small print of the offer? Please think about the cost of the basic Sky TV subscription only not including Sky Sports or Sky Cinema and not broadband $ {"and mobile" if Country.r01 else ""} services that you might take on top.
+ 87=(A5,A6) Still thinking about this product, how likely would you be to take a Sky TV subscription in the next 12 months at the following price: $ {'£' if Country.r01 else '€'}$ {A2.val}?
+ 88=(QTV) When you think of Sky what is your opinion on each of the following. For each please indicate whether this is a Sky strength and whether it is worth paying for?
+ 89=(SG1) How would you describe your knowledge of Sky Go?
+ 90=(SG2) $ {"And who, if anyone, in your household, uses Sky Go?" if S5.r1 else ""} $ {"When you previously had Sky TV, who, if anyone, in your household, used Sky Go?" if S17.r01.c01 or S17.r01.c02 or S17.r02.c01 or S17.r02.c02 else ""}
+ 91=(SG3) $ {"And why do you not use Sky Go yourself?" if S5.r1 else ""} $ {"And why did you not use Sky Go yourself?" if S17.r01.c01 or S17.r01.c02 or S17.r02.c01 or S17.r02.c02 else ""}
+ 92=(SG4) $ {"When do you tend to use Sky Go?" if S5.r1 else ""} $ {"When did you tend to use Sky Go?" if S17.r01.c01 or S17.r01.c02 or S17.r02.c01 or S17.r02.c02 else ""}
+ 93=(SG5) To what extent do you agree or disagree with the following statement: The Sky Go service means I/everyone in the household can get a lot of use from the Sky subscription.
+ 94=(SG6) To what extent do you agree or disagree with the following statement: The fact that the Sky Go service is included as standard with a Sky TV subscription makes me more likely to take Sky TV in the future.
+ 95=(INTROE) Comment element
+ 96=(QCS1_1) To what extent do you agree or disagree with the following statements regarding TV and TV services?
+ 97=(QCS1_2) To what extent do you agree or disagree with the following statements regarding TV and TV services?
+ 98=(QHB1) Thinking of a typical week how often would you do each of the following?
+ 99=(QTVW) To what extent do you agree or disagree with the following statements regarding watching TV?
+ 100=(INTROTOQTOFF) Comment element
+ 101=(QTOFF1) Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+ 102=(QTOFF3) Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+ 103=(QTOFF4) Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+ 104=(QTOFF5) Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+ 105=(QTOFF6) Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+ 106=(QTOFF7) Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+ 107=(QTOFF8) Which of the following statements would you say best describes you? (1 = totally the left statement, 4 = neither, 7 = totally the right statement)
+ 108=(QCS2_1) To what extent do you agree or disagree with the following statements regarding TV and TV services?
+ 109=(QCS2_2) To what extent do you agree or disagree with the following statements regarding TV and TV services?
+ 110=(CHP1) Below are different elements that can form part of a TV service. Imagine you have 100 chips to spend, next to each element please enter how many chips you would be willing to spend to get a TV service which included that element. If it isn't important to you at all you can enter 0 next to it.
+ 111=(QWTPA) How much extra, if anything, would you be willing to pay for a TV service that has the following feature or service?
+ 112=(QWTPB) How much would you be willing to pay to get access to the TV shows available on the following services? Just think about access to the TV shows themselves; not any additional functionality that might come with the service.
+ 113=(QCS3_1) To what extent do you agree or disagree with the following statements?
+ 114=(QCS3_2) To what extent do you agree or disagree with the following statements?
+ 115=(BB1) Which of these providers, if any, is currently your main home broadband service provider?
+ 116=(BB2) Do you currently receive a fibre broadband package from your current provider?
+ 117=(BB3) You mentioned that your household is currently using fibre broadband. Which type of fibre broadband & download speeds do you take from your provider?
+ 118=(BB4) What type of Ultrafast broadband does your household currently have?
+ 119=(MO1) Which of these providers, if any, is currently your main mobile provider of your personal mobile phone?
+ 120=(IF1) Comment element
+ 121=(PS1a) We're now going to show you some personality traits. Please select all those traits which you feel best describe yourself. Feel free to select as many as you like.
+ 122=(D2) Which of the following best describes your home?
+ 123=(D3) Which of the following best describe your living circumstances?
+ 124=(D4) And when is your current rental contract expiring?
+ 125=(FP2) How willing are you to pay for TV?
+ 126=(L17) How willing are you to commit to a 12-month contract for your ideal TV service?
+ 127=(FP3) Please tell us the extent to which you agree or disagree with each of the following statements.
+ 128=(L19) Please tell us the extent to which you agree or disagree with each of the following statements about broadband.
+ 129=(L20) And to what extent do you agree or disagree with each of these statements about broadband companies and services?
+ 130=(L7) Please indicate the extent to which you agree or disagree with each of the following statements.
+ 131=(F7) Which of the following best describes your current living arrangement?
+ 132=(G1) How many adults, aged 18 or over, including yourself, are there in your household?
+ 133=(G6) And what age(s) are they?
+ 134=(G2) What is your annual household income before tax?
+ 135=(G2a) What is your annual household income before tax?
+ 136=(K5) Are there any children aged under 18 in your household or are you regularly visited (i.e. at least once a week) by children under 18 (e.g. grandchildren, children you care for etc.)?
+ 137=(K6) And what age(s) are they?
+ 138=(M5) Which of the following best describes your occupation? If you are now retired with a private pension, please state your previous occupation.
+
+[source]: Captured variable
+Open text response
+
+[decLang]: Captured variable
+Open text response
+
+[list]: Captured variable
+Open text response
+
+[dcua]: Captured variable
+Open text response
+
+[userAgent]: Captured variable
+Open text response
+
+[url]: Captured variable
+Open text response
+
+[session]: Captured variable
+Open text response
+
+[psid]: Captured variable
+Open text response
+
+[sh1]: Captured variable
+Open text response
+
+[sh2]: Captured variable
+Open text response
+
+[sh3]: Captured variable
+Open text response
+
+vctq1: Weight DM
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq1c1] Total
+ [vctq1c2] 18-24
+ [vctq1c3] 25-34
+ [vctq1c4] 35+
+ [vctq1c5] 18-24
+ [vctq1c6] 25-34
+ [vctq1c7] 35+
+ [vctq1c8] 18-34 M
+ [vctq1c9] 18-34 F
+ [vctq1c10] 35+ M
+ [vctq1c11] 35+ F
+ [vctq1c12] 18-34 M
+ [vctq1c13] 18-34 F
+ [vctq1c14] 35+ M
+ [vctq1c15] 35+ F
+ [vctq1c16] 18-34 w OTT core
+ [vctq1c17] 18-34 wo OTT
+ [vctq1c18] 35+ w OTT core
+ [vctq1c19] 35+ wo OTT core
+ [vctq1c20] 18-34 w OTT core
+ [vctq1c21] 18-34 wo OTT
+ [vctq1c22] 35+ w OTT core
+ [vctq1c23] 35+ wo OTT core
+ [vctq1c24] 18-34 Prems
+ [vctq1c25] 18-34 no Prems
+ [vctq1c26] 35+ Prems
+ [vctq1c27] 35+ no Prems
+ [vctq1c28] 18-34 Pay
+ [vctq1c29] 18-34 Free
+ [vctq1c30] 35+ Pay
+ [vctq1c31] 35+ Free
+
+vctq2: Weight Non-DM
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq2c1] Total
+ [vctq2c2] 18-24
+ [vctq2c3] 25-34
+ [vctq2c4] 35+
+ [vctq2c5] 18-24
+ [vctq2c6] 25-34
+ [vctq2c7] 35+
+ [vctq2c8] 18-34 M
+ [vctq2c9] 18-34 F
+ [vctq2c10] 35+ M
+ [vctq2c11] 35+ F
+ [vctq2c12] 18-34 M
+ [vctq2c13] 18-34 F
+ [vctq2c14] 35+ M
+ [vctq2c15] 35+ F
+ [vctq2c16] 18-34 w OTT core
+ [vctq2c17] 18-34 wo OTT
+ [vctq2c18] 35+ w OTT core
+ [vctq2c19] 35+ wo OTT core
+ [vctq2c20] 18-34 w OTT core
+ [vctq2c21] 18-34 wo OTT
+ [vctq2c22] 35+ w OTT core
+ [vctq2c23] 35+ wo OTT core
+ [vctq2c24] 18-34 Prems
+ [vctq2c25] 18-34 no Prems
+ [vctq2c26] 35+ Prems
+ [vctq2c27] 35+ no Prems
+ [vctq2c28] 18-34 Pay
+ [vctq2c29] 18-34 Free
+ [vctq2c30] 35+ Pay
+ [vctq2c31] 35+ Free
+
+vctq3: TV DM vs Non DM
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq3c1] TV DM
+ [vctq3c2] TV Non-DM
+
+vctq4: Weight Non-DM
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq4c1] Total
+ [vctq4c2] 18-24
+ [vctq4c3] 25-34
+ [vctq4c4] 35+
+ [vctq4c5] 18-24
+ [vctq4c6] 25-34
+ [vctq4c7] 35+
+ [vctq4c8] M
+ [vctq4c9] F
+ [vctq4c10] M
+ [vctq4c11] F
+ [vctq4c12] 18-34 w OTT core
+ [vctq4c13] 18-34 wo OTT
+ [vctq4c14] 35+ w OTT core
+ [vctq4c15] 35+ wo OTT core
+ [vctq4c16] 18-34 w OTT core
+ [vctq4c17] 18-34 wo OTT
+ [vctq4c18] 35+ w OTT core
+ [vctq4c19] 35+ wo OTT core
+ [vctq4c20] 18-34 Prems
+ [vctq4c21] 18-34 no Prems
+ [vctq4c22] 35+ Prems
+ [vctq4c23] 35+ no Prems
+ [vctq4c24] 18-34 Pay
+ [vctq4c25] 18-34 Free
+ [vctq4c26] 35+ Pay
+ [vctq4c27] 35+ Free
+
+vctq5: Final Weight Non-DM
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq5c1] Total
+ [vctq5c2] 18-24
+ [vctq5c3] 25-34
+ [vctq5c4] 35+
+ [vctq5c5] 18-24
+ [vctq5c6] 25-34
+ [vctq5c7] 35+
+ [vctq5c8] M
+ [vctq5c9] F
+ [vctq5c10] M
+ [vctq5c11] F
+ [vctq5c12] 18-34 w OTT core
+ [vctq5c13] 18-34 wo OTT
+ [vctq5c14] 35+ w OTT core
+ [vctq5c15] 35+ wo OTT core
+ [vctq5c16] 18-34 w OTT core
+ [vctq5c17] 18-34 wo OTT
+ [vctq5c18] 35+ w OTT core
+ [vctq5c19] 35+ wo OTT core
+ [vctq5c20] 18-34 Prems
+ [vctq5c21] 18-34 no Prems
+ [vctq5c22] 35+ Prems
+ [vctq5c23] 35+ no Prems
+ [vctq5c24] 18-34 Pay
+ [vctq5c25] 18-34 Free
+ [vctq5c26] 35+ Pay
+ [vctq5c27] 35+ Free
+
+vctq6: Testing
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq6c1] Total
+ [vctq6c2] 18-24
+ [vctq6c3] 25-34
+ [vctq6c4] 35+
+ [vctq6c5] 18-24
+ [vctq6c6] 25-34
+ [vctq6c7] 35+
+ [vctq6c8] 18-34 M
+ [vctq6c9] 18-34 F
+ [vctq6c10] 35+ M
+ [vctq6c11] 35+ F
+ [vctq6c12] 18-34 M
+ [vctq6c13] 18-34 F
+ [vctq6c14] 35+ M
+ [vctq6c15] 35+ F
+ [vctq6c16] 18-34 w OTT core
+ [vctq6c17] 18-34 wo OTT
+ [vctq6c18] 35+ w OTT core
+ [vctq6c19] 35+ wo OTT core
+ [vctq6c20] 18-34 w OTT core
+ [vctq6c21] 18-34 wo OTT
+ [vctq6c22] 35+ w OTT core
+ [vctq6c23] 35+ wo OTT core
+ [vctq6c24] 18-34 Prems
+ [vctq6c25] 18-34 no Prems
+ [vctq6c26] 35+ Prems
+ [vctq6c27] 35+ no Prems
+ [vctq6c28] 18-34 Pay
+ [vctq6c29] 18-34 Free
+ [vctq6c30] 35+ Pay
+ [vctq6c31] 35+ Free
+ [vctq6c32] 18-24
+ [vctq6c33] 25-34
+ [vctq6c34] 35+
+ [vctq6c35] 18-24
+ [vctq6c36] 25-34
+ [vctq6c37] 35+
+ [vctq6c38] M
+ [vctq6c39] F
+ [vctq6c40] M
+ [vctq6c41] F
+ [vctq6c42] 18-34 w OTT core
+ [vctq6c43] 18-34 wo OTT
+ [vctq6c44] 35+ w OTT core
+ [vctq6c45] 35+ wo OTT core
+ [vctq6c46] 18-34 w OTT core
+ [vctq6c47] 18-34 wo OTT
+ [vctq6c48] 35+ w OTT core
+ [vctq6c49] 35+ wo OTT core
+ [vctq6c50] 18-34 Prems
+ [vctq6c51] 18-34 no Prems
+ [vctq6c52] 35+ Prems
+ [vctq6c53] 35+ no Prems
+ [vctq6c54] 18-34 Pay
+ [vctq6c55] 18-34 Free
+ [vctq6c56] 35+ Pay
+ [vctq6c57] 35+ Free
+
+vctq7: TV DM vs Non DM
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq7c1] Total
+ [vctq7c2] TV DM
+ [vctq7c3] TV Non-DM
+
+S7aMask_ROI: Hidden to keep possible codes/recodes for S7a ROI
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [S7aMask_ROIr1] Netflix
+ [S7aMask_ROIr2] Amazon Prime Video
+ [S7aMask_ROIr3] NOW
+ [S7aMask_ROIr4] Britbox
+ [S7aMask_ROIr5] AppleTV+
+ [S7aMask_ROIr6] Disney+
+ [S7aMask_ROIr7] Discovery+
+ [S7aMask_ROIr8] Paramount+
+ [S7aMask_ROIr9] Amazon Music
+ [S7aMask_ROIr10] Apple Music
+ [S7aMask_ROIr11] Spotify
+ [S7aMask_ROIr12] Xbox Game Pass
+ [S7aMask_ROIr13] PlayStation Plus
+ [S7aMask_ROIr14] DAZN
+ [S7aMask_ROIr15] Sky
+ [S7aMask_ROIr16] Virgin Media
+ [S7aMask_ROIr17] Freeview
+ [S7aMask_ROIr18] EE TV (formerly BT TV)
+ [S7aMask_ROIr19] Freesat
+ [S7aMask_ROIr20] TalkTalk TV
+ [S7aMask_ROIr21] YouView (Standalone box only)
+ [S7aMask_ROIr22] $ {S5.r98.open}
+ [S7aMask_ROIr23] YouTube Premium (no adverts)
+ [S7aMask_ROIr24] Twitch
+ [S7aMask_ROIr25] TikTok
+ [S7aMask_ROIr26] Instagram
+ [S7aMask_ROIr27] Facebook
+ [S7aMask_ROIr28] iPlayer
+ [S7aMask_ROIr29] All4
+ [S7aMask_ROIr30] ITVX/ ITV Hub
+ [S7aMask_ROIr31] YouTube
+ [S7aMask_ROIr32] Saorview
+ [S7aMask_ROIr33] Eir TV
+ [S7aMask_ROIr34] Vodafone
+ [S7aMask_ROIr35] RTE Player
+
+[TRAP2]: blue Please tell us which colour the square above is.
+Values: 1-9
+ 1=Yellow
+ 2=Red
+ 3=Green
+ 4=Purple
+ 5=Orange
+ 6=Brown
+ 7=White
+ 8=Blue
+ 9=None of these
+
+BDF1: Thanks for all your answers so far. Before today have you heard of the brand Apple?
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [BDF1r1] Yes
+ [BDF1r2] No
+
+[S16]: Were you aware that NOW is owned by Sky?
+Values: 1-3
+ 1=Yes
+ 2=No
+ 3=I don’t know
+
+[G2a]: What is your annual household income before tax?
+Values: 1-8
+ 1=Less than €15,000
+ 2=€15,001-€30,000
+ 3=€30,001-€50,000
+ 4=€50,001-€80,000
+ 5=€80,001-€100,000
+ 6=€100,001 or more
+ 7=I don't know
+ 8=I'd rather not say
+
+vctq8: Weight DM ROI
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq8c1] Total
+ [vctq8c2] 18-24
+ [vctq8c3] 25-34
+ [vctq8c4] 35+
+ [vctq8c5] 18-24
+ [vctq8c6] 25-34
+ [vctq8c7] 35+
+ [vctq8c8] 18-34 M
+ [vctq8c9] 18-34 F
+ [vctq8c10] 35+ M
+ [vctq8c11] 35+ F
+ [vctq8c12] 18-34 M
+ [vctq8c13] 18-34 F
+ [vctq8c14] 35+ M
+ [vctq8c15] 35+ F
+ [vctq8c16] 18-34 w OTT core
+ [vctq8c17] 18-34 wo OTT
+ [vctq8c18] 35+ w OTT core
+ [vctq8c19] 35+ wo OTT core
+ [vctq8c20] 18-34 w OTT core
+ [vctq8c21] 18-34 wo OTT
+ [vctq8c22] 35+ w OTT core
+ [vctq8c23] 35+ wo OTT core
+ [vctq8c24] 18-34 Prems
+ [vctq8c25] 18-34 no Prems
+ [vctq8c26] 35+ Prems
+ [vctq8c27] 35+ no Prems
+ [vctq8c28] 18-34 Pay
+ [vctq8c29] 18-34 Free
+ [vctq8c30] 35+ Pay
+ [vctq8c31] 35+ Free
+
+vctq9: Weight Non-DM ROI
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq9c1] Total
+ [vctq9c2] 18-24
+ [vctq9c3] 25-34
+ [vctq9c4] 35+
+ [vctq9c5] 18-24
+ [vctq9c6] 25-34
+ [vctq9c7] 35+
+ [vctq9c8] M
+ [vctq9c9] F
+ [vctq9c10] M
+ [vctq9c11] F
+ [vctq9c12] 18-34 w OTT core
+ [vctq9c13] 18-34 wo OTT
+ [vctq9c14] 35+ w OTT core
+ [vctq9c15] 35+ wo OTT core
+ [vctq9c16] 18-34 w OTT core
+ [vctq9c17] 18-34 wo OTT
+ [vctq9c18] 35+ w OTT core
+ [vctq9c19] 35+ wo OTT core
+ [vctq9c20] 18-34 Prems
+ [vctq9c21] 18-34 no Prems
+ [vctq9c22] 35+ Prems
+ [vctq9c23] 35+ no Prems
+ [vctq9c24] 18-34 Pay
+ [vctq9c25] 18-34 Free
+ [vctq9c26] 35+ Pay
+ [vctq9c27] 35+ Free
+
+vctq10: DM + NDM ROI
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq10c1] Total
+ [vctq10c2] 18-24
+ [vctq10c3] 25-34
+ [vctq10c4] 35+
+ [vctq10c5] 18-24
+ [vctq10c6] 25-34
+ [vctq10c7] 35+
+ [vctq10c8] 18-34 M
+ [vctq10c9] 18-34 F
+ [vctq10c10] 35+ M
+ [vctq10c11] 35+ F
+ [vctq10c12] 18-34 M
+ [vctq10c13] 18-34 F
+ [vctq10c14] 35+ M
+ [vctq10c15] 35+ F
+ [vctq10c16] 18-34 w OTT core
+ [vctq10c17] 18-34 wo OTT
+ [vctq10c18] 35+ w OTT core
+ [vctq10c19] 35+ wo OTT core
+ [vctq10c20] 18-34 w OTT core
+ [vctq10c21] 18-34 wo OTT
+ [vctq10c22] 35+ w OTT core
+ [vctq10c23] 35+ wo OTT core
+ [vctq10c24] 18-34 Prems
+ [vctq10c25] 18-34 no Prems
+ [vctq10c26] 35+ Prems
+ [vctq10c27] 35+ no Prems
+ [vctq10c28] 18-34 Pay
+ [vctq10c29] 18-34 Free
+ [vctq10c30] 35+ Pay
+ [vctq10c31] 35+ Free
+
+vctq11: ROI groups
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq11c1] Male
+ [vctq11c2] Female
+ [vctq11c3] Male
+ [vctq11c4] Female
+ [vctq11c5] Male
+ [vctq11c6] Female
+ [vctq11c7] Male
+ [vctq11c8] Female
+ [vctq11c9] 18-34
+ [vctq11c10] 35-54
+ [vctq11c11] 55+
+ [vctq11c12] 18-34
+ [vctq11c13] 35-54
+ [vctq11c14] 55+
+ [vctq11c15] 18-34
+ [vctq11c16] 35-54
+ [vctq11c17] 55+
+ [vctq11c18] 18-34
+ [vctq11c19] 35-54
+ [vctq11c20] 55+
+ [vctq11c21] Top Tier
+ [vctq11c22] Sports
+ [vctq11c23] Cinema
+ [vctq11c24] Basic
+ [vctq11c25] Pay TV
+ [vctq11c26] Free TV, No TV + OTT
+ [vctq11c27] Free TV, No TV w/o OTT
+
+vctq12: ROI groups - ages grouped
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq12c1] Male
+ [vctq12c2] Female
+ [vctq12c3] Male
+ [vctq12c4] Female
+ [vctq12c5] Male
+ [vctq12c6] Female
+ [vctq12c7] Male
+ [vctq12c8] Female
+ [vctq12c9] 18-34
+ [vctq12c10] 35+
+ [vctq12c11] 18-34
+ [vctq12c12] 35+
+ [vctq12c13] 18-34
+ [vctq12c14] 35+
+ [vctq12c15] 18-34
+ [vctq12c16] 35+
+ [vctq12c17] Top Tier
+ [vctq12c18] Sports
+ [vctq12c19] Cinema
+ [vctq12c20] Basic
+ [vctq12c21] Pay TV
+ [vctq12c22] Free TV, No TV + OTT
+ [vctq12c23] Free TV, No TV w/o OTT
+
+vctq13: Sky Genres
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq13c1] Total Sky TV customers
+ [vctq13c2] All
+ [vctq13c3] No Reality
+ [vctq13c4] No American Drama
+
+vctq14: Sky Genres - Prospects
+Values: 0-1
+ 0=Unchecked
+ 1=Checked
+ [vctq14c1] Total Sky TV prospects
+ [vctq14c2] All
+ [vctq14c3] No Reality
+ [vctq14c4] No American Drama
+
+nweight: Weights
+Values: -99999-999999
+ [nweightweightUK] weightUK
+ [nweightweightROI] weightROI
+
